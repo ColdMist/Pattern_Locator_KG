@@ -145,10 +145,14 @@ def find_symmetric(triples, observed_triples):
         except:
             continue
 
+    premise_df = pd.DataFrame(np.array(premise_list)).applymap(str)
+    conclusion_df = pd.DataFrame(np.array(conclusion_list)).applymap(str)
+    premise_df_unique_relation = np.array(list(set(list(premise_df[1]))))
+    conclusion_df_unique_relation = np.array(list(set(list(conclusion_df[1]))))
+    #####################################################################################################
     symmetric_triple_per_relation = []
-    unique_symmetric_relations = np.unique(symmetric_relations)
-    for premise in unique_symmetric_relations:
-        symmetric_array_place_holder = triples_df.loc[triples_df[1] == premise]
+    for premise in premise_df_unique_relation:
+        symmetric_array_place_holder = premise_df.loc[premise_df[1] == premise]
         symmetric_array_place_holder = np.array(symmetric_array_place_holder)
         # print(unique_relations_reflexive_triple, ' : ', len(place_holder_relation_triple))
         stat_count_per_relation_symmetric = np.array(
@@ -156,16 +160,15 @@ def find_symmetric(triples, observed_triples):
         symmetric_triple_per_relation.append(stat_count_per_relation_symmetric)
 
     symmetric_triple_per_relation = pd.DataFrame(np.array(symmetric_triple_per_relation))
-    #symmetric_triple_per_relation['symmetric_relation_count'] = symmetric_triple_per_relation['symmetric_relation_count'].astype(str).astype(int)
-    #symmetric_triple_per_relation_sorted = symmetric_triple_per_relation.sort_values(by=1, ascending=False)
+    symmetric_triple_per_relation[1] = symmetric_triple_per_relation[1].astype(str).astype(int)
+    symmetric_triple_per_relation_sorted = symmetric_triple_per_relation.sort_values(by=1, ascending=False)
 
-    return symmetric_patterns, symmetric_triple_per_relation
+    return symmetric_patterns, symmetric_triple_per_relation_sorted
 
 if __name__ == '__main__':
     data_dir = '/home/mirza/PycharmProject/relational_pattern_lookout/data/WN18'
 
     all_triple_df= pd.read_table('/home/mirza/PycharmProject/relational_pattern_lookout/data/WN18/train.txt', header=None, dtype=str)
-
     triples, observed_triples = build_indexed_dictioary(all_triple_df)
     symmetric_patterns, count_sym = find_symmetric(triples, observed_triples=observed_triples)
     reflexive_patterns, count_ref = find_reflexive(all_triple_df)
