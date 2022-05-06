@@ -165,6 +165,49 @@ def find_symmetric(triples, observed_triples):
 
     return symmetric_patterns, symmetric_triple_per_relation_sorted
 
+def find_transitive(triples_df, triples, observed_triples):
+    all_relations = list(set(list(triples_df[1])))
+    triples_df.columns = ['h', 'r', 't']
+    premise_list = []
+    conclusion_list = []
+    transitive_patterns = []
+    transitive_relations = []
+    merged_df = pd.merge(triples_df, triples_df, left_on=['r', 't'], right_on=['r', 'h'], how='inner')
+    merged_data = merged_df.to_numpy()
+    for triple in merged_data:
+        try:
+            exists = observed_triples[triple[0], triple[1], triple[4]]
+            premise = np.array([triple[0], triple[1], triple[2], triple[3], triple[1], triple[4]])
+            conclusion = np.array([triple[0], triple[1], triple[4]])
+            transitive_pattern = [triple[0], triple[1], triple[2], 'and', triple[3], triple[1], triple[4], '->',
+                                  triple[0], triple[1], triple[4]]
+            transitive_patterns.append(transitive_pattern)
+            transitive_relations.append(triple[1])
+            premise_list.append(np.array(premise))
+            conclusion_list.append(np.array(conclusion))
+        except:
+            continue
+
+    premise_df = pd.DataFrame(np.array(premise_list)).applymap(str)
+    conclusion_df = pd.DataFrame(np.array(conclusion_list)).applymap(str)
+    premise_df_unique_relation = np.array(list(set(list(premise_df[1]))))
+    conclusion_df_unique_relation = np.array(list(set(list(conclusion_df[1]))))
+    #####################################################################################################
+    transitive_triple_per_relation = []
+    for premise in premise_df_unique_relation:
+        transitive_array_place_holder = premise_df.loc[premise_df[1] == premise]
+        transitive_array_place_holder = np.array(transitive_array_place_holder)
+        # print(unique_relations_reflexive_triple, ' : ', len(place_holder_relation_triple))
+        stat_count_per_relation_transitive = np.array(
+            [premise, int(len(transitive_array_place_holder))])
+        transitive_triple_per_relation.append(stat_count_per_relation_transitive)
+
+    transitive_triple_per_relation = pd.DataFrame(np.array(transitive_triple_per_relation))
+    transitive_triple_per_relation[1] = transitive_triple_per_relation[1].astype(str).astype(int)
+    transitive_triple_per_relation_sorted = transitive_triple_per_relation.sort_values(by=1, ascending=False)
+
+    return transitive_patterns, transitive_triple_per_relation_sorted
+
 if __name__ == '__main__':
     data_dir = '/home/mirza/PycharmProject/relational_pattern_lookout/data/WN18'
 
@@ -174,5 +217,6 @@ if __name__ == '__main__':
     reflexive_patterns, count_ref = find_reflexive(all_triple_df)
     implication_patterns, count_imp = find_implication(all_triple_df, triples, observed_triples)
     inverse_patterns, count_inv = find_inverse(all_triple_df, triples, observed_triples)
+    transitive_patterns, count_tran = find_transitive(all_triple_df, triples, observed_triples)
 
 
