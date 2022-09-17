@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import os
 
 def build_indexed_dictioary(data):
     triples = list(zip([h for h in data[0]],
@@ -209,14 +210,31 @@ def find_transitive(triples_df, triples, observed_triples):
     return transitive_patterns, transitive_triple_per_relation_sorted
 
 if __name__ == '__main__':
-    data_dir = '/home/mirza/PycharmProject/relational_pattern_lookout/data/WN18'
+    data_dir = 'data'
+    data_name = 'umls'
+    file_name = 'train.txt'
+    save_pattern_dir = 'found_patterns'
 
-    all_triple_df= pd.read_table('/home/mirza/PycharmProject/relational_pattern_lookout/data/WN18/train.txt', header=None, dtype=str)
+    save_pattern_path = os.path.join(os.path.join(data_dir,data_name), save_pattern_dir)
+    file_path = os.path.join(os.path.join(data_dir,data_name),file_name)
+    all_triple_df= pd.read_table(file_path, header=None, dtype=str)
     triples, observed_triples = build_indexed_dictioary(all_triple_df)
     symmetric_patterns, count_sym = find_symmetric(triples, observed_triples=observed_triples)
     reflexive_patterns, count_ref = find_reflexive(all_triple_df)
     implication_patterns, count_imp = find_implication(all_triple_df, triples, observed_triples)
     inverse_patterns, count_inv = find_inverse(all_triple_df, triples, observed_triples)
     transitive_patterns, count_tran = find_transitive(all_triple_df, triples, observed_triples)
+
+    pd.DataFrame(symmetric_patterns).to_csv(os.path.join(save_pattern_path, 'symmetric_patterns.csv'), sep='\t', header=None, index=False)
+    pd.DataFrame(reflexive_patterns).to_csv(os.path.join(save_pattern_path, 'reflexive_patterns.csv'), sep='\t',
+                                            header=None, index=False)
+    pd.DataFrame(implication_patterns).to_csv(os.path.join(save_pattern_path, 'implication_patterns.csv'), sep='\t',
+                                            header=None, index=False)
+    pd.DataFrame(inverse_patterns).to_csv(os.path.join(save_pattern_path, 'inverse_patterns.csv'), sep='\t',
+                                            header=None, index=False)
+    pd.DataFrame(transitive_patterns).to_csv(os.path.join(save_pattern_path, 'transitive_patterns.csv'), sep='\t',
+                                            header=None, index=False)
+
+
 
 
