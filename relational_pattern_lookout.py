@@ -211,8 +211,8 @@ def find_transitive(triples_df, triples, observed_triples):
 
 if __name__ == '__main__':
     data_dir = 'data'
-    data_name = 'umls'
-    file_name = 'train.txt'
+    data_name = 'ICEWS14_TA'
+    file_name = 'train2id.txt'
     save_pattern_dir = 'found_patterns'
 
     save_pattern_path = os.path.join(os.path.join(data_dir,data_name), save_pattern_dir)
