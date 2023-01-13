@@ -211,14 +211,16 @@ def find_transitive(triples_df, triples, observed_triples):
 
 if __name__ == '__main__':
     data_dir = 'data'
-    data_name = 'ICEWS14_TA'
-    file_name = 'train2id.txt'
+    data_name = 'FB15K'
+    file_name = 'train'
     save_pattern_dir = 'found_patterns'
 
     save_pattern_path = os.path.join(os.path.join(data_dir,data_name), save_pattern_dir)
     file_path = os.path.join(os.path.join(data_dir,data_name),file_name)
     all_triple_df= pd.read_table(file_path, header=None, dtype=str)
+    # all_triple_df = pd.DataFrame([[1,2,3],[3,2,1],[3,3,3],[4,5,6],[6,5,4],[7,5,8],[11,2,4],[9,9,5]])
     triples, observed_triples = build_indexed_dictioary(all_triple_df)
+
     symmetric_patterns, count_sym = find_symmetric(triples, observed_triples=observed_triples)
     reflexive_patterns, count_ref = find_reflexive(all_triple_df)
     implication_patterns, count_imp = find_implication(all_triple_df, triples, observed_triples)
