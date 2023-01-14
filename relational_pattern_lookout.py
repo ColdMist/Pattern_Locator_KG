@@ -218,14 +218,15 @@ if __name__ == '__main__':
     save_pattern_path = os.path.join(os.path.join(data_dir,data_name), save_pattern_dir)
     file_path = os.path.join(os.path.join(data_dir,data_name),file_name)
     all_triple_df= pd.read_table(file_path, header=None, dtype=str)
+    all_triple_df = all_triple_df.iloc[:1000,:]
     # all_triple_df = pd.DataFrame([[1,2,3],[3,2,1],[3,3,3],[4,5,6],[6,5,4],[7,5,8],[11,2,4],[9,9,5]])
     triples, observed_triples = build_indexed_dictioary(all_triple_df)
 
-    symmetric_patterns, count_sym = find_symmetric(triples, observed_triples=observed_triples)
-    reflexive_patterns, count_ref = find_reflexive(all_triple_df)
-    implication_patterns, count_imp = find_implication(all_triple_df, triples, observed_triples)
+    # symmetric_patterns, count_sym = find_symmetric(triples, observed_triples=observed_triples)
+    # reflexive_patterns, count_ref = find_reflexive(all_triple_df)
+    # implication_patterns, count_imp = find_implication(all_triple_df, triples, observed_triples)
     inverse_patterns, count_inv = find_inverse(all_triple_df, triples, observed_triples)
-    transitive_patterns, count_tran = find_transitive(all_triple_df, triples, observed_triples)
+    # transitive_patterns, count_tran = find_transitive(all_triple_df, triples, observed_triples)
 
     pd.DataFrame(symmetric_patterns).to_csv(os.path.join(save_pattern_path, 'symmetric_patterns.csv'), sep='\t', header=None, index=False)
     pd.DataFrame(reflexive_patterns).to_csv(os.path.join(save_pattern_path, 'reflexive_patterns.csv'), sep='\t',
