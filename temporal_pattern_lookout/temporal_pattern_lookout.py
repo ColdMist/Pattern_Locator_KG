@@ -13,9 +13,10 @@ class PatternLookout:
     def __init__(self, temporal=False):
         self.temporal = temporal
         self.num_triples = None
-        self.num_self_sym = None
+        self.num_reflexive = None
         self.num_symmetric = None
         self.num_inverse = None
+        self.num_implication = None
 
         self.intersected = None
         self.diff = None
@@ -45,7 +46,7 @@ class PatternLookout:
 
         data_reversed.iloc[:, 0], data_reversed.iloc[:, 2] = data_reversed.iloc[:, 2].copy(), data_reversed.iloc[:, 0].copy()
 
-        self.num_self_sym = num_ss
+        self.num_reflexive = num_ss
         self.intersected = pd.merge(non_dup_data, data_reversed, how='inner')
         self.diff = pd.concat([non_dup_data, data_reversed]).drop_duplicates(keep=False)
         self.original = non_dup_data
@@ -54,10 +55,10 @@ class PatternLookout:
         self.non_dup_concat = self.concat.drop_duplicates()
         return
 
-    def find_symmetric(self):
+    def find_symmetric(self):  # reflexive belongs to symmetric or not
         assert self.intersected is not None, 'please run "initialize" first'
         set_intersected_ = self.intersected
-        num_symm = (len(set_intersected_) - self.num_self_sym) / 2
+        num_symm = (len(set_intersected_) - self.num_reflexive) / 2
         assert num_symm % 1 == 0, 'number of symmetric should be "int"'
         self.num_symmetric = num_symm
         return set_intersected_
@@ -68,23 +69,37 @@ class PatternLookout:
         return ref
 
     def find_inverse(self):
-        inv = self.concat.drop_duplicates(subset=['head', 'tail'])
-        assert self.non_dup_concat is not None, 'please run "initialize" first'
-        inv = pd.concat([inv, self.non_dup_concat]).drop_duplicates(keep=False)
+        assert self.intersected is not None, 'please run "initialize" first'
+        assert self.original is not None, 'please run "initialize" first'
+        non_dup_ori = self.original.drop_duplicates(subset=['head', 'tail'], keep=False)
+        non_dup_rev = self.reversed.drop_duplicates(subset=['head', 'tail'], keep=False)
+        cat = pd.concat([non_dup_ori, non_dup_rev])
+        non_dup_cat = cat.drop_duplicates()
+        inv = cat.drop_duplicates(subset=['head', 'tail'])
+        inv = pd.concat([inv, non_dup_cat]).drop_duplicates(keep=False)
         self.num_inverse = inv.shape[0]
         return inv
+
+    def find_implication(self):  # how to count
+        assert self.original is not None, 'please run "initialize" first'
+        imp = self.original.drop_duplicates(subset=['head', 'tail'])
+        imp = pd.concat([imp, self.original]).drop_duplicates(keep=False)
+        self.num_implication = imp.shape[0]
+        return imp
+
 
 
 
 patternLooker = PatternLookout(True)
-# dataset = patternLooker.data_loader('data', 'FB15K', 'train').iloc[:1000, :]
-dataset = pd.DataFrame([[1,2,3], [3,2,1], [3,3,3], [4,5,6], [6,5,4], [7,5,8], [11,2,4], [9,9,5], [7,8,9], [9,10,7]], columns=['head', 'relation', 'tail'])
+dataset = patternLooker.data_loader('data', 'FB15K', 'train').iloc[:3000, :]
+# dataset = pd.DataFrame([[1,2,3], [3,2,1], [3,3,3], [4,5,6], [6,5,4], [7,5,8], [11,2,4], [9,9,5], [7,8,9], [9,10,7]], columns=['head', 'relation', 'tail'])
+# dataset = pd.DataFrame([[1,2,3], [3,2,1], [3,3,3], [11,2,4], [7,8,9], [9,10,7], [2, 8, 4], [2, 7, 4]], columns=['head', 'relation', 'tail'])
 _ = patternLooker.statistics(dataset)
 patternLooker.initialize(dataset)
 set_symmetric = patternLooker.find_symmetric()
 set_reflexive = patternLooker.find_reflexive()
-_ = patternLooker.find_inverse()
-
+set_inverse = patternLooker.find_inverse()
+set_implication = patternLooker.find_implication()
 
 
 
