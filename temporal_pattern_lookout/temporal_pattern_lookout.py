@@ -3,7 +3,6 @@ PatternLookout类：处理三元组
 TemporalPatternLookout类：PatternLookout的子类，处理四元组
 """
 
-
 import numpy as np
 import pandas as pd
 import os
@@ -57,11 +56,12 @@ class PatternLookout:
 
     def find_symmetric(self):  # reflexive belongs to symmetric or not
         assert self.intersected is not None, 'please run "initialize" first'
-        set_intersected_ = self.intersected
-        num_symm = (len(set_intersected_) - self.num_reflexive) / 2
+        symm = self.intersected
+        anti_symm = pd.concat([self.original, symm]).drop_duplicates(keep=False)
+        num_symm = (len(symm) - self.num_reflexive) / 2
         assert num_symm % 1 == 0, 'number of symmetric should be "int"'
         self.num_symmetric = num_symm
-        return set_intersected_
+        return symm, anti_symm
 
     def find_reflexive(self):
         assert self.intersected is not None, 'please run "initialize" first'
@@ -69,39 +69,59 @@ class PatternLookout:
         return ref
 
     def find_inverse(self):
-        assert self.intersected is not None, 'please run "initialize" first'
+        assert self.reversed is not None, 'please run "initialize" first'
         assert self.original is not None, 'please run "initialize" first'
-        non_dup_ori = self.original.drop_duplicates(subset=['head', 'tail'], keep=False)
-        non_dup_rev = self.reversed.drop_duplicates(subset=['head', 'tail'], keep=False)
-        cat = pd.concat([non_dup_ori, non_dup_rev])
-        non_dup_cat = cat.drop_duplicates()
-        inv = cat.drop_duplicates(subset=['head', 'tail'])
-        inv = pd.concat([inv, non_dup_cat]).drop_duplicates(keep=False)
-        self.num_inverse = inv.shape[0]
+        inv = pd.merge(self.original, self.reversed, on=['head', 'tail'], how='inner')
+        inv = inv[inv.loc[:, 'relation_x'] != inv.loc[:, 'relation_y']]
+        self.num_inverse = inv.shape[0] / 2
+        assert self.num_inverse % 1 == 0, 'number of inverse should be "int"'
+        inv.rename(columns={'relation_x': 'relation'}, inplace=True)
+        inv = pd.merge(self.original, inv.iloc[:, :3], how='inner').drop_duplicates()
         return inv
 
     def find_implication(self):  # how to count
         assert self.original is not None, 'please run "initialize" first'
-        imp = self.original.drop_duplicates(subset=['head', 'tail'])
+        imp = self.original.drop_duplicates(subset=['head', 'tail'], keep=False)
         imp = pd.concat([imp, self.original]).drop_duplicates(keep=False)
+        imp = imp.drop_duplicates()
         self.num_implication = imp.shape[0]
+
+        # if calculate num by C(m, 2)
+        # groups = imp.loc[:, 'head'].value_counts().reset_index()
+        # groups = dict(zip(groups.iloc[:, 0], groups.iloc[:, 1]))
+        # for index, row in imp.iterrows():
+        #     self.num_implication +=
+
         return imp
-
-
 
 
 patternLooker = PatternLookout(True)
 dataset = patternLooker.data_loader('data', 'FB15K', 'train').iloc[:3000, :]
 # dataset = pd.DataFrame([[1,2,3], [3,2,1], [3,3,3], [4,5,6], [6,5,4], [7,5,8], [11,2,4], [9,9,5], [7,8,9], [9,10,7]], columns=['head', 'relation', 'tail'])
 # dataset = pd.DataFrame([[1,2,3], [3,2,1], [3,3,3], [11,2,4], [7,8,9], [9,10,7], [2, 8, 4], [2, 7, 4]], columns=['head', 'relation', 'tail'])
+dataset = pd.DataFrame([[1,5,4], [1,2,4], [1,3,4], [3,9,7],[3,8,7],[3,5,7],[3,2,7], [4,9,1], [4,5,1], [7,7,3]], columns=['head', 'relation', 'tail'])
 _ = patternLooker.statistics(dataset)
 patternLooker.initialize(dataset)
-set_symmetric = patternLooker.find_symmetric()
+set_symmetric, set_anti_symmetric = patternLooker.find_symmetric()
 set_reflexive = patternLooker.find_reflexive()
 set_inverse = patternLooker.find_inverse()
 set_implication = patternLooker.find_implication()
 
 
+# class TemporalPatternLookout(PatternLookout):
+#     def __init__(self, temporal=True):
+#         super(TemporalPatternLookout, self).__init__()
+#         self.temporal = temporal
+#
+#     def find_temporal_inverse(self):
+#         non_dup_ori = self.original.drop_duplicates(subset=['head', 'tail'], keep=False)
+#         non_dup_rev = self.reversed.drop_duplicates(subset=['head', 'tail'], keep=False)
+#         cat = pd.concat([non_dup_ori, non_dup_rev])
+#         non_dup_cat = cat.drop_duplicates()
+#         inv = cat.drop_duplicates(subset=['head', 'tail'])
+#         inv = pd.concat([inv, non_dup_cat]).drop_duplicates(keep=False)
+#         self.num_inverse = inv.shape[0]
+#
 
 
 
