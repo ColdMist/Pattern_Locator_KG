@@ -1,6 +1,6 @@
 """
-PatternLookout类：处理三元组
-TemporalPatternLookout类：PatternLookout的子类，处理四元组
+PatternLookout：for triples
+TemporalPatternLookout：subclass of PatternLookout, for quaternion
 """
 
 import numpy as np
