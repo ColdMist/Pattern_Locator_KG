@@ -10,8 +10,8 @@ from scipy.special import comb
 import time
 
 class PatternLookout:
-    def __init__(self, temporal=False):
-        self.temporal = temporal
+    def __init__(self):
+        self.temporal = False
         self.num_data = None
         self.num_triples = None
         self.num_reflexive = None
@@ -122,9 +122,9 @@ class PatternLookout:
 
 
 class TemporalPatternLookout(PatternLookout):
-    def __init__(self, temporal=True):
+    def __init__(self):
         super(TemporalPatternLookout, self).__init__()
-        self.temporal = temporal
+        self.temporal = True
         self.num_evolve = None
         self.num_t_inverse = None
         self.num_t_relation = None
