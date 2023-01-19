@@ -1,6 +1,6 @@
 """
-PatternLookout类：处理三元组
-TemporalPatternLookout类：PatternLookout的子类，处理四元组
+PatternLookout：for triples
+TemporalPatternLookout：subclass of PatternLookout, for quaternion
 """
 
 import numpy as np
@@ -27,15 +27,6 @@ class PatternLookout:
         self.concat = None
         self.non_dup_concat = None
 
-    @staticmethod
-    def data_loader(dir_name, data_name, file_name, temporal):
-        read_path = os.path.join(os.path.join(dir_name, data_name), file_name)
-        if not temporal:
-            data = pd.read_table(read_path, header=None, names=['head', 'relation', 'tail'], index_col=False)
-        else:
-            data = pd.read_table(read_path, header=None, names=['head', 'relation', 'tail', 'time'], index_col=False)
-        return data
-
     @ staticmethod
     def count(data):
         dic = data.value_counts(subset=['head', 'tail']).reset_index()
@@ -52,6 +43,14 @@ class PatternLookout:
                 check.add(paar_)
                 check.add(paar)
         return num
+
+    def data_loader(self, dir_name, data_name, file_name):
+        read_path = os.path.join(os.path.join(dir_name, data_name), file_name)
+        if not self.temporal:
+            data = pd.read_table(read_path, header=None, names=['head', 'relation', 'tail'], index_col=False)
+        else:
+            data = pd.read_table(read_path, header=None, names=['head', 'relation', 'tail', 'time'], index_col=False)
+        return data
 
     def statistics(self, data):
         triples = data.apply(lambda x: tuple(x), axis=1).values.tolist()
@@ -158,7 +157,7 @@ def main():
     print('--------------------Begin--------------------------------------------')
     start = time.time()
     patternlooker = TemporalPatternLookout()
-    dataset = patternlooker.data_loader('data', 'ICEWS14_TA', 'train2id.txt', temporal=True).iloc[:, :]
+    dataset = patternlooker.data_loader('data', 'ICEWS14_TA', 'train2id.txt').iloc[:, :]
 
     # initialize
     _ = patternlooker.statistics(dataset)
