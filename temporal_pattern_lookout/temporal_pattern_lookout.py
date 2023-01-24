@@ -8,6 +8,7 @@ import pandas as pd
 import os
 from scipy.special import comb
 import time
+from utilities import AnalysisTools
 
 class PatternLookout:
     def __init__(self):
@@ -21,7 +22,7 @@ class PatternLookout:
         self.num_implication = None
 
         self.intersected = None
-        self.diff = None
+        self.comp = None
         self.original = None
         self.reversed = None
         self.concat = None
@@ -44,6 +45,15 @@ class PatternLookout:
                 check.add(paar)
         return num
 
+    @staticmethod
+    def count_comb(data):
+        ht_data = data.groupby(['head', 'tail'])
+        cnt = 0
+        for _, ht in ht_data:
+            ht.drop_duplicates(inplace=True)
+            cnt += comb(ht.shape[0], 2)
+        return cnt
+
     def data_loader(self, dir_name, data_name, file_name):
         read_path = os.path.join(os.path.join(dir_name, data_name), file_name)
         if not self.temporal:
@@ -64,22 +74,22 @@ class PatternLookout:
         data_reversed = non_dup_data.copy()
 
         data_reversed.iloc[:, 0], data_reversed.iloc[:, 2] = data_reversed.iloc[:, 2].copy(), data_reversed.iloc[:, 0].copy()
-
-        self.num_data = int(non_dup_data.shape[0])
-        self.num_reflexive = int(num_ss)
-        self.intersected = pd.merge(non_dup_data, data_reversed, how='inner')
-        self.diff = pd.concat([non_dup_data, data_reversed]).drop_duplicates(keep=False)
         self.original = non_dup_data
         self.reversed = data_reversed
-        self.concat = pd.concat([non_dup_data, data_reversed], axis=0)
+
+        self.num_data = int(self.original.shape[0])
+        self.num_reflexive = int(num_ss)
+        self.intersected = pd.merge(self.original, self.reversed, how='inner')
+        self.comp = pd.concat([self.original, self.intersected]).drop_duplicates(keep=False)
+        self.concat = pd.concat([self.original, self.reversed], axis=0)
         self.non_dup_concat = self.concat.drop_duplicates()
         return
 
-    def find_symmetric(self):  # reflexive belongs to symmetric or not
+    def find_symmetric(self):  # (h, r, t, t1), (h, r, t, t2) are counted as 2
         assert self.intersected is not None, 'please run "initialize" first'
         symm = self.intersected
-        anti_symm = pd.concat([self.original, symm]).drop_duplicates(keep=False)
-        num_symm = (len(symm) - self.num_reflexive) / 2
+        anti_symm = self.comp
+        num_symm = (len(symm) + self.num_reflexive) / 2
         assert num_symm % 1 == 0, 'number of symmetric should be "int"'
         self.num_symmetric = int(num_symm)
         self.num_anti_symmetric = self.num_data - self.num_symmetric
@@ -111,12 +121,14 @@ class PatternLookout:
         assert self.original is not None, 'please run "initialize" first'
         imp = self.original.drop_duplicates(subset=['head', 'tail'], keep=False)
         imp = pd.concat([imp, self.original]).drop_duplicates(keep=False)
-        imp = imp.drop_duplicates()
-        imp_ = imp.groupby(['head', 'tail'])
-        self.num_implication = 0
-        for group in imp_:
-            cnt = comb(group[-1].shape[0], 2)
-            self.num_implication += cnt
+        if self.temporal:
+            self.num_implication = 0
+            t_group = imp.groupby('time')
+            for _, e_t_group in t_group:
+                self.num_implication += self.count_comb(e_t_group)
+        else:
+            for _, group in imp:
+                self.num_implication += self.count_comb(group)
         self.num_implication = int(self.num_implication)
         return imp
 
@@ -132,7 +144,7 @@ class TemporalPatternLookout(PatternLookout):
 
     def find_evolve(self):
         evo = self.find_implication()
-        self.num_evolve = self.num_implication
+        self.num_evolve = int(self.count_comb(evo))
         return evo
 
     def find_temporal_inverse(self):
@@ -144,22 +156,25 @@ class TemporalPatternLookout(PatternLookout):
         assert self.original is not None, 'please run "initialize" first'
         self.timeline = self.original.drop_duplicates(subset=['time']).loc[:, 'time'].reset_index(drop=True)
         timeline = len(self.timeline)
-        r_groups = self.original.groupby(['relation'])
         s_t_rel = set()
-        for rel in r_groups:
-            if len(rel[-1].drop_duplicates(subset=['time'])) < timeline:
-                s_t_rel.add(rel[-1]['relation'].iloc[0])
+        ht_groups = self.original.groupby(['head', 'tail'])
+        for _, ht in ht_groups:
+            r_groups = ht.groupby(['relation'])
+            for rel in r_groups:
+                if len(rel[-1].drop_duplicates(subset=['time'])) < timeline:
+                    s_t_rel.add(rel[-1]['relation'].iloc[0])
         self.num_t_relation = len(s_t_rel)
         return s_t_rel
 
+    # def find_t_sys:
+    #     pass
 
 def main():
     print('--------------------Begin--------------------------------------------')
     start = time.time()
     patternlooker = TemporalPatternLookout()
-    dataset = patternlooker.data_loader('data', 'ICEWS14_TA', 'train2id.txt').iloc[:, :]
-
-    # initialize
+    dataset = patternlooker.data_loader('data', 'ICEWS14_TA', 'train2id.txt').iloc[:500, :]
+    # dataset = pd.DataFrame([[1,2,3,1], [1,2,3,2], [8,2,4,3], [1,9,4,1],[1,9,4,2],[1,9,4,3]], columns=['head', 'relation', 'tail', 'time'])
     _ = patternlooker.statistics(dataset)
     patternlooker.initialize(dataset)
 
@@ -174,18 +189,25 @@ def main():
     set_t_inverse = patternlooker.find_temporal_inverse()
     set_t_relation = patternlooker.find_temporal_relation()
     end = time.time()
+
+    analyser = AnalysisTools()
+    freq_symmetric = analyser.cal_num_symmetric(set_symmetric)
+    print(freq_symmetric)
+
     print('It takes {} seconds'.format(end - start))
     print('Number of symmetric is: {} \n'
           'Number of anti_symmetric is: {} \n'
           'Number of reflexive is: {} \n'
           'Number of inverse is: {} \n'
           'Number of temporal inverse is: {} \n'
+          'Number of temporal implication is: {} \n'
           'Number of evolves is: {} \n'
           'Number of temporal relation is: {} \n'.format(patternlooker.num_symmetric, patternlooker.num_anti_symmetric,
                                                          patternlooker.num_reflexive, patternlooker.num_inverse,
-                                                         patternlooker.num_t_inverse, patternlooker.num_evolve,
-                                                         patternlooker.num_t_relation))
+                                                         patternlooker.num_t_inverse, patternlooker.num_implication,
+                                                         patternlooker.num_evolve, patternlooker.num_t_relation))
     print('--------------------Finish-------------------------------------------')
+
 
 if __name__ == '__main__':
     main()
