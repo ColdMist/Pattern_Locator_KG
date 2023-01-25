@@ -10,6 +10,7 @@ from scipy.special import comb
 import time
 from utilities import AnalysisTools
 
+
 class PatternLookout:
     def __init__(self):
         self.temporal = False
@@ -20,6 +21,7 @@ class PatternLookout:
         self.num_anti_symmetric = None
         self.num_inverse = None
         self.num_implication = None
+        self.stat_rel = dict()
 
         self.intersected = None
         self.comp = None
@@ -46,12 +48,15 @@ class PatternLookout:
         return num
 
     @staticmethod
-    def count_comb(data):
+    def count_comb(data, temporal=False):
         ht_data = data.groupby(['head', 'tail'])
         cnt = 0
         for _, ht in ht_data:
-            ht.drop_duplicates(inplace=True)
             cnt += comb(ht.shape[0], 2)
+            if temporal:
+                ht_vc = ht.value_counts('relation')
+                for c in ht_vc[ht_vc > 1].values:
+                    cnt -= comb(c, 2)
         return cnt
 
     def data_loader(self, dir_name, data_name, file_name):
@@ -63,12 +68,16 @@ class PatternLookout:
         return data
 
     def statistics(self, data):
-        triples = data.apply(lambda x: tuple(x), axis=1).values.tolist()
-        num_triples = len(set(triples))
+        data = data.iloc[:, :3]
+        data.drop_duplicates(inplace=True)
+        num_triples = data.shape[0]
         self.num_triples = num_triples
+        stat = data.value_counts('relation').to_dict()
+        self.stat_rel = stat
         return num_triples
 
     def initialize(self, data):
+        data = data.iloc[:, :3]
         non_dup_data = data.drop_duplicates()
         num_ss = np.sum(non_dup_data.iloc[:, 0] == non_dup_data.iloc[:, 2])
         data_reversed = non_dup_data.copy()
@@ -107,13 +116,7 @@ class PatternLookout:
         inv = inv[inv.loc[:, 'relation_x'] != inv.loc[:, 'relation_y']]
         inv.rename(columns={'relation_x': 'relation'}, inplace=True)
         inv = pd.merge(self.original, inv.iloc[:, :3], how='inner').drop_duplicates()
-        if self.temporal:
-            self.num_inverse = 0
-            inv_t = inv.groupby('time')
-            for data_t in inv_t:
-                self.num_inverse += self.count(data_t[-1])
-        else:
-            self.num_inverse = self.count(inv)
+        self.num_inverse = self.count(inv)
         self.num_inverse = int(self.num_inverse)
         return inv
 
@@ -121,14 +124,7 @@ class PatternLookout:
         assert self.original is not None, 'please run "initialize" first'
         imp = self.original.drop_duplicates(subset=['head', 'tail'], keep=False)
         imp = pd.concat([imp, self.original]).drop_duplicates(keep=False)
-        if self.temporal:
-            self.num_implication = 0
-            t_group = imp.groupby('time')
-            for _, e_t_group in t_group:
-                self.num_implication += self.count_comb(e_t_group)
-        else:
-            for _, group in imp:
-                self.num_implication += self.count_comb(group)
+        self.num_implication = self.count_comb(imp)
         self.num_implication = int(self.num_implication)
         return imp
 
@@ -137,44 +133,121 @@ class TemporalPatternLookout(PatternLookout):
     def __init__(self):
         super(TemporalPatternLookout, self).__init__()
         self.temporal = True
+        self.t_num_data = None
+        self.num_quaternions = None
+        self.t_num_reflexive = None
+        self.num_t_symmetric = None
+        self.num_t_anti_symmetric = None
         self.num_evolve = None
         self.num_t_inverse = None
         self.num_t_relation = None
         self.timeline = None
+        self.t_stat_rel = dict()
+
+        self.t_intersected = None
+        self.t_comp = None
+        self.t_original = None
+        self.t_reversed = None
+        self.t_concat = None
+        self.t_non_dup_concat = None
+
+    def statistics(self, data):
+        super(TemporalPatternLookout, self).statistics(data)
+        data.drop_duplicates(inplace=True)
+        num_quaternions = data.shape[0]
+        self.num_quaternions = num_quaternions
+        stat = data.value_counts('relation').to_dict()
+        self.t_stat_rel = stat
+        return num_quaternions
+
+    def initialize(self, data):
+        super(TemporalPatternLookout, self).initialize(data)
+        non_dup_data = data.drop_duplicates()
+        num_ss = np.sum(non_dup_data.iloc[:, 0] == non_dup_data.iloc[:, 2])
+        data_reversed = non_dup_data.copy()
+
+        data_reversed.iloc[:, 0], data_reversed.iloc[:, 2] = data_reversed.iloc[:, 2].copy(), data_reversed.iloc[:,0].copy()
+
+        self.t_original = non_dup_data
+        self.t_reversed = data_reversed
+
+        self.t_num_data = int(self.t_original.shape[0])
+        self.t_num_reflexive = int(num_ss)
+
+        self.t_intersected = pd.merge(self.t_original, self.t_reversed, how='inner')
+        self.t_comp = pd.concat([self.t_original, self.t_intersected]).drop_duplicates(keep=False)
+        self.t_concat = pd.concat([self.t_original, self.t_reversed], axis=0)
+        self.t_non_dup_concat = self.t_concat.drop_duplicates()
+
+        self.timeline = self.t_original.drop_duplicates(subset=['time']).loc[:, 'time'].reset_index(drop=True)
+
+    def find_inverse(self):
+        assert self.t_reversed is not None, 'please run "initialize" first'
+        assert self.t_original is not None, 'please run "initialize" first'
+        inv = pd.merge(self.t_original, self.t_reversed, on=['head', 'tail'], how='inner')
+        inv = inv[inv.loc[:, 'relation_x'] != inv.loc[:, 'relation_y']]
+        inv.rename(columns={'relation_x': 'relation'}, inplace=True)
+        inv = pd.merge(self.t_original, inv.iloc[:, :3], how='inner').drop_duplicates()
+        self.num_inverse = 0
+        set_inv = pd.DataFrame()
+        inv_t = inv.groupby('time')
+        for _, data_t in inv_t:
+            cnt = self.count(data_t)
+            self.num_inverse += cnt
+            if cnt:
+                set_inv = pd.concat([set_inv, data_t], axis=0)
+        self.num_inverse = int(self.num_inverse)
+        return set_inv
+
+    def find_temporal_symmetric(self):
+        assert self.t_intersected is not None, 'please run "initialize" first'
+        symm = self.t_intersected
+        anti_symm = self.t_comp
+        num_symm = (len(symm) + self.t_num_reflexive) / 2
+        assert num_symm % 1 == 0, 'number of symmetric should be "int"'
+        self.num_t_symmetric = int(num_symm)
+        self.num_t_anti_symmetric = self.t_num_data - self.num_t_symmetric
+        return symm, anti_symm
 
     def find_evolve(self):
-        evo = self.find_implication()
+        assert self.t_original is not None, 'please run "initialize" first'
+        evo = self.t_original.drop_duplicates(subset=['head', 'tail'], keep=False)
+        evo = pd.concat([evo, self.t_original]).drop_duplicates(keep=False)
+        self.num_evolve = self.count_comb(evo, True)
         self.num_evolve = int(self.count_comb(evo))
         return evo
 
     def find_temporal_inverse(self):
-        inv = self.find_inverse()
+        assert self.t_reversed is not None, 'please run "initialize" first'
+        assert self.t_original is not None, 'please run "initialize" first'
+        inv = pd.merge(self.t_original, self.t_reversed, on=['head', 'tail'], how='inner')
+        inv = inv[inv.loc[:, 'relation_x'] != inv.loc[:, 'relation_y']]
+        inv.rename(columns={'relation_x': 'relation'}, inplace=True)
+        inv = pd.merge(self.original, inv.iloc[:, :3], how='inner').drop_duplicates()
         self.num_t_inverse = int(self.count(inv))
         return inv
 
     def find_temporal_relation(self):
-        assert self.original is not None, 'please run "initialize" first'
-        self.timeline = self.original.drop_duplicates(subset=['time']).loc[:, 'time'].reset_index(drop=True)
+        assert self.t_original is not None, 'please run "initialize" first'
         timeline = len(self.timeline)
         s_t_rel = set()
-        ht_groups = self.original.groupby(['head', 'tail'])
+        ht_groups = self.t_original.groupby(['head', 'tail'])
         for _, ht in ht_groups:
             r_groups = ht.groupby(['relation'])
-            for rel in r_groups:
-                if len(rel[-1].drop_duplicates(subset=['time'])) < timeline:
-                    s_t_rel.add(rel[-1]['relation'].iloc[0])
+            for _, rel in r_groups:
+                if len(rel.drop_duplicates(subset=['time'])) < timeline:
+                    s_t_rel.add(rel['relation'].iloc[0])
         self.num_t_relation = len(s_t_rel)
         return s_t_rel
 
-    # def find_t_sys:
-    #     pass
+
 
 def main():
     print('--------------------Begin--------------------------------------------')
     start = time.time()
     patternlooker = TemporalPatternLookout()
-    dataset = patternlooker.data_loader('data', 'ICEWS14_TA', 'train2id.txt').iloc[:500, :]
-    # dataset = pd.DataFrame([[1,2,3,1], [1,2,3,2], [8,2,4,3], [1,9,4,1],[1,9,4,2],[1,9,4,3]], columns=['head', 'relation', 'tail', 'time'])
+    # dataset = patternlooker.data_loader('data', 'ICEWS14_TA', 'train2id.txt').iloc[50:200, :]
+    dataset = pd.DataFrame([[1,3,2,1], [2,3,1,2], [2,3,1,1]], columns=['head', 'relation', 'tail', 'time'])
     _ = patternlooker.statistics(dataset)
     patternlooker.initialize(dataset)
 
@@ -185,6 +258,7 @@ def main():
     set_implication = patternlooker.find_implication()
 
     # Dynamic Logical Temporal Patterns
+    set_t_symmetric, set_t_anti_symmetric = patternlooker.find_temporal_symmetric()
     set_evolve = patternlooker.find_evolve()
     set_t_inverse = patternlooker.find_temporal_inverse()
     set_t_relation = patternlooker.find_temporal_relation()

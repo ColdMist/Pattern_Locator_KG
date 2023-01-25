@@ -26,7 +26,9 @@ class AnalysisTools():
         num_rel = df.value_counts('relation').to_dict()
         return num_rel
 
-
+    def cal_percentage(self, df1, df2):
+        percentage = df1.shape[0] / df2.shape[0] * 100
+        return '{.3f}%'.format(percentage)
 
 
 
