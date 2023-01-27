@@ -79,7 +79,7 @@ def find_implication(triples_df,  triples, observed_triples):
     return implication_patterns, implication_triple_per_relation
 
 def find_inverse(triples_df,  triples, observed_triples):
-    #triples_df = pd.DataFrame(triples)
+    #triples_df = pd.DataFrame(static)
     all_relations = list(set(list(triples_df[1])))
     premise_list = []
     conclusion_list = []
@@ -222,11 +222,11 @@ if __name__ == '__main__':
     # all_triple_df = pd.DataFrame([[1,2,3], [3,2,1], [3,3,3], [4,5,6], [6,5,4], [7,5,8], [11,2,4], [9,9,5], [7,8,9], [9,10,7], [7, 10, 15]])
     triples, observed_triples = build_indexed_dictioary(all_triple_df)
 
-    # symmetric_patterns, count_sym = find_symmetric(triples, observed_triples=observed_triples)
+    # symmetric_patterns, count_sym = find_symmetric(static, observed_triples=observed_triples)
     # reflexive_patterns, count_ref = find_reflexive(all_triple_df)
-    # implication_patterns, count_imp = find_implication(all_triple_df, triples, observed_triples)
-    # inverse_patterns, count_inv = find_inverse(all_triple_df, triples, observed_triples)
-    transitive_patterns, count_tran = find_transitive(all_triple_df, triples, observed_triples)  # seems only pick self_symm triples
+    # implication_patterns, count_imp = find_implication(all_triple_df, static, observed_triples)
+    # inverse_patterns, count_inv = find_inverse(all_triple_df, static, observed_triples)
+    transitive_patterns, count_tran = find_transitive(all_triple_df, triples, observed_triples)  # seems only pick self_symm static
 
     pd.DataFrame(symmetric_patterns).to_csv(os.path.join(save_pattern_path, 'symmetric_patterns.csv'), sep='\t', header=None, index=False)
     pd.DataFrame(reflexive_patterns).to_csv(os.path.join(save_pattern_path, 'reflexive_patterns.csv'), sep='\t',
