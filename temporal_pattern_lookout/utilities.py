@@ -39,7 +39,7 @@ class PlotTools:
     def __init__(self):
         pass
 
-    def plot_distribution_rel(self, train_set, test_set, showall=False, dynamic=False, sparse=False):
+    def plot_distribution_rel(self, train_set, test_set, showall=False, dynamic=False, on='symmetric', save_path=None):
         if not showall:
             train_set = train_set[~train_set['freq'].isin([0])]
             test_set = test_set[~test_set['freq'].isin([0])]
@@ -53,8 +53,10 @@ class PlotTools:
         ax.tick_params(axis='x', length=0, rotation=30)
         ax.grid(axis='y', alpha=0.5, ls='--')
         ax.legend(frameon=False)
-        ax.set_title('Dynamic' if dynamic else 'Static')
+        ax.set_title('{} {}'.format('Dynamic' if dynamic else 'Static', on))
 
-        if sparse:
+        if on == 'relations':
             ax.xaxis.set_major_locator(ticke.MultipleLocator(base=5))
+        if save_path:
+            plt.savefig(save_path + 'Distribution.png')
         plt.show()

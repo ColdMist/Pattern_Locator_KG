@@ -9,12 +9,15 @@ import os
 from scipy.special import comb
 import time
 from utilities import AnalysisTools, PlotTools
+import pickle
 
 
 class PatternLookout:
     def __init__(self):
         self.temporal = False
+        self.num_entities = None
         self.num_data = None
+        self.num_relations = None
         self.num_triples = None
         self.num_reflexive = None
         self.num_symmetric = None
@@ -78,7 +81,9 @@ class PatternLookout:
 
     def initialize(self, data):
         data = data.iloc[:, :3]
+        self.num_entities = int(pd.concat([data.iloc[:, 0], data.iloc[:, 2]]).drop_duplicates().shape[0])
         non_dup_data = data.drop_duplicates()
+        self.num_relations = int(data.iloc[:, 1].drop_duplicates().shape[0])
         num_ss = np.sum(non_dup_data.iloc[:, 0] == non_dup_data.iloc[:, 2])
         data_reversed = non_dup_data.copy()
 
@@ -133,16 +138,16 @@ class TemporalPatternLookout(PatternLookout):
     def __init__(self):
         super(TemporalPatternLookout, self).__init__()
         self.temporal = True
-        self.t_num_data = None
+        self.num_t_data = None
         self.num_quaternions = None
-        self.t_num_reflexive = None
+        self.num_t_reflexive = None
         self.num_t_symmetric = None
         self.num_t_anti_symmetric = None
         self.num_evolve = None
         self.num_t_inverse = None
-        self.num_t_relation = None
+        self.num_t_relations = None
         self.timeline = None
-        self.t_stat_rel = None
+        self.stat_t_rel = None
 
         self.t_intersected = None
         self.t_comp = None
@@ -157,7 +162,7 @@ class TemporalPatternLookout(PatternLookout):
         num_quaternions = data.shape[0]
         self.num_quaternions = num_quaternions
         stat = pd.DataFrame(data.value_counts('relation')).reset_index().rename(columns={0: 'number'})
-        self.t_stat_rel = stat
+        self.stat_t_rel = stat
         return num_quaternions
 
     def initialize(self, data):
@@ -171,8 +176,8 @@ class TemporalPatternLookout(PatternLookout):
         self.t_original = non_dup_data
         self.t_reversed = data_reversed
 
-        self.t_num_data = int(self.t_original.shape[0])
-        self.t_num_reflexive = int(num_ss)
+        self.num_t_data = int(self.t_original.shape[0])
+        self.num_t_reflexive = int(num_ss)
 
         self.t_intersected = pd.merge(self.t_original, self.t_reversed, how='inner')
         self.t_comp = pd.concat([self.t_original, self.t_intersected]).drop_duplicates(keep=False)
@@ -203,10 +208,10 @@ class TemporalPatternLookout(PatternLookout):
         assert self.t_intersected is not None, 'please run "initialize" first'
         symm = self.t_intersected
         anti_symm = self.t_comp
-        num_symm = (len(symm) + self.t_num_reflexive) / 2
+        num_symm = (len(symm) + self.num_t_reflexive) / 2
         assert num_symm % 1 == 0, 'number of symmetric should be "int"'
         self.num_t_symmetric = int(num_symm)
-        self.num_t_anti_symmetric = self.t_num_data - self.num_t_symmetric
+        self.num_t_anti_symmetric = self.num_t_data - self.num_t_symmetric
         return symm, anti_symm
 
     def find_evolve(self):
@@ -237,72 +242,88 @@ class TemporalPatternLookout(PatternLookout):
             for _, rel in r_groups:
                 if len(rel.drop_duplicates(subset=['time'])) < timeline:
                     s_t_rel.add(rel['relation'].iloc[0])
-        self.num_t_relation = len(s_t_rel)
+        self.num_t_relations = len(s_t_rel)
         return s_t_rel
-
 
 
 def main():
     print('--------------------Begin--------------------------------------------')
-
     start = time.time()
-    patternlooker = TemporalPatternLookout()
-    dataname = 'ICEWS14_TA'
-    for data in ['train2id.txt', 'test2id.txt']:
-        dataset = patternlooker.data_loader('data', dataname, data).iloc[:, :]
-        # dataset = pd.DataFrame([[2,3,4,1], [4,3,2,2], [8,7,6,5], [6, 7,8,5]], columns=['head', 'relation', 'tail', 'time'])
-        _ = patternlooker.statistics(dataset)
-        patternlooker.initialize(dataset)
+    datalist = os.listdir('./data')
+    for dataname in datalist:
+        for data in ['train2id.txt', 'test2id.txt']:
+            patternlooker = TemporalPatternLookout()
+            dataset = patternlooker.data_loader('data', dataname, data).iloc[:, :]
+            # dataset = pd.DataFrame([[2,3,4,1], [4,3,2,2], [8,7,6,5], [6, 7,8,5]], columns=['head', 'relation', 'tail', 'time'])
+            _ = patternlooker.statistics(dataset)
+            patternlooker.initialize(dataset)
 
-        # Static Logical Temporal Patterns
-        set_symmetric, set_anti_symmetric = patternlooker.find_symmetric()
-        set_reflexive = patternlooker.find_reflexive()
-        set_inverse = patternlooker.find_inverse()
-        set_implication = patternlooker.find_implication()
+            # Static Logical Temporal Patterns
+            set_symmetric, set_anti_symmetric = patternlooker.find_symmetric()
+            set_reflexive = patternlooker.find_reflexive()
+            set_inverse = patternlooker.find_inverse()
+            set_implication = patternlooker.find_implication()
 
-        # Dynamic Logical Temporal Patterns
-        set_t_symmetric, set_t_anti_symmetric = patternlooker.find_temporal_symmetric()
-        set_evolve = patternlooker.find_evolve()
-        set_t_inverse = patternlooker.find_temporal_inverse()
-        set_t_relation = patternlooker.find_temporal_relation()
-        end = time.time()
+            # Dynamic Logical Temporal Patterns
+            set_t_symmetric, set_t_anti_symmetric = patternlooker.find_temporal_symmetric()
+            set_evolve = patternlooker.find_evolve()
+            set_t_inverse = patternlooker.find_temporal_inverse()
+            set_t_relation = patternlooker.find_temporal_relation()
+            end = time.time()
 
-        analyser = AnalysisTools()
-        freq_symmetric = analyser.occurance_symmetric(set_symmetric, patternlooker.stat_rel).rename(columns={'number':'freq'})
-        freq_t_symmetric = analyser.occurance_symmetric(set_t_symmetric, patternlooker.t_stat_rel).rename(columns={'number':'freq'})
+            analyser = AnalysisTools()
+            freq_symmetric = analyser.occurance_symmetric(set_symmetric, patternlooker.stat_rel).rename(columns={'number':'freq'})
+            freq_t_symmetric = analyser.occurance_symmetric(set_t_symmetric, patternlooker.stat_t_rel).rename(columns={'number':'freq'})
 
-        save_path = '../results/{}'.format(dataname)
-        path_list = {'s_symm': save_path + '/statistics/static/symmetric'
-                    , 's_rel': save_path + '/statistics/static/relations'
-                    ,'d_symm': save_path + '/statistics/dynamic/symmetric'
-                    , 'd_rel': save_path + '/statistics/dynamic/relations'
-                     }
-        for p in path_list.values():
-            if not os.path.exists(p):
-                os.makedirs(p)
-        freq_symmetric.reset_index(drop=True).to_csv('{}/{}_freq_symm.csv'.format(path_list['s_symm'], data))
-        freq_t_symmetric.reset_index(drop=True).to_csv('{}/{}_freq_t_symm.csv'.format(path_list['d_symm'], data))
-        patternlooker.stat_rel.reset_index(drop=True).rename(columns={'number': 'freq'}).to_csv(
-            '{}/{}_freq_rel.csv'.format(path_list['s_rel'], data))
-        patternlooker.t_stat_rel.reset_index(drop=True).rename(columns={'number': 'freq'}).to_csv(
-            '{}/{}_freq_t_rel.csv'.format(path_list['d_rel'], data))
+            stat_dict = {'size of data(static)': patternlooker.num_data
+                         , 'number of entities': patternlooker.num_entities
+                         , 'number of relations': patternlooker.num_relations
+                         , 'number of triples': patternlooker.num_triples
+                         , 'number of static symmetric': patternlooker.num_symmetric
+                         , 'number of static inverse': patternlooker.num_inverse
+                         , 'number of reflexive': patternlooker.num_reflexive
+                         , 'number of implication': patternlooker.num_implication
 
+                         , 'number of temporal data': patternlooker.num_t_data
+                         , 'number of temporal relations': patternlooker.num_t_relations
+                         , 'number of quaternions': patternlooker.num_quaternions
+                         , 'number of temporal symmetric': patternlooker.num_t_symmetric
+                         , 'number of temporal inverse': patternlooker.num_t_inverse
+                         , 'number of temporal reflexive': patternlooker.num_t_reflexive
+                         , 'number of evolve': patternlooker.num_evolve}
 
+            save_path = '../results/{}/statistics'.format(dataname)
+            with open(save_path + '/stats.txt', 'w') as file:
+                file.write(str(stat_dict))
 
-        print('It takes {} seconds'.format(end - start))
-        print('Number of symmetric is: {} \n'
-              'Number of anti_symmetric is: {} \n'
-              'Number of reflexive is: {} \n'
-              'Number of inverse is: {} \n'
-              'Number of temporal inverse is: {} \n'
-              'Number of temporal implication is: {} \n'
-              'Number of evolves is: {} \n'
-              'Number of temporal relation is: {} \n'.format(patternlooker.num_symmetric, patternlooker.num_anti_symmetric,
-                                                             patternlooker.num_reflexive, patternlooker.num_inverse,
-                                                             patternlooker.num_t_inverse, patternlooker.num_implication,
-                                                             patternlooker.num_evolve, patternlooker.num_t_relation))
-    print('--------------------Finish-------------------------------------------')
+            path_list = {'s_symm': save_path + '/static/symmetric'
+                        , 's_rel': save_path + '/static/relations'
+                        ,'d_symm': save_path + '/dynamic/symmetric'
+                        , 'd_rel': save_path + '/dynamic/relations'
+                        }
+            for p in path_list.values():
+                if not os.path.exists(p):
+                    os.makedirs(p)
+            freq_symmetric.reset_index(drop=True).to_csv('{}/{}_freq_symm.csv'.format(path_list['s_symm'], data))
+            freq_t_symmetric.reset_index(drop=True).to_csv('{}/{}_freq_t_symm.csv'.format(path_list['d_symm'], data))
+            patternlooker.stat_rel.reset_index(drop=True).rename(columns={'number': 'freq'}).to_csv(
+                '{}/{}_freq_rel.csv'.format(path_list['s_rel'], data))
+            patternlooker.stat_t_rel.reset_index(drop=True).rename(columns={'number': 'freq'}).to_csv(
+                '{}/{}_freq_t_rel.csv'.format(path_list['d_rel'], data))
 
+            print('It takes {} seconds'.format(end - start))
+            print('Number of symmetric is: {} \n'
+                  'Number of anti_symmetric is: {} \n'
+                  'Number of reflexive is: {} \n'
+                  'Number of inverse is: {} \n'
+                  'Number of temporal inverse is: {} \n'
+                  'Number of temporal implication is: {} \n'
+                  'Number of evolves is: {} \n'
+                  'Number of temporal relation is: {} \n'.format(patternlooker.num_symmetric, patternlooker.num_anti_symmetric,
+                                                                 patternlooker.num_reflexive, patternlooker.num_inverse,
+                                                                 patternlooker.num_t_inverse, patternlooker.num_implication,
+                                                                 patternlooker.num_evolve, patternlooker.num_t_relations))
+        print('--------------------Finish-------------------------------------------')
 
 
 if __name__ == '__main__':
