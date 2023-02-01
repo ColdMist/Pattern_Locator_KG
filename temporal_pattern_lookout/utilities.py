@@ -45,9 +45,17 @@ class PlotTools:
             test_set = test_set[~test_set['freq'].isin([0])]
         train_set.reset_index(inplace=True)
         test_set.reset_index(inplace=True)
-        fig, ax = plt.subplots(1, 1)
-        ax.bar(train_set.loc[:, 'relation'].apply(str), train_set.loc[:, 'freq'] / train_set.loc[:, 'freq'].sum(), label='Train', color='#f9766e', edgecolor='grey', alpha=0.5)
-        ax.bar(test_set.loc[:, 'relation'].apply(str), test_set.loc[:, 'freq'] / test_set.loc[:, 'freq'].sum(), label='Test', color='#00bfc4', edgecolor='grey', alpha=0.5)
+        fig, ax = plt.subplots(1, 1, figsize=(24, 6))
+        if on == 'relations':
+            ax.bar(train_set.loc[:, 'relation'].apply(str), train_set.loc[:, 'freq'] / train_set.loc[:, 'freq'].sum(),
+                   label='Train', color='#f9766e', edgecolor='grey', alpha=0.5)
+            ax.bar(test_set.loc[:, 'relation'].apply(str), test_set.loc[:, 'freq'] / test_set.loc[:, 'freq'].sum(),
+                   label='Test', color='#00bfc4', edgecolor='grey', alpha=0.5)
+        elif on == 'symmetric':
+            ax.bar(train_set.loc[:, 'relation'].apply(str), train_set.loc[:, 'freq'],
+                   label='Train', color='#f9766e', edgecolor='grey', alpha=0.5)
+            ax.bar(test_set.loc[:, 'relation'].apply(str), test_set.loc[:, 'freq'],
+                   label='Test', color='#00bfc4', edgecolor='grey', alpha=0.5)
         ax.set_xlabel('relations', fontsize=12)
         ax.set_ylabel('percentage', fontsize=12)
         ax.tick_params(axis='x', length=0, rotation=30)
@@ -57,6 +65,7 @@ class PlotTools:
 
         if on == 'relations':
             ax.xaxis.set_major_locator(ticke.MultipleLocator(base=5))
+
         if save_path:
-            plt.savefig(save_path + 'Distribution.png')
+            plt.savefig(save_path + 'Distribution.png', dpi=300)
         plt.show()

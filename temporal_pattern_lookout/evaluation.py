@@ -9,7 +9,7 @@ from utilities import PlotTools
 
 
 def plot_distribution(on='symmetric'):
-    stat_path = '../results/wikidata_TA/statistics'
+    stat_path = '../results/ICEWS14_TA/statistics'
     temp_path = stat_path + '/dynamic/{}/'.format(on)
     static_path = stat_path + '/static/{}/'.format(on)
 

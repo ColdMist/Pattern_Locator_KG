@@ -301,6 +301,7 @@ def main():
                         ,'d_symm': save_path + '/dynamic/symmetric'
                         , 'd_rel': save_path + '/dynamic/relations'
                         }
+
             for p in path_list.values():
                 if not os.path.exists(p):
                     os.makedirs(p)
