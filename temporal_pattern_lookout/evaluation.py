@@ -7,9 +7,14 @@ import os
 import pandas as pd
 from utilities import PlotTools
 
+"""
+1. # r1 --> # symmetric num of r1 --> # precentage of symmetric of r1
+2. # for certain relation, count conclusion in test set and permise in train set.
+"""
+
 
 def plot_distribution(on='symmetric'):
-    stat_path = '../results/ICEWS14_TA/statistics'
+    stat_path = '../results/icews14/statistics'
     temp_path = stat_path + '/dynamic/{}/'.format(on)
     static_path = stat_path + '/static/{}/'.format(on)
 
@@ -21,11 +26,14 @@ def plot_distribution(on='symmetric'):
                 data_path.append(file)
 
         test, train = pd.read_csv(file_ord + data_path[0], index_col=0), pd.read_csv(file_ord + data_path[1], index_col=0)
-        ploter.plot_distribution_rel(train, test, showall=False
+        ploter.plot_distribution_rel(train, test, showall=True
                                      , dynamic=True if file_ord == temp_path else False
                                      , on=on
                                      , save_path=file_ord)
 
 
+# plot
 for on in ['symmetric', 'relations']:
     plot_distribution(on=on)
+
+#

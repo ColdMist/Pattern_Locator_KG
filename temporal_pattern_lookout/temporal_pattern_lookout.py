@@ -254,12 +254,14 @@ def main():
         for data in ['train2id.txt', 'test2id.txt']:
             patternlooker = TemporalPatternLookout()
             dataset = patternlooker.data_loader('data', dataname, data).iloc[:, :]
-            # dataset = pd.DataFrame([[2,3,4,1], [4,3,2,2], [8,7,6,5], [6, 7,8,5]], columns=['head', 'relation', 'tail', 'time'])
+            # dataset = pd.DataFrame([[2,3,4,1], [4,3,2,2], [8,7,6,5], [6, 7,8,5], [5,5,5,5]], columns=['head', 'relation', 'tail', 'time'])
             _ = patternlooker.statistics(dataset)
             patternlooker.initialize(dataset)
 
             # Static Logical Temporal Patterns
             set_symmetric, set_anti_symmetric = patternlooker.find_symmetric()
+
+
             set_reflexive = patternlooker.find_reflexive()
             set_inverse = patternlooker.find_inverse()
             set_implication = patternlooker.find_implication()
@@ -272,11 +274,11 @@ def main():
             end = time.time()
 
             analyser = AnalysisTools()
-            freq_symmetric = analyser.occurance_symmetric(set_symmetric, patternlooker.stat_rel).rename(columns={'number':'freq'})
-            freq_t_symmetric = analyser.occurance_symmetric(set_t_symmetric, patternlooker.stat_t_rel).rename(columns={'number':'freq'})
+            stat_symmetric = analyser.occurance_symmetric(set_symmetric, patternlooker.stat_rel)
+            stat_t_symmetric = analyser.occurance_symmetric(set_t_symmetric, patternlooker.stat_t_rel)
 
-            stat_dict = {'size of data(static)': patternlooker.num_data
-                         , 'number of entities': patternlooker.num_entities
+            stat_dict = {
+                         'number of entities': patternlooker.num_entities
                          , 'number of relations': patternlooker.num_relations
                          , 'number of triples': patternlooker.num_triples
                          , 'number of static symmetric': patternlooker.num_symmetric
@@ -293,7 +295,7 @@ def main():
                          , 'number of evolve': patternlooker.num_evolve}
 
             save_path = '../results/{}/statistics'.format(dataname)
-            with open(save_path + '/stats.txt', 'w') as file:
+            with open(save_path + '/stats_{}.txt'.format(data[:-7]), 'w') as file:
                 file.write(str(stat_dict))
 
             path_list = {'s_symm': save_path + '/static/symmetric'
@@ -302,15 +304,30 @@ def main():
                         , 'd_rel': save_path + '/dynamic/relations'
                         }
 
+            # save states fo symmetric
             for p in path_list.values():
                 if not os.path.exists(p):
                     os.makedirs(p)
-            freq_symmetric.reset_index(drop=True).to_csv('{}/{}_freq_symm.csv'.format(path_list['s_symm'], data))
-            freq_t_symmetric.reset_index(drop=True).to_csv('{}/{}_freq_t_symm.csv'.format(path_list['d_symm'], data))
+            stat_symmetric.reset_index(drop=True).to_csv('{}/{}_freq_symm.csv'.format(path_list['s_symm'], data), index=False)
+            stat_t_symmetric.reset_index(drop=True).to_csv('{}/{}_freq_t_symm.csv'.format(path_list['d_symm'], data), index=False)
             patternlooker.stat_rel.reset_index(drop=True).rename(columns={'number': 'freq'}).to_csv(
-                '{}/{}_freq_rel.csv'.format(path_list['s_rel'], data))
+                '{}/{}_freq_rel.csv'.format(path_list['s_rel'], data), index=False)
             patternlooker.stat_t_rel.reset_index(drop=True).rename(columns={'number': 'freq'}).to_csv(
-                '{}/{}_freq_t_rel.csv'.format(path_list['d_rel'], data))
+                '{}/{}_freq_t_rel.csv'.format(path_list['d_rel'], data), index=False)
+
+            # save sets
+            set_path = '../results/{}/pattern sets/{}'.format(dataname, data[:-7])
+            if not os.path.exists(set_path):
+                os.makedirs(set_path)
+
+            set_reflexive.to_csv(set_path + '/set reflexive.csv', index=False)
+            set_symmetric.to_csv(set_path + '/set symmetric.csv', index=False)
+            set_inverse.to_csv(set_path + '/set inverse.csv', index=False)
+            set_implication.to_csv(set_path + '/set implication.csv', index=False)
+            set_evolve.to_csv(set_path + '/set evolve.csv', index=False)
+            set_t_inverse.to_csv(set_path + '/set temporal reflexive.csv', index=False)
+            set_t_symmetric.to_csv(set_path + '/set temporal symmetric.csv', index=False)
+            pd.DataFrame(set_t_relation).to_csv(set_path + '/set temporal relation.csv', index=False)
 
             print('It takes {} seconds'.format(end - start))
             print('Number of symmetric is: {} \n'

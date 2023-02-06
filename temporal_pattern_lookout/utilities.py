@@ -16,30 +16,34 @@ import numpy as np
 # then count how many of test samples their Premise exist in train  ,premise->conclusion
 
 
+
+
+
 class AnalysisTools:
     def __init__(self):
         pass
 
-    def occurance_symmetric(self, symm_set, stat_rel):
+    @ staticmethod
+    def occurance_symmetric(symm_set, stat_rel):
+        counts_num = stat_rel.copy().set_index('relation')
+        counts_num.sort_index(inplace=True)
         symm_set = pd.DataFrame(symm_set.value_counts('relation')).rename(columns={0: 'number'})
         stat_rel = stat_rel.set_index('relation', inplace=False)
-        freq = (symm_set / stat_rel).fillna(0).reset_index()
-        return freq.sort_values(by='number', ascending=False)
-
-
-    # def occurance_temporal_relation(self, symm_set, stat_rel):
-    #     symm_set = pd.DataFrame(symm_set.value_counts('relation')).rename(columns={0: 'freq'})
-    #     stat_rel.set_index('relation', inplace=True)
-    #     freq = (symm_set / stat_rel).fillna(0).reset_index()
-    #     return freq.sort_values(by='freq', ascending=False)
-    #
+        stat = (symm_set / stat_rel).fillna(0).rename(columns={'number': 'percentage'})
+        stat.insert(0, 'number of relation', counts_num.loc[:, 'number'])
+        stat.insert(1, 'number of symmetric', symm_set.loc[:, 'number'])
+        stat = stat.fillna(0)
+        stat.reset_index(inplace=True)
+        stat['number of symmetric'] = stat['number of symmetric'].astype(int)
+        return stat.sort_values(by='number of relation', ascending=False)
 
 
 class PlotTools:
     def __init__(self):
         pass
 
-    def plot_distribution_rel(self, train_set, test_set, showall=False, dynamic=False, on='symmetric', save_path=None):
+    @staticmethod
+    def plot_distribution_rel(train_set, test_set, showall=False, dynamic=False, on='symmetric', save_path=None):
         if not showall:
             train_set = train_set[~train_set['freq'].isin([0])]
             test_set = test_set[~test_set['freq'].isin([0])]
