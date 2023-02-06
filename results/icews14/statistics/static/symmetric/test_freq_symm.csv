@@ -1,0 +1,162 @@
+relation,number of relation,number of symmetric,percentage
+Make statement,1199,50,0.041701418
+Consult,849,196,0.230859835
+Make an appeal or request,503,42,0.083499006
+Express intent to meet or negotiate,410,44,0.107317073
+Host a visit,360,8,0.022222222
+Make a visit,344,8,0.023255814
+Praise or endorse,328,2,0.006097561
+Criticize or denounce,274,34,0.124087591
+"Arrest, detain, or charge with legal action",242,0,0
+Accuse,223,24,0.107623318
+Use unconventional violence,170,12,0.070588235
+Engage in negotiation,163,36,0.220858896
+Express intent to cooperate,148,38,0.256756757
+Express intent to engage in diplomatic cooperation (such as policy support),141,14,0.09929078
+Use conventional military force,128,4,0.03125
+Demand,122,6,0.049180328
+Sign formal agreement,113,28,0.247787611
+Engage in diplomatic cooperation,112,28,0.25
+Investigate,75,0,0
+Reject,74,2,0.027027027
+Discuss by telephone,68,18,0.264705882
+fight with small arms and light weapons,66,6,0.090909091
+Meet at a 'third' location,63,18,0.285714286
+Threaten,60,6,0.1
+Make optimistic comment,59,2,0.033898305
+Appeal for diplomatic cooperation (such as policy support),52,2,0.038461538
+Make pessimistic comment,48,2,0.041666667
+Engage in symbolic act,42,2,0.047619048
+Demonstrate or rally,41,0,0
+"Abduct, hijack, or take hostage",40,0,0
+"Return, release person(s)",33,0,0
+Make empathetic comment,30,0,0
+Deny responsibility,27,0,0
+"Protest violently, riot",26,0,0
+Physically assault,23,2,0.086956522
+Provide aid,22,0,0
+Reduce relations,22,0,0
+Mobilize or increase armed forces,21,0,0
+Provide humanitarian aid,21,0,0
+Bring lawsuit against,19,0,0
+Cooperate militarily,18,0,0
+Occupy territory,18,0,0
+Impose administrative sanctions,18,0,0
+Yield,17,0,0
+Confiscate property,17,0,0
+Cooperate economically,16,0,0
+Use tactics of violent repression,15,0,0
+Complain officially,14,0,0
+Threaten with military force,14,0,0
+Expel or deport individuals,13,0,0
+Provide economic aid,13,0,0
+Express intent to provide military aid,12,0,0
+Sexually assault,12,0,0
+Engage in material cooperation,12,0,0
+Rally opposition against,12,0,0
+Rally support on behalf of,12,0,0
+"Impose embargo, boycott, or sanctions",12,0,0
+Coerce,11,0,0
+Assassinate,11,0,0
+Grant diplomatic recognition,10,0,0
+Express intent to release persons or property,10,0,0
+Consider policy option,10,0,0
+Reduce or break diplomatic relations,10,0,0
+Ease administrative sanctions,10,0,0
+Impose restrictions on political freedoms,10,0,0
+Demand change in leadership,10,2,0.2
+"Accuse of crime, corruption",10,0,0
+Employ aerial weapons,9,0,0
+Carry out suicide bombing,9,0,0
+"Conduct suicide, car, or other non-military bombing",9,0,0
+Express accord,9,0,0
+Provide military aid,9,0,0
+Express intent to provide humanitarian aid,9,0,0
+Appeal for intelligence,8,0,0
+Acknowledge or claim responsibility,8,0,0
+Express intent to provide material aid,8,0,0
+Kill by physical assault,7,0,0
+Appeal for change in leadership,7,0,0
+Demand diplomatic cooperation (such as policy support),7,0,0
+"Investigate crime, corruption",7,0,0
+Halt negotiations,7,0,0
+"Defy norms, law",7,0,0
+Express intent to cooperate economically,7,0,0
+Increase military alert status,6,0,0
+"Reject plan, agreement to settle dispute",6,2,0.333333333
+Refuse to yield,6,0,0
+Appeal for judicial cooperation,6,0,0
+"Reject proposal to meet, discuss, or negotiate",6,0,0
+Demonstrate military or police power,6,0,0
+Appeal to engage in or accept mediation,5,0,0
+"Declare truce, ceasefire",5,0,0
+Express intent to settle dispute,5,0,0
+Decline comment,5,0,0
+Accuse of human rights abuses,5,0,0
+Appeal for release of persons or property,5,0,0
+Express intent to provide economic aid,4,0,0
+Mediate,4,0,0
+Accede to demands for change in leadership,4,0,0
+Express intent to ease administrative sanctions,4,0,0
+Mobilize or increase police power,4,0,0
+Refuse to release persons or property,4,0,0
+Attempt to assassinate,3,0,0
+Demonstrate for leadership change,3,0,0
+Conduct strike or boycott,3,0,0
+Accede to demands for rights,3,0,0
+Appeal for de-escalation of military engagement,3,0,0
+Demand material cooperation,3,0,0
+Appeal for military aid,3,0,0
+fight with artillery and tanks,3,0,0
+Provide military protection or peacekeeping,3,0,0
+Receive deployment of peacekeepers,2,0,0
+Retreat or surrender militarily,2,0,0
+Accuse of aggression,2,0,0
+"Accuse of espionage, treason",2,0,0
+"Return, release property",2,0,0
+Appeal for economic cooperation,2,0,0
+Appeal for rights,2,0,0
+Apologize,2,0,0
+Defend verbally,2,0,0
+Appeal for easing of administrative sanctions,2,0,0
+Increase police alert status,2,0,0
+Appeal to yield,2,0,0
+Grant asylum,2,0,0
+Give ultimatum,2,0,0
+Appeal to others to meet or negotiate,2,0,0
+Engage in judicial cooperation,2,0,0
+Demand political reform,1,0,0
+Destroy property,1,0,0
+Seize or damage property,1,0,0
+Demand settling of dispute,1,0,0
+Demand release of persons or property,1,0,0
+Threaten non-force,1,0,0
+"Obstruct passage, block",1,0,0
+"Threaten with political dissent, protest",1,0,0
+Threaten with repression,1,0,0
+Use as human shield,1,0,0
+"Demand meeting, negotiation",1,0,0
+Demand de-escalation of military engagement,1,0,0
+Veto,1,0,0
+Violate ceasefire,1,0,0
+Demand mediation,1,0,0
+Express intent to cooperate on judicial matters,1,0,0
+Engage in mass killings,1,0,0
+Reduce or stop economic assistance,1,0,0
+Appeal for aid,1,0,0
+Impose state of emergency or martial law,1,0,0
+"Impose blockade, restrict movement",1,0,0
+Halt mediation,1,0,0
+Express intent to yield,1,0,0
+Appeal for humanitarian aid,1,0,0
+Express intent to mediate,1,0,0
+Reduce or stop material aid,1,0,0
+Express intent to accept mediation,1,0,0
+Reduce or stop military assistance,1,0,0
+"Accede to demands for change in institutions, regime",1,0,0
+Refuse to de-escalate military engagement,1,0,0
+Refuse to ease administrative sanctions,1,0,0
+"Express intent to ease economic sanctions, boycott, or embargo",1,0,0
+Express intent to de-escalate military engagement,1,0,0
+Accuse of war crimes,1,0,0
+Express intent to engage in material cooperation,1,0,0
