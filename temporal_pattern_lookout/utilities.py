@@ -16,25 +16,22 @@ import numpy as np
 # then count how many of test samples their Premise exist in train  ,premise->conclusion
 
 
-
-
-
 class AnalysisTools:
     def __init__(self):
         pass
 
     @ staticmethod
-    def occurance_symmetric(symm_set, stat_rel):
+    def occurance_pattern(target_pattern, stat_rel, pattern_name):
         counts_num = stat_rel.copy().set_index('relation')
         counts_num.sort_index(inplace=True)
-        symm_set = pd.DataFrame(symm_set.value_counts('relation')).rename(columns={0: 'number'})
+        pattern_set = pd.DataFrame(target_pattern.value_counts('relation')).rename(columns={0: 'number'})
         stat_rel = stat_rel.set_index('relation', inplace=False)
-        stat = (symm_set / stat_rel).fillna(0).rename(columns={'number': 'percentage'})
+        stat = (pattern_set / stat_rel).fillna(0).rename(columns={'number': 'percentage'})
         stat.insert(0, 'number of relation', counts_num.loc[:, 'number'])
-        stat.insert(1, 'number of symmetric', symm_set.loc[:, 'number'])
+        stat.insert(1, 'number of {}'.format(pattern_name), pattern_set.loc[:, 'number'])
         stat = stat.fillna(0)
         stat.reset_index(inplace=True)
-        stat['number of symmetric'] = stat['number of symmetric'].astype(int)
+        stat['number of {}'.format(pattern_name)] = stat['number of {}'.format(pattern_name)].astype(int)
         return stat.sort_values(by='number of relation', ascending=False)
 
 
