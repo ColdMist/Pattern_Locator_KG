@@ -75,10 +75,12 @@ def pattern_analyse(dataset, pattern):
                                 '{}/freq_rel.csv'.format(path_list['s_rel']), index=False)
 
 
-def conclusion_premise_paar(train_set, test_set, dataset, pattern):
+def conclusion_premise_paar(dataset, pattern):
     save_path = '../results/{}/statistics/con_pre_pair'.format(dataset)
     if not os.path.exists(save_path):
         os.makedirs(save_path)
+    test_set = '../results/{}/pattern sets/test/set {}.csv'.format(dataset,  pattern)
+    train_set = '../results/{}/pattern sets/train/set {}.csv'.format(dataset,  pattern)
     test = pd.read_csv(test_set)
     test_reversed = test.copy()
     if pattern == 'symmetric' or pattern == 'temporal symmetric':
@@ -93,14 +95,13 @@ def conclusion_premise_paar(train_set, test_set, dataset, pattern):
         stat = pd.DataFrame((int_vc / test_vc))
 
         stat.insert(0, 'number in test set', test_vc)
-        stat.insert(1, 'number of symmetric in train set', int_vc)
+        stat.insert(1, 'number of {} in train set'.format(pattern), int_vc)
         stat.fillna(0, inplace=True)
         stat.rename(columns={0: 'percentage'}, inplace=True)
-        stat['number of symmetric in train set'] = stat['number of symmetric in train set'].astype(int)
+        stat['number of {} in train set'.format(pattern)] = stat['number of {} in train set'.format(pattern)].astype(int)
         stat.sort_values(by='number in test set', inplace=True, ascending=False)
         stat.to_csv(save_path + '/{}.csv'.format(pattern))
 
-    # if pattern == 'inverse' or pattern == 'temporal inverse':
 
 def plot_distribution(dataset, pattern, by='freq'):
     for t in ['train', 'test']:
@@ -138,10 +139,8 @@ def main(dataset, pattern):
     # for on in ['symmetric', 'relations']:
     #     plot_distribution(on=on)
 
-    pattern_analyse(dataset, pattern)
-    # inverse_analyse(dataset)
-    conclusion_premise_paar('../results/{}/pattern sets/train/set {}.csv'.format(dataset,  pattern),
-                        '../results/{}/pattern sets/test/set {}.csv'.format(dataset, pattern),  dataset, pattern)
+    # pattern_analyse(dataset, pattern)
+    conclusion_premise_paar(dataset, pattern)
 
-    plot_distribution(dataset, pattern)
+    # plot_distribution(dataset, pattern)
 
