@@ -1,0 +1,30 @@
+relation,number in test set,number of symmetric in train set,percentage
+Consult,196,138,0.7040816326530612
+Make statement,50,30,0.6
+Express intent to meet or negotiate,44,36,0.8181818181818182
+Make an appeal or request,42,32,0.7619047619047619
+Express intent to cooperate,38,28,0.7368421052631579
+Engage in negotiation,36,28,0.7777777777777778
+Criticize or denounce,34,26,0.7647058823529411
+Sign formal agreement,28,20,0.7142857142857143
+Engage in diplomatic cooperation,28,24,0.8571428571428571
+Accuse,24,20,0.8333333333333334
+Discuss by telephone,18,12,0.6666666666666666
+Meet at a 'third' location,18,14,0.7777777777777778
+Express intent to engage in diplomatic cooperation (such as policy support),14,12,0.8571428571428571
+Use unconventional violence,12,10,0.8333333333333334
+Make a visit,8,6,0.75
+Host a visit,8,6,0.75
+Threaten,6,6,1.0
+Demand,6,6,1.0
+fight with small arms and light weapons,6,4,0.6666666666666666
+Use conventional military force,4,2,0.5
+Appeal for diplomatic cooperation (such as policy support),2,2,1.0
+Make optimistic comment,2,2,1.0
+Make pessimistic comment,2,2,1.0
+Engage in symbolic act,2,0,0.0
+Physically assault,2,2,1.0
+Praise or endorse,2,2,1.0
+Reject,2,2,1.0
+"Reject plan, agreement to settle dispute",2,2,1.0
+Demand change in leadership,2,0,0.0

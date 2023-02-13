@@ -1,0 +1,20 @@
+relation,number in test set,number of temporal symmetric in train set,percentage
+Consult,94,0,0.0
+Engage in negotiation,20,0,0.0
+Discuss by telephone,12,0,0.0
+Express intent to meet or negotiate,12,0,0.0
+Express intent to cooperate,10,0,0.0
+Engage in diplomatic cooperation,8,0,0.0
+Meet at a 'third' location,8,0,0.0
+Sign formal agreement,6,0,0.0
+Express intent to engage in diplomatic cooperation (such as policy support),6,0,0.0
+Appeal for diplomatic cooperation (such as policy support),2,0,0.0
+Criticize or denounce,2,0,0.0
+Demand change in leadership,2,0,0.0
+Engage in symbolic act,2,0,0.0
+Make an appeal or request,2,0,0.0
+Make a visit,2,0,0.0
+Accuse,2,0,0.0
+Use conventional military force,2,0,0.0
+Use unconventional violence,2,0,0.0
+fight with small arms and light weapons,2,0,0.0
