@@ -8,11 +8,11 @@ import temporal_pattern_lookout
 import evaluation
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', default='icews14', choices=['icews14', 'wikidata_TA', 'selfmade'], help='Knowledge graph dataset')
-parser.add_argument('--pattern', default='temporal symmetric'
+parser.add_argument('--dataset', default='selfmade', choices=['icews14', 'wikidata_TA', 'selfmade'], help='Knowledge graph dataset')
+parser.add_argument('--pattern', default='evolve'
                     , choices=['symmetric', 'temporal symmetric', 'inverse'
-        , 'temporal inverse', 'implication', 'temporal implication'])
+        , 'temporal inverse', 'implication', 'temporal implication', 'evolve'])
 args = parser.parse_args()
 
-# temporal_pattern_lookout.main(args.dataset)
+temporal_pattern_lookout.main(args.dataset)
 evaluation.main(args.dataset, args.pattern)

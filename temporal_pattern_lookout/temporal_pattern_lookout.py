@@ -50,14 +50,21 @@ class PatternLookout:
 
     @staticmethod
     def count_comb(data, temporal=False):
-        ht_data = data.groupby(['head', 'tail'])
         cnt = 0
-        for _, ht in ht_data:
-            cnt += comb(ht.shape[0], 2)
-            if temporal:
-                ht_vc = ht.value_counts('relation')
-                for c in ht_vc[ht_vc > 1].values:
-                    cnt -= comb(c, 2)
+        if temporal:
+            data = data.groupby('time')
+            for _, dt in data:
+                ht_data = dt.groupby(['head', 'tail'])
+                for _, ht in ht_data:
+                    cnt += comb(ht.shape[0], 2)
+        else:
+            ht_data = data.groupby(['head', 'tail'])
+            for _, ht in ht_data:
+                cnt += comb(ht.shape[0], 2)
+                # if temporal:
+                #     ht_vc = ht.value_counts('relation')
+                #     for c in ht_vc[ht_vc > 1].values:
+                #         cnt -= comb(c, 2)
         return cnt
 
     def data_loader(self, dir_name, data_name, file_name):
@@ -143,6 +150,7 @@ class TemporalPatternLookout(PatternLookout):
         self.num_t_anti_symmetric = None
         self.num_evolve = None
         self.num_t_inverse = None
+        self.num_t_implication = None
         self.num_t_relations = None
         self.timeline = None
         self.stat_t_rel = None
@@ -184,24 +192,6 @@ class TemporalPatternLookout(PatternLookout):
 
         self.timeline = self.t_original.drop_duplicates(subset=['time']).loc[:, 'time'].reset_index(drop=True)
 
-    def find_temporal_inverse(self):
-        assert self.t_reversed is not None, 'please run "initialize" first'
-        assert self.t_original is not None, 'please run "initialize" first'
-        inv = pd.merge(self.t_original, self.t_reversed, on=['head', 'tail'], how='inner')
-        inv = inv[inv.loc[:, 'relation_x'] != inv.loc[:, 'relation_y']]
-        inv.rename(columns={'relation_x': 'relation'}, inplace=True)
-        inv = pd.merge(self.t_original, inv.iloc[:, :3], how='inner').drop_duplicates()
-        self.num_inverse = 0
-        set_inv = pd.DataFrame()
-        inv_t = inv.groupby('time')
-        for _, data_t in inv_t:
-            cnt = self.count(data_t)
-            self.num_inverse += cnt
-            if cnt:
-                set_inv = pd.concat([set_inv, data_t], axis=0)
-        self.num_inverse = int(self.num_inverse)
-        return set_inv
-
     def find_temporal_symmetric(self):
         assert self.t_intersected is not None, 'please run "initialize" first'
         symm = self.t_intersected
@@ -212,23 +202,65 @@ class TemporalPatternLookout(PatternLookout):
         self.num_t_anti_symmetric = self.num_t_data - self.num_t_symmetric
         return symm, anti_symm
 
+    def find_temporal_inverse(self):
+        assert self.t_reversed is not None, 'please run "initialize" first'
+        assert self.t_original is not None, 'please run "initialize" first'
+        inv = pd.merge(self.t_original, self.t_reversed, on=['head', 'tail', 'time'], how='inner')
+        inv = inv[inv.loc[:, 'relation_x'] != inv.loc[:, 'relation_y']]
+        inv.rename(columns={'relation_x': 'relation'}, inplace=True)
+        inv.drop('relation_y', inplace=True, axis=1)
+        inv = pd.merge(self.t_original, inv, how='inner').drop_duplicates()
+        num_t_inverse = 0
+        set_inv = pd.DataFrame()
+        inv_t = inv.groupby('time')
+        for _, data_t in inv_t:
+            cnt = self.count(data_t)
+            num_t_inverse += cnt
+            if cnt:
+                set_inv = pd.concat([set_inv, data_t], axis=0)
+        self.num_t_inverse = int(num_t_inverse)
+        return set_inv
+
+    def find_temporal_implication(self):
+        assert self.t_original is not None, 'please run "initialize" first'
+        imp = self.t_original.drop_duplicates(subset=['head', 'tail', 'time'], keep=False)
+        imp = pd.concat([imp, self.t_original]).drop_duplicates(keep=False)
+        self.num_t_implication = int(self.count_comb(imp, self.temporal))
+        return imp
+
     def find_evolve(self):
+        def cal_evolve(df: pd.DataFrame):
+            # data.sort_values(by='time', ascending=True, inplace=True)
+            cnt = 0
+            cnt_overlap = 0
+            for index, row in df.iterrows():
+                row = pd.DataFrame(row).T
+                r = row.loc[index, 'relation']
+                t = row.loc[index, 'time']
+                temp1 = df[(df['relation'] != r) & (df['time'] > t)]
+                temp2 = df[(df['relation'] != r) & (df['time'] == t)]
+                if temp1.shape[0] == 0 and temp2.shape[0] == 0:
+                    df.drop(index, axis=0)
+                    continue
+                cnt += temp1.shape[0]
+                cnt_overlap += temp2.shape[0]
+            assert cnt_overlap % 1 == 0, 'cnt_overlab should be int!'
+            cnt += cnt_overlap // 2
+            return df, cnt
+
         assert self.t_original is not None, 'please run "initialize" first'
         evo = self.t_original.drop_duplicates(subset=['head', 'tail'], keep=False)
         evo = pd.concat([evo, self.t_original]).drop_duplicates(keep=False)
-        self.num_evolve = self.count_comb(evo, True)
-        self.num_evolve = int(self.count_comb(evo))
-        return evo
-
-    def find_inverse(self):
-        assert self.t_reversed is not None, 'please run "initialize" first'
-        assert self.t_original is not None, 'please run "initialize" first'
-        inv = pd.merge(self.t_original, self.t_reversed, on=['head', 'tail'], how='inner')
-        inv = inv[inv.loc[:, 'relation_x'] != inv.loc[:, 'relation_y']]
-        inv.rename(columns={'relation_x': 'relation'}, inplace=True)
-        inv = pd.merge(self.original, inv.iloc[:, :3], how='inner').drop_duplicates()
-        self.num_t_inverse = int(self.count(inv))
-        return inv
+        # evo.sort_values(by='time', inplace=True, ascending=True)
+        set_evo = pd.DataFrame()
+        evo = evo.groupby(['head', 'tail'])
+        num_evo = 0
+        for _, data_e in evo:
+            e, c = cal_evolve(data_e)
+            num_evo += c
+            set_evo = pd.concat([set_evo, e])
+        self.num_evolve = int(num_evo)
+        return set_evo
 
     def find_temporal_relation(self):
         assert self.t_original is not None, 'please run "initialize" first'
@@ -243,7 +275,6 @@ class TemporalPatternLookout(PatternLookout):
         self.num_t_relations = len(s_t_rel)
         return s_t_rel
 
-
 def makedir(path):
     if not os.path.exists(path):
         os.makedirs(path)
@@ -256,7 +287,7 @@ def main(dataname):
     for data in ['train2id.txt', 'test2id.txt']:
         patternlooker = TemporalPatternLookout()
         dataset = patternlooker.data_loader('data', dataname, data).iloc[:, :]
-        # dataset = pd.DataFrame([[2,3,4,1], [4,3,2,2], [8,7,6,5], [6, 7,8,5], [5,5,5,5]], columns=['head', 'relation', 'tail', 'time'])
+
         _ = patternlooker.statistics(dataset)
         patternlooker.initialize(dataset)
 
@@ -270,6 +301,7 @@ def main(dataname):
         # Dynamic Logical Temporal Patterns
         set_t_symmetric, set_t_anti_symmetric = patternlooker.find_temporal_symmetric()
         set_evolve = patternlooker.find_evolve()
+        set_t_implication = patternlooker.find_temporal_implication()
         set_t_inverse = patternlooker.find_temporal_inverse()
         set_t_relation = patternlooker.find_temporal_relation()
         end = time.time()
@@ -289,6 +321,7 @@ def main(dataname):
             , 'number of temporal symmetric': patternlooker.num_t_symmetric
             , 'number of temporal inverse': patternlooker.num_t_inverse
             , 'number of temporal reflexive': patternlooker.num_t_reflexive
+            , 'number of temporal implication': patternlooker.num_t_implication
             , 'number of evolve': patternlooker.num_evolve}
 
         save_path = '../results/{}/statistics'.format(dataname)
@@ -304,25 +337,26 @@ def main(dataname):
         set_symmetric.to_csv(set_path + '/set symmetric.csv', index=False)
         set_inverse.to_csv(set_path + '/set inverse.csv', index=False)
         set_implication.to_csv(set_path + '/set implication.csv', index=False)
-        set_evolve.to_csv(set_path + '/set temporal implication.csv', index=False)
         set_t_inverse.to_csv(set_path + '/set temporal inverse.csv', index=False)
         set_t_symmetric.to_csv(set_path + '/set temporal symmetric.csv', index=False)
+        set_t_implication.to_csv(set_path + '/set temporal implication.csv', index=False )
+        set_evolve.to_csv(set_path + '/set evolve.csv', index=False)
         pd.DataFrame(set_t_relation).to_csv(set_path + '/set temporal relation.csv', index=False)
         patternlooker.stat_rel.to_csv(set_path + '/stat_rel.csv', index=False)
         patternlooker.stat_t_rel.to_csv(set_path + '/stat_t_rel.csv', index=False)
 
         print('It takes {} seconds'.format(end - start))
-        print('Number of symmetric is: {} \n'
-              'Number of anti_symmetric is: {} \n'
-              'Number of reflexive is: {} \n'
-              'Number of inverse is: {} \n'
-              'Number of temporal inverse is: {} \n'
-              'Number of temporal implication is: {} \n'
-              'Number of evolves is: {} \n'
-              'Number of temporal relation is: {} \n'.format(patternlooker.num_symmetric, patternlooker.num_anti_symmetric,
-                                                             patternlooker.num_reflexive, patternlooker.num_inverse,
-                                                             patternlooker.num_t_inverse, patternlooker.num_implication,
-                                                             patternlooker.num_evolve, patternlooker.num_t_relations))
+    #     print('Number of symmetric is: {} \n'
+    #           'Number of anti_symmetric is: {} \n'
+    #           'Number of reflexive is: {} \n'
+    #           'Number of inverse is: {} \n'
+    #           'Number of temporal inverse is: {} \n'
+    #           'Number of temporal implication is: {} \n'
+    #           'Number of evolves is: {} \n'
+    #           'Number of temporal relation is: {} \n'.format(patternlooker.num_symmetric, patternlooker.num_anti_symmetric,
+    #                                                          patternlooker.num_reflexive, patternlooker.num_inverse,
+    #                                                          patternlooker.num_t_inverse, patternlooker.num_implication,
+    #                                                          patternlooker.num_evolve, patternlooker.num_t_relations))
     print('--------------------Finish-------------------------------------------')
 
 

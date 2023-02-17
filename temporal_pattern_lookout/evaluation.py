@@ -13,123 +13,17 @@ import matplotlib.ticker as ticke
 # TODO: 1. r1 --> # symmetric num of r1 --> # percentage of symmetric of r1
 # TODO: 2. for certain relation, count conclusion in test set and premise in train set.
 
+# TODO: 3. make (ri, rj) inverse dict, count for each pair: 2*#(ri, rj) / (#ri + #rj) on train
+# TODO: 4. for test, for certain ri, looking up dict (for a (ri, rj) regarding a threshold)
+#  , check if (. rj .) exists in train, if yes, count 1
+# TODO: 5. make (ri --> rj) implication dict, count 1 each pair: #(ri --> rj) / (#ri) on train
+# TODO: 6. check for (ri) in test set, looking up dict(rj-->ri)(premise --> conclusion) and look if (. rj .) in train
 
-def plot_train_test_distribution(dataset):
-
-    train_set = pd.read_csv('../results/%s/pattern sets/train/stat_rel.csv' % dataset)
-    test_set = pd.read_csv('../results/%s/pattern sets/test/stat_rel.csv' % dataset)
-    train_t_set = pd.read_csv('../results/%s/pattern sets/train/stat_t_rel.csv' % dataset)
-    test_t_set = pd.read_csv('../results/%s/pattern sets/test/stat_t_rel.csv' % dataset)
-
-    for s in ['temporal', '']:
-        data_train = train_t_set if s == 'temporal' else train_set
-        data_test = test_t_set if s == 'temporal' else test_set
-        rel_num_tr = data_train.loc[:, 'number'].sum()
-        rel_num_te = data_test.loc[:, 'number'].sum()
-
-        data_train.set_index('relation', inplace=True)
-        data_test.set_index('relation', inplace=True)
-        fig, ax = plt.subplots(2, 1, figsize=(24, 6), sharex=True)
-        ax[0].bar(data_train.index, data_train.loc[:, 'number'],
-                  label='number of %s relation in train set' % s, color='#f9766e', edgecolor='grey', alpha=0.5)
-        ax[0].bar(data_test.index, data_test.loc[:, 'number'],
-                  label='number of %s in test set' % s, color='#00bfc4', edgecolor='grey', alpha=0.5)
-
-        ax[1].bar(data_train.index, data_train.loc[:, 'number']/rel_num_tr,
-                  label='percentage of %s relation in train set' % s, color='#f9766e', edgecolor='grey', alpha=0.5)
-        ax[1].bar(data_test.index, data_test.loc[:, 'number']/rel_num_te,
-                  label='percentage of %s in test set' % s, color='#00bfc4', edgecolor='grey', alpha=0.5)
-
-        ax[0].set_xlabel('relations', fontsize=12)
-        ax[1].set_xlabel('relations', fontsize=12)
-        ax[0].set_ylabel('number', fontsize=12)
-        ax[1].set_ylabel('percentage', fontsize=12)
-        for i in range(2):
-            ax[i].tick_params(axis='x', length=0, rotation=30)
-            ax[i].grid(axis='y', alpha=0.5, ls='--')
-            ax[i].legend(frameon=False)
-
-        fig.suptitle('({}) {} relation distribution'.format(dataset, s))
-        plt.xticks([])
-
-        save_path = '../results/{}/statistics/'.format(dataset)
-        plt.savefig(save_path + '%s_Distribution.png' % s, dpi=300)
-        plt.show()
-
-
-def pattern_analyse(dataset, pattern):
-    for by in ['train', 'test']:
-        analyser = AnalysisTools()
-        save_path = '../results/{}/statistics/{}'.format(dataset, by)
-        path_list = {'s_%s' % pattern: save_path + '/static'
-            , 's_rel': save_path + '/static'
-            , 'd_%s' % pattern: save_path + '/dynamic'
-            , 'd_rel': save_path + '/dynamic'
-                     }
-
-        for p in path_list.values():
-            if not os.path.exists(p):
-                os.makedirs(p)
-
-        if pattern.split()[0] == 'temporal':
-            set_t_pattern = pd.read_csv(r'../results/{}/pattern sets/{}/set {}.csv'
-                                        .format(dataset, by, pattern))
-            stat_t_rel = pd.read_csv(r'../results/{}/pattern sets/{}/stat_t_rel.csv'
-                                     .format(dataset, by))
-            stat_t_pattern = analyser.occurance_pattern(set_t_pattern, stat_t_rel, '%s' % pattern)
-
-            # save states fo symmetric
-            stat_t_pattern.reset_index(drop=True).to_csv(
-                '{}/freq_{}.csv'.format(path_list['d_%s' % pattern], pattern),
-                index=False)
-
-            stat_t_rel.reset_index(drop=True).rename(columns={'number': 'freq'}).to_csv(
-                '{}/freq_rel.csv'.format(path_list['d_rel']), index=False)
-        else:
-            set_pattern = pd.read_csv(r'../results/{}/pattern sets/{}/set {}.csv'
-                                        .format(dataset, by, pattern))
-            stat_rel = pd.read_csv(r'../results/{}/pattern sets/{}/stat_rel.csv'
-                                   .format(dataset, by))
-            stat_pattern = analyser.occurance_pattern(set_pattern, stat_rel, '%s' % pattern)
-
-            # save states fo symmetric
-            stat_pattern.reset_index(drop=True).to_csv('{}/freq_{}.csv'.format(path_list['s_%s' % pattern], pattern),
-                                                   index=False)
-            stat_rel.reset_index(drop=True).rename(columns={'number': 'freq'}).to_csv(
-                                '{}/freq_rel.csv'.format(path_list['s_rel']), index=False)
-
-
-def conclusion_premise_paar(dataset, pattern):
-    save_path = '../results/{}/statistics/con_pre_pair'.format(dataset)
-    if not os.path.exists(save_path):
-        os.makedirs(save_path)
-    test_set = '../results/{}/pattern sets/test/set {}.csv'.format(dataset,  pattern)
-    train_set = '../results/{}/pattern sets/train/set {}.csv'.format(dataset,  pattern)
-    test = pd.read_csv(test_set)
-    test_reversed = test.copy()
-    if pattern == 'symmetric' or pattern == 'temporal symmetric':
-        test_reversed.loc[:, 'head'], test_reversed.loc[:, 'tail'] = \
-            test_reversed.loc[:, 'tail'].copy(), test_reversed.loc[:, 'head'].copy()
-
-        train = pd.read_csv(train_set)
-        intersected = pd.merge(train, test_reversed, how='inner')
-        int_vc = intersected.value_counts('relation')
-
-        test_vc = test.value_counts('relation')
-        stat = pd.DataFrame((int_vc / test_vc))
-
-        stat.insert(0, 'number in test set', test_vc)
-        stat.insert(1, 'number of {} in train set'.format(pattern), int_vc)
-        stat.fillna(0, inplace=True)
-        stat.rename(columns={0: 'percentage'}, inplace=True)
-        stat['number of {} in train set'.format(pattern)] = stat['number of {} in train set'.format(pattern)].astype(int)
-        stat.sort_values(by='number in test set', inplace=True, ascending=False)
-        stat.to_csv(save_path + '/{}.csv'.format(pattern))
 
 
 def plot_distribution(dataset, pattern):
     for t in ['train', 'test']:
-        typ = 'dynamic' if pattern.split()[0] == 'temporal' else 'static'
+        typ = 'dynamic' if (pattern == 'evolve' or pattern.split()[0] == 'temporal') else 'static'
         data = pd.read_csv('../results/{}/statistics/{}/{}/freq_{}.csv'.format(dataset, t, typ, pattern))
         fig, ax = plt.subplots(2, 1, figsize=(24, 6), sharex=True)
 
@@ -154,12 +48,15 @@ def plot_distribution(dataset, pattern):
 
         save_path = '../results/{}/statistics/{}/{}/'.format(dataset, t, typ)
         plt.savefig(save_path + '%s_Distribution.png' % pattern, dpi=300)
-        plt.show()
+        # plt.show()
 
 
 def main(dataset, pattern):
-    plot_train_test_distribution(dataset)
-    # pattern_analyse(dataset, pattern)
-    # conclusion_premise_paar(dataset, pattern)
-    # plot_distribution(dataset, pattern)
+    analysis = AnalysisTools(dataset, pattern)
+    analysis.pattern_analyse()
+    # analysis.conclusion_premise_paar()
+    analysis.pattern_pair_analyse()
 
+    # ptool = PlotTools(dataset)
+    # ptool.plot_train_test_distribution()
+    # plot_distribution(dataset, pattern)
