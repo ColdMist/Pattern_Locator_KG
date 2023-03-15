@@ -1,639 +1,1043 @@
-head,relation,tail
-Arseniy Yatsenyuk,Consult,Joseph Robinette Biden
-Ministry (Nigeria),Appeal for diplomatic cooperation (such as policy support),Citizen (Nigeria)
-Nuri al-Maliki,Make statement,Iraq
-UN Security Council,Criticize or denounce,North Korea
-Boko Haram,Use conventional military force,Government (Nigeria)
-Kazakhstan,Consult,Afghanistan
-Election Commission (India),Make an appeal or request,Citizen (India)
-Citizen (Nigeria),Make an appeal or request,Government (Nigeria)
-China,Criticize or denounce,Japan
-Benjamin Netanyahu,Consult,John Kerry
-Catherine Ashton,Consult,Iran
-Drug Gang (Mexico),fight with small arms and light weapons,Military (Mexico)
-Abdel Fattah Al-Sisi,Consult,Giorgio Napolitano
-Shiv Sena,Criticize or denounce,Raj Thackeray
-Malaysia,Consult,China
-Japan,Express intent to meet or negotiate,China
-Foreign Affairs (South Korea),Express intent to meet or negotiate,China
-Angela Merkel,Consult,Antonis Samaras
-North Korea,Engage in negotiation,Japan
-South Korea,Consult,China
-Media (India),Consult,Member of Parliament (India)
-Uhuru Muigai Kenyatta,Make an appeal or request,Citizen (Kenya)
-Media Personnel (Somalia),Consult,Al-Shabaab
-Citizen (India),Criticize or denounce,Thief (India)
-Abdullah Abdullah,Consult,Ashraf Ghani Ahmadzai
-Citizen (Sudan),Make an appeal or request,Government (Sudan)
-Azam Khan,Criticize or denounce,Election Commission (India)
-Japan,Engage in diplomatic cooperation,Vietnam
-John Kerry,Consult,Sergey Viktorovich Lavrov
-Employee (India),Accuse,Citizen (India)
-Citizen (India),Accuse,Villager (India)
-Citizen (Nigeria),Accuse,Government (Nigeria)
-Japan,Engage in negotiation,South Korea
-Daily Trust,Consult,Pogu Bitrus
-Barack Obama,Consult,Pope Francis
-Citizen (India),Criticize or denounce,Employee (India)
-France,Engage in negotiation,Canada
-Vietnam,Express intent to cooperate,Cambodia
-North Korea,Consult,Kim Jong-Un
-Citizen (Kenya),Demand,Government (Kenya)
-John Kerry,Consult,Ethiopia
-Foreign Affairs (Russia),Express intent to cooperate,Cabinet / Council of Ministers / Advisors (United States)
-China,Engage in diplomatic cooperation,Japan
-Fumio Kishida,Make statement,John Kerry
-Iran,Consult,Kazakhstan
-Police (Kenya),Make statement,Lawyer/Attorney (Kenya)
-Benjamin Netanyahu,Discuss by telephone,Barack Obama
-China,Consult,Japan
-Iraq,Make statement,Nuri al-Maliki
-Joseph Robinette Biden,Consult,Arseniy Yatsenyuk
-South Korea,Consult,Iran
-Israeli Defense Forces,Make statement,Hamas
-Barisan Revolusi Nasional,Engage in negotiation,UN Security Council
-Mohammad Javad Zarif,Make statement,Iran
-China,Express intent to meet or negotiate,Malaysia
-Cabinet / Council of Ministers / Advisors (United States),Discuss by telephone,Sergey Viktorovich Lavrov
-Employee (India),Criticize or denounce,Citizen (India)
-Xi Jinping,Make optimistic comment,China
-Myanmar,Sign formal agreement,Thailand
-Employee (India),Make an appeal or request,Citizen (India)
-Barack Obama,Engage in negotiation,Iran
-Iraq,Host a visit,Iran
-China,Make statement,Iran
-Court Judge (Kenya),Make an appeal or request,Uhuru Muigai Kenyatta
-Citizen (India),Criticize or denounce,Medical Personnel (India)
-Philippines,Criticize or denounce,China
-Head of Government (Tajikistan),Consult,Xi Jinping
-Head of Government (Egypt),Consult,Hani Dahi
-Other Authorities / Officials (Nigeria),Make statement,Health Ministry (Nigeria)
-Vietnam,Express intent to cooperate,Sudan
-Citizen (India),Make an appeal or request,Governor (India)
-Iraq,Make statement,Haider Al-Abadi
-Julie Bishop,Consult,Cabinet / Council of Ministers / Advisors (United States)
-Sergey Kuzhugetovich Shoygu,Make statement,Interfax
-Head of Government (India),Accuse,Citizen (India)
-Benjamin Netanyahu,Consult,Barack Obama
-Japan,Criticize or denounce,China
-Military (Mexico),fight with small arms and light weapons,Drug Gang (Mexico)
-Gazprom,Sign formal agreement,OMV
-Kim Jong-Un,Consult,North Korea
-Ashraf Ghani Ahmadzai,Sign formal agreement,Abdullah Abdullah
-Government Delegation (Colombia),Express intent to cooperate,National Liberation Army
-John Kerry,Meet at a 'third' location,Sergey Viktorovich Lavrov
-Xi Jinping,Consult,China
-Citizen (Kenya),Make an appeal or request,Police (Kenya)
-Iraq,Consult,Iran
-Mohammad Javad Zarif,Express intent to meet or negotiate,John Kerry
-Iran,Make statement,Member of Parliament (Iran)
-South Korea,Express intent to meet or negotiate,North Korea
-Japan,Consult,South Korea
-John Kerry,Make statement,Fumio Kishida
-Iraq,Engage in diplomatic cooperation,Iran
-Armed Rebel (Yemen),Use unconventional violence,Citizen (Yemen)
-South Korea,Express intent to engage in diplomatic cooperation (such as policy support),China
-Joseph Robinette Biden,Express intent to meet or negotiate,Arseniy Yatsenyuk
-Mohammad Javad Zarif,Consult,Sergey Viktorovich Lavrov
-Mohammad Javad Zarif,Consult,Catherine Ashton
-Iran,Make statement,Mohammad Javad Zarif
-South Korea,Demand,North Korea
-Sergey Viktorovich Lavrov,Consult,Nuri al-Maliki
-Ashraf Ghani Ahmadzai,Consult,Abdullah Abdullah
-Ministry (Nigeria),Criticize or denounce,Citizen (Nigeria)
-Iraq,Sign formal agreement,Iran
-South Korea,Express intent to cooperate,North Korea
-Japan,Engage in diplomatic cooperation,South Korea
-Other Authorities / Officials (Nigeria),Make an appeal or request,Citizen (Nigeria)
-Foreign Affairs (Russia),Make statement,John Kerry
-Member of Parliament (Iran),Make statement,Iran
-China,Consult,South Africa
-China,Make optimistic comment,Xi Jinping
-South Korea,Make statement,North Korea
-Didier Burkhalter,Consult,Elmar Mammadyarov
-Vietnam,Consult,China
-China,Host a visit,François Hollande
-Lawyer/Attorney (Kenya),Consult,Court Judge (Kenya)
-John Kerry,Express intent to meet or negotiate,Catherine Ashton
-Media (India),Consult,Omar Abdullah
-Citizen (India),Accuse,Head of Government (India)
-China,Consult,South Korea
-Citizen (Nigeria),Criticize or denounce,Ministry (Nigeria)
-Governor (Kenya),Make an appeal or request,Citizen (Kenya)
-Catherine Ashton,Consult,John Kerry
-Xi Jinping,Consult,Barack Obama
-Iran,Sign formal agreement,China
-François Hollande,Consult,Barack Obama
-North Korea,Make a visit,South Korea
-Japan,Engage in negotiation,North Korea
-Iran,Engage in diplomatic cooperation,Iraq
-Sebastian Kurz,Consult,Ministry (Iran)
-China,Express intent to engage in diplomatic cooperation (such as policy support),Iran
-Head of Government (India),Express intent to meet or negotiate,Citizen (India)
-South Africa,Consult,China
-China,Express intent to meet or negotiate,South Korea
-John Kerry,Consult,Xi Jinping
-South Korea,Criticize or denounce,Japan
-Protester (Thailand),Make statement,Thailand
-Citizen (India),Accuse,Employee (India)
-Member of Parliament (India),Consult,Media (India)
-Catherine Ashton,Express intent to meet or negotiate,Mohammad Javad Zarif
-China,Make pessimistic comment,Japan
-Ashraf Ghani Ahmadzai,Consult,Barack Obama
-France,Engage in diplomatic cooperation,Lithuanian Armed Forces
-Japan,Express intent to cooperate,South Korea
-France,Engage in negotiation,Iran
-Citizen (Yemen),Use unconventional violence,Armed Rebel (Yemen)
-France,Consult,Canada
-Iran,Consult,Iraq
-Evangelos Venizelos,Consult,Antonis Samaras
-Iran,Engage in diplomatic cooperation,Oman
-Iraq,Engage in negotiation,John Kerry
-Mexico,Engage in diplomatic cooperation,Iran
-Japan,Express intent to meet or negotiate,South Korea
-Citizen (Nigeria),Appeal for diplomatic cooperation (such as policy support),Ministry (Nigeria)
-Government (Nigeria),Make an appeal or request,Citizen (Nigeria)
-Sergey Viktorovich Lavrov,Consult,Pham Binh Minh
-Angela Merkel,Consult,Barack Obama
-North Korea,Express intent to meet or negotiate,Japan
-Sherry Rehman,Consult,Ashraf Ghani Ahmadzai
-Abdiweli Sheikh Ahmed,Meet at a 'third' location,Amina Mohamed
-South Korea,Express intent to cooperate,Democratic Party
-Abdullah Abdullah,Consult,Barack Obama
-Thailand,Express intent to cooperate,Vietnam
-South Korea,Accuse,North Korea
-Thailand,Make statement,Protester (Thailand)
-John Kerry,Discuss by telephone,Sergey Viktorovich Lavrov
-János Martonyi,Consult,Elmar Mammadyarov
-Cabinet / Council of Ministers / Advisors (United States),Consult,Sergey Viktorovich Lavrov
-Iran,Express intent to engage in diplomatic cooperation (such as policy support),China
-Lawyer/Attorney (Philippines),Make statement,Justice Department/Ministery (Philippines)
-Benjamin Netanyahu,Consult,Cabinet / Council of Ministers / Advisors (United States)
-Ed Royce,Consult,Pavlo Klimkin
-France,Express intent to engage in diplomatic cooperation (such as policy support),China
-France,Consult,China
-Ministry (Nigeria),Make an appeal or request,Citizen (Nigeria)
-Angela Merkel,Express intent to cooperate,François Hollande
-China,Accuse,Vietnam
-John Kerry,Make statement,South Korea
-North Korea,Host a visit,China
-City Mayor (Philippines),Make statement,Philippines
-UN Security Council,Engage in negotiation,Barisan Revolusi Nasional
-Chuck Hagel,Accuse,China
-Vietnam,Engage in diplomatic cooperation,Japan
-Japan,Meet at a 'third' location,South Korea
-Barack Obama,Discuss by telephone,Benjamin Netanyahu
-Cabinet / Council of Ministers / Advisors (United States),Consult,Abdel Fattah Al-Sisi
-Sergey Viktorovich Lavrov,Discuss by telephone,Cabinet / Council of Ministers / Advisors (United States)
-François Hollande,Consult,Angela Merkel
-Barack Obama,Express intent to meet or negotiate,Xi Jinping
-Catherine Ashton,Consult,Mohammad Javad Zarif
-Barack Obama,Consult,Angela Merkel
-Citizen (India),Make an appeal or request,Election Commission (India)
-China,Consult,Tajikistan
-Interfax,Make statement,Sergey Kuzhugetovich Shoygu
-Angela Merkel,Consult,Head of Government (Ukraine)
-Citizen (International),Engage in symbolic act,Sheikh Hasina Wajed
-Mohammad Javad Zarif,Express intent to meet or negotiate,Catherine Ashton
-Japan,Consult,North Korea
-South Korea,Consult,Japan
-Citizen (India),Demand change in leadership,Head of Government (India)
-Benjamin Netanyahu,Express intent to meet or negotiate,John Kerry
-Mevlut Cavusoglu,Discuss by telephone,John Kerry
-Police (Philippines),Make statement,Criminal (Philippines)
-China,Make a visit,North Korea
-Government (Nigeria),Sign formal agreement,Academic Staff Union of Universities
-Vietnam,Express intent to engage in diplomatic cooperation (such as policy support),Mexico
-Medical Personnel (India),Criticize or denounce,Citizen (India)
-Iran,Engage in diplomatic cooperation,Kuwait
-Mahinda Rajapaksa,Express intent to cooperate,Xi Jinping
-John Kerry,Express intent to meet or negotiate,Benjamin Netanyahu
-China,Express intent to meet or negotiate,Japan
-Iran,Engage in diplomatic cooperation,Mexico
-Cabinet / Council of Ministers / Advisors (United States),Express intent to cooperate,Foreign Affairs (Russia)
-Agence France-Presse,Discuss by telephone,Riek Machar
-North Atlantic Treaty Organization,Sign formal agreement,Afghanistan
-Gjorge Ivanov,Consult,Tomislav Nikolić
-France,Express intent to meet or negotiate,China
-Court Judge (Egypt),Make an appeal or request,Lawyer/Attorney (Egypt)
-Labor Union (Bulgaria),Sign formal agreement,Business (Bulgaria)
-Iran,Engage in negotiation,Bertie Ahern
-Antonis Samaras,Express intent to meet or negotiate,Evangelos Venizelos
-Government (Nigeria),Accuse,Citizen (Nigeria)
-Citizen (Australia),Use unconventional violence,Criminal (Australia)
-Ashraf Ghani Ahmadzai,Sign formal agreement,China
-Iraq,Make statement,Iran
-Hamas,Make statement,Israeli Defense Forces
-John Kerry,Consult,Benjamin Netanyahu
-Iran,Consult,Tajikistan
-Andrea Orlando,Consult,Robert Cazanciuc
-Sergey Viktorovich Lavrov,Express intent to meet or negotiate,John Kerry
-John Kerry,Consult,Mohammad Javad Zarif
-Oman,Engage in diplomatic cooperation,Iran
-China,Express intent to cooperate,Japan
-France,Engage in diplomatic cooperation,Iran
-Barack Obama,Consult,Xi Jinping
-"Armed Gang (Palestinian Territory, Occupied)",fight with small arms and light weapons,Israeli Defense Forces
-Vietnam,Express intent to cooperate,China
-Foreign Affairs (Russia),Consult,Foreign Affairs (Syria)
-Herve Ladsous,Consult,UN Security Council
-John Kerry,Meet at a 'third' location,Benjamin Netanyahu
-François Hollande,Host a visit,China
-Barack Obama,Consult,Benjamin Netanyahu
-Ashraf Ghani Ahmadzai,Accuse,Abdullah Abdullah
-Citizen (India),Threaten,Employee (India)
-China,Express intent to meet or negotiate,Foreign Affairs (South Korea)
-China,Consult,France
-New Zealand,Sign formal agreement,China
-South Korea,Criticize or denounce,North Korea
-Iran,Host a visit,Iraq
-Angela Merkel,Make statement,Barack Obama
-Raj Thackeray,Criticize or denounce,Shiv Sena
-Government (Sudan),Make an appeal or request,Citizen (Sudan)
-Citizen (Nigeria),Criticize or denounce,Chibuike Rotimi Amaechi
-Barack Obama,Sign formal agreement,Afghanistan
-François Hollande,Discuss by telephone,Massoud Barzani
-Iran,Express intent to engage in diplomatic cooperation (such as policy support),United Arab Emirates
-Afghanistan,Consult,Kazakhstan
-Abdullah Abdullah,Sign formal agreement,Ashraf Ghani Ahmadzai
-Japan,Express intent to engage in diplomatic cooperation (such as policy support),China
-Julie Bishop,Consult,China
-Sudan,Express intent to cooperate,Vietnam
-Sergey Viktorovich Lavrov,Discuss by telephone,John Kerry
-South Korea,Express intent to meet or negotiate,Japan
-Citizen (Nigeria),Make an appeal or request,Other Authorities / Officials (Nigeria)
-Xi Jinping,Express intent to cooperate,Mahinda Rajapaksa
-Xi Jinping,Engage in negotiation,Fiji
-Head of Government (India),Make an appeal or request,Citizen (India)
-South Korea,Express intent to meet or negotiate,China
-North Korea,Express intent to meet or negotiate,South Korea
-Iran,Engage in negotiation,Barack Obama
-Police (Kenya),Accuse,Citizen (Kenya)
-Court Judge (Kenya),Consult,Lawyer/Attorney (Kenya)
-South Korea,Reject,North Korea
-Election Commission (India),Criticize or denounce,Azam Khan
-Sergey Viktorovich Lavrov,Consult,Mohammad Javad Zarif
-Citizen (India),Criticize or denounce,Company - Owner or Operator (India)
-Armed Gang (Thailand),Use unconventional violence,Citizen (Thailand)
-Barack Obama,Consult,Mohamed Ould Abdel Aziz
-Oluṣẹgun Ọbasanjọ,Make an appeal or request,Citizen (Nigeria)
-Barack Obama,Consult,Haider Al-Abadi
-South Korea,Engage in diplomatic cooperation,Japan
-Sergey Viktorovich Lavrov,Express intent to cooperate,Cabinet / Council of Ministers / Advisors (United States)
-François Hollande,Meet at a 'third' location,Barack Obama
-National Liberation Army,Express intent to cooperate,Government Delegation (Colombia)
-Iran,Engage in negotiation,France
-Japan,Make statement,South Korea
-Election Commission (India),Criticize or denounce,Citizen (India)
-Ethiopia,Consult,John Kerry
-China,Engage in diplomatic cooperation,Association of Southeast Asian Nations
-Sergey Viktorovich Lavrov,Make statement,Media (Russia)
-Chuck Hagel,Consult,Jean-Yves Le Drian
-China,Make statement,Defense / Security Ministry (China)
-Academic Staff Union of Universities,Sign formal agreement,Government (Nigeria)
-Sergey Viktorovich Lavrov,Meet at a 'third' location,Cabinet / Council of Ministers / Advisors (United States)
-Joseph Robinette Biden,Consult,Head of Government (Ukraine)
-Iran,Engage in diplomatic cooperation,United Arab Emirates
-China,Criticize or denounce,Philippines
-Emmanuel Eweta Uduaghan,Make an appeal or request,Citizen (Nigeria)
-Citizen (Kenya),Demand,Police (Kenya)
-China,Sign formal agreement,South Korea
-Military Personnel (Nigeria),Make an appeal or request,Citizen (Nigeria)
-Bangladesh Nationalist Party,Make statement,Sheikh Hasina Wajed
-Ashraf Ghani Ahmadzai,Consult,Sherry Rehman
-China,Consult,Xi Jinping
-Sergey Viktorovich Lavrov,Consult,John Kerry
-Abdel Fattah Al-Sisi,Engage in negotiation,Envoy (Saudi Arabia)
-Cabinet / Council of Ministers / Advisors (United States),Express intent to meet or negotiate,Sergey Viktorovich Lavrov
-Mohamed Ould Abdel Aziz,Consult,Barack Obama
-Cabinet / Council of Ministers / Advisors (United States),Consult,Benjamin Netanyahu
-Liu Yandong,Consult,Benjamin Netanyahu
-Benjamin Netanyahu,Consult,Likud
-Head of Government (Ukraine),Consult,Joseph Robinette Biden
-Japan,Engage in diplomatic cooperation,China
-Citizen (Yemen),Use unconventional violence,Militant (Yemen)
-South Korea,Make a visit,North Korea
-South Korea,Engage in negotiation,Japan
-Foreign Affairs (United States),Consult,Abdullah Abdullah
-Massoud Barzani,Make a visit,François Hollande
-North Korea,Consult,Japan
-Japan,Consult,France
-UN Security Council,Meet at a 'third' location,Angola
-China,Consult,Malaysia
-China,Express intent to cooperate,Vietnam
-Member of Parliament (Australia),Criticize or denounce,Citizen (Australia)
-North Korea,Accuse,South Korea
-Jean-Yves Le Drian,Consult,Chuck Hagel
-Benjamin Netanyahu,Consult,Tony Blair
-Al-Shabaab,Consult,Media Personnel (Somalia)
-Ethiopia,Consult,African Union
-Citizen (Kenya),Make an appeal or request,Uhuru Muigai Kenyatta
-South Korea,"Reject plan, agreement to settle dispute",North Korea
-Other Authorities / Officials (Mexico),Consult,Miguel Ángel Osorio Chong
-Uhuru Muigai Kenyatta,Make an appeal or request,Court Judge (Kenya)
-Angola,Meet at a 'third' location,UN Security Council
-John Kerry,Consult,Catherine Ashton
-South Korea,Make statement,Japan
-John Kerry,Engage in negotiation,Mohammad Javad Zarif
-Citizen (India),Make an appeal or request,Employee (India)
-Medical Personnel (India),Accuse,Citizen (India)
-Cabinet / Council of Ministers / Advisors (United States),Express intent to cooperate,Sergey Viktorovich Lavrov
-Iran,Criticize or denounce,Iraq
-United Arab Emirates,Express intent to engage in diplomatic cooperation (such as policy support),Iran
-Iran,Express intent to engage in diplomatic cooperation (such as policy support),Slovenia
-China,Consult,Vietnam
-Arseniy Yatsenyuk,Express intent to meet or negotiate,Joseph Robinette Biden
-Miguel Ángel Osorio Chong,Consult,Other Authorities / Officials (Mexico)
-Military (Thailand),Make an appeal or request,Citizen (Thailand)
-Afghanistan,Praise or endorse,Iran
-Alexander Stubb,Consult,Dmitry Anatolyevich Medvedev
-Government (Kenya),Demand,Citizen (Kenya)
-Governor (India),Make an appeal or request,Citizen (India)
-China,Express intent to engage in diplomatic cooperation (such as policy support),Japan
-Citizen (Thailand),Threaten,Military (Thailand)
-Government (Nigeria),Threaten,Citizen (Nigeria)
-Haider Al-Abadi,Make statement,Iraq
-Justice Department/Ministery (Philippines),Make statement,Lawyer/Attorney (Philippines)
-Pham Binh Minh,Consult,Sergey Viktorovich Lavrov
-Massoud Barzani,Host a visit,François Hollande
-Combatant (Yemen),Use unconventional violence,Citizen (Yemen)
-Lithuanian Armed Forces,Engage in diplomatic cooperation,France
-Thief (India),Physically assault,Citizen (India)
-North Korea,Criticize or denounce,UN Security Council
-Nuri al-Maliki,Consult,Sergey Viktorovich Lavrov
-Barack Obama,Meet at a 'third' location,François Hollande
-North Korea,Demand,South Korea
-Japan,Express intent to cooperate,China
-John Kerry,Express intent to cooperate,Sergey Viktorovich Lavrov
-Democratic Party,Express intent to cooperate,South Korea
-Envoy (Saudi Arabia),Engage in negotiation,Abdel Fattah Al-Sisi
-François Hollande,Make a visit,Massoud Barzani
-Xi Jinping,Consult,Head of Government (India)
-Representatives (France),Consult,Activist (France)
-John Kerry,Express intent to meet or negotiate,Mohammad Javad Zarif
-Citizen (India),Accuse,Medical Personnel (India)
-Amina Mohamed,Meet at a 'third' location,Abdiweli Sheikh Ahmed
-François Hollande,Express intent to cooperate,Angela Merkel
-Pavlo Klimkin,Consult,Ed Royce
-Sergey Viktorovich Lavrov,Consult,Catherine Ashton
-Media (Russia),Make statement,Sergey Viktorovich Lavrov
-Health Ministry (Nigeria),Make statement,Other Authorities / Officials (Nigeria)
-North Korea,"Reject plan, agreement to settle dispute",South Korea
-Japan,Express intent to meet or negotiate,North Korea
-Angela Merkel,Consult,François Hollande
-Citizen (Nigeria),Make an appeal or request,Ministry (Nigeria)
-Benjamin Netanyahu,Consult,Liu Yandong
-Iran,Sign formal agreement,Iraq
-Cabinet / Council of Ministers / Advisors (United States),Make a visit,China
-Zakir Hasanov,Consult,Irakli Alasania
-Ashraf Ghani Ahmadzai,Express intent to cooperate,Abdullah Abdullah
-Catherine Ashton,Consult,Sergey Viktorovich Lavrov
-Chongwadai,Engage in negotiation,Park Won-soon
-Israeli Defense Forces,fight with small arms and light weapons,"Armed Gang (Palestinian Territory, Occupied)"
-South Korea,Express intent to cooperate,Japan
-Vietnam,Engage in diplomatic cooperation,Cambodia
-Activist (France),Consult,Representatives (France)
-Government (Kenya),Make statement,Police (Kenya)
-Mevlut Cavusoglu,Consult,Pavlo Klimkin
-Hani Dahi,Consult,Head of Government (Egypt)
-Seyran Ohanyan,Consult,Armenia
-Business (Iran),Consult,France
-North Korea,Make a visit,China
-Citizen (Australia),Make an appeal or request,Member of Parliament (Australia)
-South Korea,Make statement,John Kerry
-Iran,Engage in diplomatic cooperation,France
-Police (Kenya),Demand,Citizen (Kenya)
-Government (Nigeria),Use conventional military force,Boko Haram
-Barack Obama,Engage in negotiation,Xi Jinping
-John Kerry,Discuss by telephone,Benjamin Netanyahu
-Citizen (Nigeria),Make an appeal or request,Court Judge (Nigeria)
-Citizen (Georgia),Express intent to meet or negotiate,France
-Iran,Consult,Catherine Ashton
-North Korea,Criticize or denounce,South Korea
-China,Express intent to engage in diplomatic cooperation (such as policy support),France
-North Korea,Express intent to cooperate,South Korea
-Pogu Bitrus,Consult,Daily Trust
-Citizen (Nigeria),Make an appeal or request,Emmanuel Eweta Uduaghan
-Police (Kenya),Make an appeal or request,Citizen (Kenya)
-Barack Obama,Meet at a 'third' location,North Atlantic Treaty Organization
-China,Host a visit,North Korea
-National Coalition for Syrian Revolutionary and Opposition Forces,Accuse,Government (Syria)
-Court Judge (Nigeria),Make an appeal or request,Citizen (Nigeria)
-Criminal (Australia),Use unconventional violence,Citizen (Australia)
-Criminal (Philippines),Make statement,Police (Philippines)
-China,Sign formal agreement,New Zealand
-Imran Khan,Consult,Raheel Sharif
-Xi Jinping,Express intent to meet or negotiate,Barack Obama
-Aero Vodochody,Sign formal agreement,Representatives (Iraq)
-UN Security Council,Consult,Herve Ladsous
-Iran,Praise or endorse,Afghanistan
-Tajikistan,Express intent to meet or negotiate,Iran
-Representatives (Iraq),Consult,Massoud Barzani
-China,Consult,Julie Bishop
-Citizen (Kenya),fight with small arms and light weapons,Police (Kenya)
-Tajikistan,Consult,Iran
-Antonis Samaras,Consult,Angela Merkel
-Citizen (India),Make an appeal or request,Head of Government (India)
-Sheikh Hasina Wajed,Consult,Ashraf Ghani Ahmadzai
-African Union,Consult,Ethiopia
-Kazakhstan,Consult,Iran
-Barack Obama,Make statement,Angela Merkel
-Barack Obama,Consult,François Hollande
-Japan,Criticize or denounce,South Korea
-Barack Obama,Consult,Abdullah Abdullah
-François Hollande,Engage in negotiation,Xi Jinping
-François Hollande,Host a visit,Massoud Barzani
-John Kerry,Engage in negotiation,Iraq
-Armenia,Consult,Seyran Ohanyan
-Cristina Fernández de Kirchner,Discuss by telephone,Pope Francis
-Iran,Engage in negotiation,John Kerry
-Pope Francis,Discuss by telephone,Cristina Fernández de Kirchner
-Catherine Ashton,Express intent to meet or negotiate,John Kerry
-China,Express intent to cooperate,South Korea
-Company - Owner or Operator (India),Criticize or denounce,Citizen (India)
-France,Express intent to meet or negotiate,Citizen (Georgia)
-Thailand,Sign formal agreement,Myanmar
-John Kerry,Express intent to meet or negotiate,Sergey Viktorovich Lavrov
-Armed Rebel (Syria),Accuse,Government (Syria)
-Sultan bin Saeed Al Mansouri,Engage in negotiation,Representatives (United States)
-Elmar Mammadyarov,Consult,Didier Burkhalter
-France,Consult,Business (Iran)
-Foreign Affairs (Libya),Consult,Foreign Affairs (United States)
-Ethiopia,Express intent to cooperate,Sudan
-Citizen (Kenya),Accuse,Police (Kenya)
-Antonis Samaras,Consult,Evangelos Venizelos
-John Kerry,Consult,Presidential Candidate (Afghanistan)
-Citizen (Kenya),Make an appeal or request,Governor (Kenya)
-Romania,Engage in diplomatic cooperation,China
-Abdullah Abdullah,Express intent to cooperate,Ashraf Ghani Ahmadzai
-Thief (India),Criticize or denounce,Citizen (India)
-Ashraf Ghani Ahmadzai,Consult,Sheikh Hasina Wajed
-South Korea,Express intent to cooperate,China
-Tony Blair,Consult,Benjamin Netanyahu
-Government (Pakistan),Consult,Pakistan Tehreek-e-Insaf
-Employee (India),Threaten,Citizen (India)
-United Arab Emirates,Engage in diplomatic cooperation,Iran
-Likud,Consult,Benjamin Netanyahu
-Member of Parliament (Iraq),Consult,Nuri al-Maliki
-Sergey Viktorovich Lavrov,Engage in negotiation,Peter Szijjarto
-Sergey Viktorovich Lavrov,Consult,Cabinet / Council of Ministers / Advisors (United States)
-Giorgio Napolitano,Consult,Abdel Fattah Al-Sisi
-Japan,Make pessimistic comment,China
-Iran,Use conventional military force,Iraq
-Cambodia,Consult,Thailand
-China,Make a visit,Cabinet / Council of Ministers / Advisors (United States)
-Nuri al-Maliki,Consult,Member of Parliament (Iraq)
-Nonaligned Movement,Meet at a 'third' location,Mohammad Javad Zarif
-Bertie Ahern,Engage in negotiation,Iran
-Citizen (Nigeria),Threaten,Government (Nigeria)
-Vietnam,Accuse,China
-Government (Syria),Accuse,National Coalition for Syrian Revolutionary and Opposition Forces
-Armed Rebel (Yemen),Use unconventional violence,Militant (Yemen)
-Peter Szijjarto,Engage in negotiation,Sergey Viktorovich Lavrov
-North Korea,Make statement,South Korea
-Citizen (Nigeria),Make an appeal or request,Adams Oshiomhole
-Iraq,Criticize or denounce,Iran
-Malaysia,Express intent to meet or negotiate,China
-Sergey Viktorovich Lavrov,Meet at a 'third' location,John Kerry
-China,Accuse,Chuck Hagel
-Citizen (Mali),Make an appeal or request,UN Security Council
-Tajikistan,Consult,China
-Sheikh Hasina Wajed,Make statement,Bangladesh Nationalist Party
-Martin Lidegaard,Express intent to cooperate,Philip Hammond
-Head of Government (Ukraine),Consult,Angela Merkel
-Police (Kenya),Make statement,Government (Kenya)
-Cabinet / Council of Ministers / Advisors (United States),Consult,Haider Al-Abadi
-Citizen (Yemen),Use unconventional violence,Combatant (Yemen)
-Adams Oshiomhole,Make an appeal or request,Citizen (Nigeria)
-Robert Cazanciuc,Consult,Andrea Orlando
-Sergey Viktorovich Lavrov,Express intent to meet or negotiate,Cabinet / Council of Ministers / Advisors (United States)
-Cabinet / Council of Ministers / Advisors (United States),Consult,Julie Bishop
-South Africa,Engage in diplomatic cooperation,Congo
-Haider Al-Abadi,Consult,Cabinet / Council of Ministers / Advisors (United States)
-Vietnam,Express intent to cooperate,Thailand
-Pope Francis,Consult,Barack Obama
-Iran,Consult,South Korea
-Dmitry Anatolyevich Medvedev,Consult,Alexander Stubb
-Lawyer/Attorney (Egypt),Make an appeal or request,Court Judge (Egypt)
-North Atlantic Treaty Organization,Meet at a 'third' location,Barack Obama
-Villager (India),Accuse,Citizen (India)
-Militant (Yemen),Use unconventional violence,Citizen (Yemen)
-Afghanistan,Sign formal agreement,Barack Obama
-Benjamin Netanyahu,Meet at a 'third' location,John Kerry
-Pavlo Klimkin,Consult,Mevlut Cavusoglu
-Ministry (Iran),Consult,Sebastian Kurz
-Militant (Yemen),Use unconventional violence,Armed Rebel (Yemen)
-Shabelle Media Network,Consult,Intellectual (Somalia)
-OMV,Sign formal agreement,Gazprom
-Member of Parliament (India),Consult,Citizen (India)
-Philippines,Make statement,City Mayor (Philippines)
-Foreign Affairs (Syria),Consult,Foreign Affairs (Russia)
-Raheel Sharif,Consult,Imran Khan
-Xi Jinping,Engage in negotiation,Barack Obama
-Afghanistan,Make statement,Iran
-John Kerry,Engage in negotiation,Iran
-Canada,Consult,France
-Mohammad Javad Zarif,Engage in negotiation,John Kerry
-UN Security Council,Express intent to meet or negotiate,Iran
-Sergey Viktorovich Lavrov,Discuss by telephone,Pavlo Klimkin
-Iran,Express intent to meet or negotiate,UN Security Council
-Citizen (Nigeria),Make an appeal or request,Oluṣẹgun Ọbasanjọ
-Iran,Make statement,Iraq
-Intellectual (Somalia),Consult,Shabelle Media Network
-Citizen (Thailand),Use unconventional violence,Armed Gang (Thailand)
-Abdullah Abdullah,Accuse,Ashraf Ghani Ahmadzai
-Iran,Express intent to meet or negotiate,Tajikistan
-Thailand,Consult,Cambodia
-Abdel Fattah Al-Sisi,Engage in negotiation,Head of Government (Ethiopia)
-Evangelos Venizelos,Express intent to meet or negotiate,Antonis Samaras
-Citizen (India),Express intent to meet or negotiate,Head of Government (India)
-Barack Obama,Express intent to cooperate,François Hollande
-Mohammad Javad Zarif,Consult,John Kerry
-Iraq,Use conventional military force,Iran
-Justice and Equality Movement,Consult,Media (Africa)
-Xi Jinping,Consult,John Kerry
-Police (Kenya),fight with small arms and light weapons,Citizen (Kenya)
-Citizen (India),Consult,Member of Parliament (India)
-South Korea,Meet at a 'third' location,Japan
-Foreign Affairs (United States),Consult,Foreign Affairs (Libya)
-Cambodia,Express intent to cooperate,Vietnam
-Sergey Viktorovich Lavrov,Express intent to cooperate,John Kerry
-France,Consult,Japan
-Mohammad Javad Zarif,Meet at a 'third' location,Nonaligned Movement
-Citizen (Nigeria),Make an appeal or request,Military Personnel (Nigeria)
-Citizen (India),Criticize or denounce,Election Commission (India)
-Pavlo Klimkin,Discuss by telephone,Sergey Viktorovich Lavrov
-Afghanistan,Sign formal agreement,North Atlantic Treaty Organization
-UN Security Council,Make an appeal or request,Citizen (Mali)
-Irakli Alasania,Consult,Zakir Hasanov
-China,Sign formal agreement,Iran
-Abdullah Abdullah,Consult,Foreign Affairs (United States)
-Xi Jinping,Consult,Head of Government (Tajikistan)
-South Korea,Sign formal agreement,Japan
-Association of Southeast Asian Nations,Engage in diplomatic cooperation,China
-Pakistan Tehreek-e-Insaf,Consult,Government (Pakistan)
-Head of Government (India),Consult,Xi Jinping
-Head of Government (Ethiopia),Engage in negotiation,Abdel Fattah Al-Sisi
-Benjamin Netanyahu,Discuss by telephone,John Kerry
-China,Express intent to meet or negotiate,France
-Riek Machar,Discuss by telephone,Agence France-Presse
-John Kerry,Discuss by telephone,Mevlut Cavusoglu
-John Kerry,Make statement,Foreign Affairs (Russia)
-Citizen (Australia),Criticize or denounce,Member of Parliament (Australia)
-François Hollande,Express intent to cooperate,Barack Obama
-Japan,Express intent to meet or negotiate,France
-Company - Owner or Operator (Italy),Consult,Silvio Berlusconi
-Canada,Engage in negotiation,France
-Head of Government (India),Demand change in leadership,Citizen (India)
-Japan,Consult,China
-Iran,Make statement,Afghanistan
-Citizen (India),Physically assault,Thief (India)
-Government (Nigeria),Consult,Head of Government (Nigeria)
-Xi Jinping,Engage in negotiation,François Hollande
-Representatives (United States),Engage in negotiation,Sultan bin Saeed Al Mansouri
-Elmar Mammadyarov,Consult,János Martonyi
-Omar Abdullah,Consult,Media (India)
-Labor Union (Nigeria),Criticize or denounce,Citizen (Nigeria)
-Lawyer/Attorney (Kenya),Make statement,Police (Kenya)
-Barack Obama,Consult,Ashraf Ghani Ahmadzai
-Military (Thailand),Threaten,Citizen (Thailand)
-Kuwait,Engage in diplomatic cooperation,Iran
-Sudan,Express intent to cooperate,Ethiopia
-Iran,Make statement,China
-Milos Zeman,Consult,Businessperson (Czech Republic)
-China,Sign formal agreement,Ashraf Ghani Ahmadzai
-Mexico,Express intent to engage in diplomatic cooperation (such as policy support),Vietnam
-Abdel Fattah Al-Sisi,Consult,Cabinet / Council of Ministers / Advisors (United States)
-Member of Parliament (Australia),Make an appeal or request,Citizen (Australia)
-China,Engage in diplomatic cooperation,Romania
-Silvio Berlusconi,Consult,Company - Owner or Operator (Italy)
-Media (Africa),Consult,Justice and Equality Movement
-Dmitry Olegovich Rogozin,Consult,Yevgeny Shevchuk
-Slovenia,Express intent to engage in diplomatic cooperation (such as policy support),Iran
-Fiji,Engage in negotiation,Xi Jinping
-Head of Government (Nigeria),Consult,Government (Nigeria)
-China,Express intent to engage in diplomatic cooperation (such as policy support),South Korea
-South Korea,Sign formal agreement,China
-Massoud Barzani,Consult,Representatives (Iraq)
-North Korea,Reject,South Korea
-Cambodia,Engage in diplomatic cooperation,Vietnam
-Yevgeny Shevchuk,Consult,Dmitry Olegovich Rogozin
-Haider Al-Abadi,Consult,Barack Obama
-Park Won-soon,Engage in negotiation,Chongwadai
-Presidential Candidate (Afghanistan),Consult,John Kerry
-Tomislav Nikolić,Consult,Gjorge Ivanov
-Japan,Sign formal agreement,South Korea
-Chibuike Rotimi Amaechi,Criticize or denounce,Citizen (Nigeria)
-France,Express intent to meet or negotiate,Japan
-Government (Syria),Accuse,Armed Rebel (Syria)
-Citizen (Nigeria),Criticize or denounce,Labor Union (Nigeria)
-Citizen (Thailand),Make an appeal or request,Military (Thailand)
-Philip Hammond,Express intent to cooperate,Martin Lidegaard
-Massoud Barzani,Discuss by telephone,François Hollande
-Businessperson (Czech Republic),Consult,Milos Zeman
-Representatives (Iraq),Sign formal agreement,Aero Vodochody
-Cabinet / Council of Ministers / Advisors (United States),Meet at a 'third' location,Sergey Viktorovich Lavrov
-Sheikh Hasina Wajed,Engage in symbolic act,Citizen (International)
-Defense / Security Ministry (China),Make statement,China
-Congo,Engage in diplomatic cooperation,South Africa
-Business (Bulgaria),Sign formal agreement,Labor Union (Bulgaria)
+head,relation,tail,time
+Arseniy Yatsenyuk,Consult,Joseph Robinette Biden,2014-07-29
+Ministry (Nigeria),Appeal for diplomatic cooperation (such as policy support),Citizen (Nigeria),2014-12-23
+Nuri al-Maliki,Make statement,Iraq,2014-06-29
+UN Security Council,Criticize or denounce,North Korea,2014-08-10
+Boko Haram,Use conventional military force,Government (Nigeria),2014-04-16
+Kazakhstan,Consult,Afghanistan,2014-04-11
+Election Commission (India),Make an appeal or request,Citizen (India),2014-04-21
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-05-08
+China,Criticize or denounce,Japan,2014-09-02
+Benjamin Netanyahu,Consult,John Kerry,2014-07-24
+Catherine Ashton,Consult,Iran,2014-04-07
+Drug Gang (Mexico),fight with small arms and light weapons,Military (Mexico),2014-03-16
+Abdel Fattah Al-Sisi,Consult,Giorgio Napolitano,2014-11-26
+Shiv Sena,Criticize or denounce,Raj Thackeray,2014-03-11
+Malaysia,Consult,China,2014-03-13
+Japan,Express intent to meet or negotiate,China,2014-11-08
+Foreign Affairs (South Korea),Express intent to meet or negotiate,China,2014-07-14
+Angela Merkel,Consult,Antonis Samaras,2014-09-23
+North Korea,Engage in negotiation,Japan,2014-08-10
+South Korea,Consult,China,2014-04-29
+Media (India),Consult,Member of Parliament (India),2014-02-17
+Uhuru Muigai Kenyatta,Make an appeal or request,Citizen (Kenya),2014-12-02
+Media Personnel (Somalia),Consult,Al-Shabaab,2014-10-21
+Citizen (India),Criticize or denounce,Thief (India),2014-09-06
+Abdullah Abdullah,Consult,Ashraf Ghani Ahmadzai,2014-07-03
+Citizen (Sudan),Make an appeal or request,Government (Sudan),2014-12-11
+Azam Khan,Criticize or denounce,Election Commission (India),2014-04-15
+Japan,Engage in diplomatic cooperation,Vietnam,2014-12-26
+John Kerry,Consult,Sergey Viktorovich Lavrov,2014-04-09
+Employee (India),Accuse,Citizen (India),2014-04-25
+John Kerry,Consult,Sergey Viktorovich Lavrov,2014-03-07
+Citizen (India),Accuse,Villager (India),2014-05-27
+Citizen (Nigeria),Accuse,Government (Nigeria),2014-05-26
+Japan,Engage in negotiation,South Korea,2014-03-20
+Daily Trust,Consult,Pogu Bitrus,2014-06-16
+Barack Obama,Consult,Pope Francis,2014-03-26
+Citizen (India),Criticize or denounce,Employee (India),2014-11-12
+France,Engage in negotiation,Canada,2014-06-06
+Vietnam,Express intent to cooperate,Cambodia,2014-06-27
+North Korea,Consult,Kim Jong-Un,2014-10-17
+Citizen (Kenya),Demand,Government (Kenya),2014-12-08
+John Kerry,Consult,Ethiopia,2014-05-05
+Foreign Affairs (Russia),Express intent to cooperate,Cabinet / Council of Ministers / Advisors (United States),2014-11-08
+China,Engage in diplomatic cooperation,Japan,2014-09-10
+Japan,Engage in negotiation,South Korea,2014-02-18
+Fumio Kishida,Make statement,John Kerry,2014-02-08
+Iran,Consult,Kazakhstan,2014-06-03
+Police (Kenya),Make statement,Lawyer/Attorney (Kenya),2014-08-26
+Benjamin Netanyahu,Discuss by telephone,Barack Obama,2014-07-12
+China,Consult,Japan,2014-07-02
+Iraq,Make statement,Nuri al-Maliki,2014-07-07
+Joseph Robinette Biden,Consult,Arseniy Yatsenyuk,2014-04-23
+South Korea,Consult,Iran,2014-05-02
+Israeli Defense Forces,Make statement,Hamas,2014-12-24
+Barisan Revolusi Nasional,Engage in negotiation,UN Security Council,2014-11-13
+Mohammad Javad Zarif,Make statement,Iran,2014-08-04
+China,Express intent to meet or negotiate,Malaysia,2014-05-03
+Cabinet / Council of Ministers / Advisors (United States),Discuss by telephone,Sergey Viktorovich Lavrov,2014-11-21
+Employee (India),Criticize or denounce,Citizen (India),2014-12-17
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-07-18
+Xi Jinping,Make optimistic comment,China,2014-07-20
+Myanmar,Sign formal agreement,Thailand,2014-05-02
+Employee (India),Make an appeal or request,Citizen (India),2014-04-04
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-10-21
+Barack Obama,Engage in negotiation,Iran,2014-05-15
+Iraq,Host a visit,Iran,2014-01-15
+China,Make statement,Iran,2014-12-04
+Court Judge (Kenya),Make an appeal or request,Uhuru Muigai Kenyatta,2014-06-18
+North Korea,Engage in negotiation,Japan,2014-07-04
+Citizen (India),Criticize or denounce,Medical Personnel (India),2014-04-11
+Philippines,Criticize or denounce,China,2014-04-01
+Head of Government (Tajikistan),Consult,Xi Jinping,2014-09-20
+Head of Government (Egypt),Consult,Hani Dahi,2014-08-25
+Other Authorities / Officials (Nigeria),Make statement,Health Ministry (Nigeria),2014-02-26
+Vietnam,Express intent to cooperate,Sudan,2014-04-17
+Citizen (India),Make an appeal or request,Governor (India),2014-12-30
+Boko Haram,Use conventional military force,Government (Nigeria),2014-10-15
+Iraq,Make statement,Haider Al-Abadi,2014-08-15
+Julie Bishop,Consult,Cabinet / Council of Ministers / Advisors (United States),2014-08-12
+Sergey Kuzhugetovich Shoygu,Make statement,Interfax,2014-03-28
+Citizen (Nigeria),Accuse,Government (Nigeria),2014-05-22
+Head of Government (India),Accuse,Citizen (India),2014-07-06
+Benjamin Netanyahu,Consult,Barack Obama,2014-02-16
+Japan,Criticize or denounce,China,2014-11-14
+Military (Mexico),fight with small arms and light weapons,Drug Gang (Mexico),2014-03-16
+Gazprom,Sign formal agreement,OMV,2014-06-27
+Kim Jong-Un,Consult,North Korea,2014-10-17
+Ashraf Ghani Ahmadzai,Sign formal agreement,Abdullah Abdullah,2014-07-14
+Government Delegation (Colombia),Express intent to cooperate,National Liberation Army,2014-09-05
+John Kerry,Meet at a 'third' location,Sergey Viktorovich Lavrov,2014-01-31
+Xi Jinping,Consult,China,2014-11-23
+Citizen (Kenya),Make an appeal or request,Police (Kenya),2014-08-01
+Iraq,Consult,Iran,2014-10-29
+Mohammad Javad Zarif,Express intent to meet or negotiate,John Kerry,2014-10-08
+Iran,Make statement,Member of Parliament (Iran),2014-11-29
+South Korea,Express intent to meet or negotiate,North Korea,2014-08-25
+Japan,Consult,South Korea,2014-09-26
+North Korea,Engage in negotiation,Japan,2014-03-05
+John Kerry,Make statement,Fumio Kishida,2014-03-23
+Iraq,Engage in diplomatic cooperation,Iran,2014-10-21
+Armed Rebel (Yemen),Use unconventional violence,Citizen (Yemen),2014-02-06
+South Korea,Express intent to engage in diplomatic cooperation (such as policy support),China,2014-02-06
+Joseph Robinette Biden,Express intent to meet or negotiate,Arseniy Yatsenyuk,2014-04-21
+Mohammad Javad Zarif,Consult,Sergey Viktorovich Lavrov,2014-04-22
+Mohammad Javad Zarif,Consult,Catherine Ashton,2014-01-26
+Iran,Make statement,Mohammad Javad Zarif,2014-03-10
+South Korea,Demand,North Korea,2014-06-30
+Sergey Viktorovich Lavrov,Consult,Nuri al-Maliki,2014-02-20
+Ashraf Ghani Ahmadzai,Consult,Abdullah Abdullah,2014-09-22
+Ministry (Nigeria),Criticize or denounce,Citizen (Nigeria),2014-11-13
+Iraq,Sign formal agreement,Iran,2014-10-25
+Arseniy Yatsenyuk,Consult,Joseph Robinette Biden,2014-03-13
+South Korea,Express intent to cooperate,North Korea,2014-02-14
+Japan,Engage in diplomatic cooperation,South Korea,2014-02-08
+Other Authorities / Officials (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-07-25
+Nuri al-Maliki,Make statement,Iraq,2014-08-13
+Foreign Affairs (Russia),Make statement,John Kerry,2014-04-13
+Armed Rebel (Yemen),Use unconventional violence,Citizen (Yemen),2014-06-19
+Member of Parliament (Iran),Make statement,Iran,2014-02-05
+China,Consult,South Africa,2014-06-03
+China,Make optimistic comment,Xi Jinping,2014-07-08
+South Korea,Make statement,North Korea,2014-07-02
+Didier Burkhalter,Consult,Elmar Mammadyarov,2014-06-03
+Vietnam,Consult,China,2014-07-12
+China,Host a visit,François Hollande,2014-02-27
+Lawyer/Attorney (Kenya),Consult,Court Judge (Kenya),2014-09-05
+China,Engage in diplomatic cooperation,Japan,2014-10-08
+John Kerry,Express intent to meet or negotiate,Catherine Ashton,2014-10-10
+Media (India),Consult,Omar Abdullah,2014-10-21
+Election Commission (India),Make an appeal or request,Citizen (India),2014-02-20
+Mohammad Javad Zarif,Consult,Catherine Ashton,2014-03-10
+Citizen (India),Accuse,Head of Government (India),2014-07-18
+Iraq,Sign formal agreement,Iran,2014-12-11
+China,Consult,South Korea,2014-06-30
+South Korea,Demand,North Korea,2014-02-06
+Citizen (Nigeria),Criticize or denounce,Ministry (Nigeria),2014-04-22
+Governor (Kenya),Make an appeal or request,Citizen (Kenya),2014-07-21
+Catherine Ashton,Consult,John Kerry,2014-05-06
+Xi Jinping,Consult,Barack Obama,2014-06-06
+China,Criticize or denounce,Japan,2014-01-22
+Iran,Sign formal agreement,China,2014-12-29
+François Hollande,Consult,Barack Obama,2014-02-11
+North Korea,Make a visit,South Korea,2014-10-07
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-09-15
+John Kerry,Meet at a 'third' location,Sergey Viktorovich Lavrov,2014-10-14
+Japan,Engage in negotiation,North Korea,2014-07-19
+Japan,Engage in diplomatic cooperation,South Korea,2014-09-16
+Iran,Engage in diplomatic cooperation,Iraq,2014-12-29
+Sebastian Kurz,Consult,Ministry (Iran),2014-03-19
+China,Express intent to engage in diplomatic cooperation (such as policy support),Iran,2014-05-07
+Head of Government (India),Express intent to meet or negotiate,Citizen (India),2014-11-25
+South Africa,Consult,China,2014-07-17
+Governor (Kenya),Make an appeal or request,Citizen (Kenya),2014-03-18
+China,Express intent to meet or negotiate,South Korea,2014-05-22
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-07-07
+John Kerry,Consult,Xi Jinping,2014-02-17
+Japan,Engage in negotiation,South Korea,2014-08-25
+South Korea,Criticize or denounce,Japan,2014-01-22
+Other Authorities / Officials (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-02-04
+Protester (Thailand),Make statement,Thailand,2014-04-08
+Citizen (India),Accuse,Employee (India),2014-06-25
+Member of Parliament (India),Consult,Media (India),2014-10-05
+China,Consult,South Korea,2014-06-17
+Catherine Ashton,Express intent to meet or negotiate,Mohammad Javad Zarif,2014-04-02
+China,Make pessimistic comment,Japan,2014-05-15
+Ashraf Ghani Ahmadzai,Consult,Barack Obama,2014-07-26
+France,Engage in diplomatic cooperation,Lithuanian Armed Forces,2014-07-29
+Japan,Engage in negotiation,North Korea,2014-03-29
+Japan,Express intent to cooperate,South Korea,2014-09-11
+France,Engage in negotiation,Iran,2014-11-20
+Citizen (Yemen),Use unconventional violence,Armed Rebel (Yemen),2014-06-28
+France,Consult,Canada,2014-09-16
+Iran,Consult,Iraq,2014-12-09
+Evangelos Venizelos,Consult,Antonis Samaras,2014-01-25
+Iran,Engage in diplomatic cooperation,Oman,2014-01-29
+Iraq,Engage in negotiation,John Kerry,2014-06-23
+Japan,Consult,South Korea,2014-03-20
+Benjamin Netanyahu,Consult,John Kerry,2014-06-17
+Mexico,Engage in diplomatic cooperation,Iran,2014-09-13
+Japan,Express intent to meet or negotiate,South Korea,2014-03-16
+Citizen (Nigeria),Appeal for diplomatic cooperation (such as policy support),Ministry (Nigeria),2014-03-27
+Government (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-09-01
+Sergey Viktorovich Lavrov,Consult,Pham Binh Minh,2014-05-16
+Angela Merkel,Consult,Barack Obama,2014-07-03
+North Korea,Express intent to meet or negotiate,Japan,2014-08-04
+Sherry Rehman,Consult,Ashraf Ghani Ahmadzai,2014-11-16
+Abdiweli Sheikh Ahmed,Meet at a 'third' location,Amina Mohamed,2014-03-31
+Azam Khan,Criticize or denounce,Election Commission (India),2014-05-12
+South Korea,Express intent to cooperate,Democratic Party,2014-03-03
+Abdullah Abdullah,Consult,Barack Obama,2014-07-08
+Thailand,Express intent to cooperate,Vietnam,2014-12-22
+South Korea,Accuse,North Korea,2014-05-16
+Thailand,Make statement,Protester (Thailand),2014-02-07
+John Kerry,Discuss by telephone,Sergey Viktorovich Lavrov,2014-03-14
+Nuri al-Maliki,Make statement,Iraq,2014-08-11
+János Martonyi,Consult,Elmar Mammadyarov,2014-04-29
+Cabinet / Council of Ministers / Advisors (United States),Consult,Sergey Viktorovich Lavrov,2014-11-23
+Iran,Express intent to engage in diplomatic cooperation (such as policy support),China,2014-11-17
+Lawyer/Attorney (Philippines),Make statement,Justice Department/Ministery (Philippines),2014-08-04
+Benjamin Netanyahu,Consult,Cabinet / Council of Ministers / Advisors (United States),2014-01-05
+Ed Royce,Consult,Pavlo Klimkin,2014-07-31
+France,Express intent to engage in diplomatic cooperation (such as policy support),China,2014-10-20
+France,Consult,China,2014-03-24
+Ministry (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-10-03
+Angela Merkel,Express intent to cooperate,François Hollande,2014-05-10
+China,Accuse,Vietnam,2014-05-30
+John Kerry,Make statement,South Korea,2014-02-10
+Mohammad Javad Zarif,Make statement,Iran,2014-11-25
+Mohammad Javad Zarif,Make statement,Iran,2014-12-30
+North Korea,Host a visit,China,2014-07-01
+City Mayor (Philippines),Make statement,Philippines,2014-09-06
+UN Security Council,Engage in negotiation,Barisan Revolusi Nasional,2014-11-13
+Chuck Hagel,Accuse,China,2014-06-11
+Vietnam,Engage in diplomatic cooperation,Japan,2014-05-16
+Japan,Meet at a 'third' location,South Korea,2014-11-16
+China,Consult,Japan,2014-04-29
+Barack Obama,Discuss by telephone,Benjamin Netanyahu,2014-07-30
+Cabinet / Council of Ministers / Advisors (United States),Consult,Abdel Fattah Al-Sisi,2014-06-26
+Cabinet / Council of Ministers / Advisors (United States),Discuss by telephone,Sergey Viktorovich Lavrov,2014-11-23
+Sergey Viktorovich Lavrov,Discuss by telephone,Cabinet / Council of Ministers / Advisors (United States),2014-04-11
+Mohammad Javad Zarif,Make statement,Iran,2014-10-30
+François Hollande,Consult,Angela Merkel,2014-02-20
+Barack Obama,Express intent to meet or negotiate,Xi Jinping,2014-11-06
+Catherine Ashton,Consult,Mohammad Javad Zarif,2014-11-29
+Barack Obama,Consult,Angela Merkel,2014-07-04
+Catherine Ashton,Consult,Mohammad Javad Zarif,2014-07-12
+Citizen (India),Make an appeal or request,Election Commission (India),2014-05-09
+China,Consult,Tajikistan,2014-05-20
+Interfax,Make statement,Sergey Kuzhugetovich Shoygu,2014-07-09
+Angela Merkel,Consult,Head of Government (Ukraine),2014-12-14
+South Korea,Express intent to engage in diplomatic cooperation (such as policy support),China,2014-05-26
+Citizen (International),Engage in symbolic act,Sheikh Hasina Wajed,2014-09-24
+Sergey Kuzhugetovich Shoygu,Make statement,Interfax,2014-12-02
+Mohammad Javad Zarif,Express intent to meet or negotiate,Catherine Ashton,2014-03-07
+Japan,Consult,North Korea,2014-03-04
+South Korea,Consult,Japan,2014-12-29
+Citizen (India),Demand change in leadership,Head of Government (India),2014-09-19
+Philippines,Criticize or denounce,China,2014-11-13
+Benjamin Netanyahu,Express intent to meet or negotiate,John Kerry,2014-11-14
+Mevlut Cavusoglu,Discuss by telephone,John Kerry,2014-11-06
+Police (Philippines),Make statement,Criminal (Philippines),2014-12-27
+China,Make a visit,North Korea,2014-07-21
+Government (Nigeria),Sign formal agreement,Academic Staff Union of Universities,2014-04-11
+Vietnam,Express intent to engage in diplomatic cooperation (such as policy support),Mexico,2014-10-23
+Medical Personnel (India),Criticize or denounce,Citizen (India),2014-09-18
+North Korea,Engage in negotiation,Japan,2014-04-04
+Iran,Engage in diplomatic cooperation,Kuwait,2014-06-02
+Philippines,Criticize or denounce,China,2014-01-11
+Mahinda Rajapaksa,Express intent to cooperate,Xi Jinping,2014-09-16
+John Kerry,Express intent to meet or negotiate,Benjamin Netanyahu,2014-12-13
+China,Express intent to meet or negotiate,Japan,2014-11-08
+Iran,Engage in diplomatic cooperation,Mexico,2014-12-03
+Cabinet / Council of Ministers / Advisors (United States),Express intent to cooperate,Foreign Affairs (Russia),2014-11-08
+Agence France-Presse,Discuss by telephone,Riek Machar,2014-01-10
+Israeli Defense Forces,Make statement,Hamas,2014-08-06
+North Atlantic Treaty Organization,Sign formal agreement,Afghanistan,2014-10-02
+Gjorge Ivanov,Consult,Tomislav Nikolić,2014-07-15
+North Korea,Make a visit,South Korea,2014-09-17
+France,Express intent to meet or negotiate,China,2014-11-24
+Citizen (Nigeria),Accuse,Government (Nigeria),2014-01-07
+Court Judge (Egypt),Make an appeal or request,Lawyer/Attorney (Egypt),2014-03-22
+Labor Union (Bulgaria),Sign formal agreement,Business (Bulgaria),2014-10-10
+Iran,Engage in negotiation,Bertie Ahern,2014-02-04
+Antonis Samaras,Express intent to meet or negotiate,Evangelos Venizelos,2014-11-17
+Government (Nigeria),Accuse,Citizen (Nigeria),2014-10-13
+Citizen (Australia),Use unconventional violence,Criminal (Australia),2014-02-18
+Mohammad Javad Zarif,Make statement,Iran,2014-04-15
+Ashraf Ghani Ahmadzai,Sign formal agreement,China,2014-11-01
+Iraq,Make statement,Iran,2014-06-18
+Member of Parliament (Iran),Make statement,Iran,2014-10-27
+Police (Philippines),Make statement,Criminal (Philippines),2014-02-24
+Hamas,Make statement,Israeli Defense Forces,2014-07-21
+John Kerry,Consult,Benjamin Netanyahu,2014-04-10
+Iran,Consult,Tajikistan,2014-03-26
+Benjamin Netanyahu,Consult,Cabinet / Council of Ministers / Advisors (United States),2014-01-08
+Andrea Orlando,Consult,Robert Cazanciuc,2014-05-16
+Sergey Viktorovich Lavrov,Express intent to meet or negotiate,John Kerry,2014-03-12
+Japan,Engage in negotiation,North Korea,2014-05-30
+John Kerry,Consult,Mohammad Javad Zarif,2014-09-27
+Oman,Engage in diplomatic cooperation,Iran,2014-11-30
+China,Express intent to cooperate,Japan,2014-11-12
+France,Engage in diplomatic cooperation,Iran,2014-02-07
+Barack Obama,Consult,Xi Jinping,2014-06-06
+Citizen (Nigeria),Accuse,Government (Nigeria),2014-03-21
+"Armed Gang (Palestinian Territory, Occupied)",fight with small arms and light weapons,Israeli Defense Forces,2014-06-03
+Japan,Consult,South Korea,2014-11-13
+Vietnam,Express intent to cooperate,China,2014-12-26
+John Kerry,Express intent to meet or negotiate,Benjamin Netanyahu,2014-07-23
+Foreign Affairs (Russia),Consult,Foreign Affairs (Syria),2014-10-17
+Citizen (India),Accuse,Employee (India),2014-03-14
+Herve Ladsous,Consult,UN Security Council,2014-03-07
+John Kerry,Meet at a 'third' location,Benjamin Netanyahu,2014-12-16
+François Hollande,Host a visit,China,2014-03-26
+Barack Obama,Consult,Benjamin Netanyahu,2014-07-18
+Ashraf Ghani Ahmadzai,Accuse,Abdullah Abdullah,2014-09-27
+Citizen (India),Threaten,Employee (India),2014-04-25
+China,Express intent to meet or negotiate,Foreign Affairs (South Korea),2014-09-05
+Barack Obama,Consult,Angela Merkel,2014-03-05
+China,Consult,France,2014-03-19
+New Zealand,Sign formal agreement,China,2014-11-17
+Head of Government (India),Express intent to meet or negotiate,Citizen (India),2014-12-16
+South Korea,Criticize or denounce,North Korea,2014-01-29
+China,Consult,South Africa,2014-07-23
+Iran,Host a visit,Iraq,2014-10-21
+Angela Merkel,Make statement,Barack Obama,2014-07-19
+Raj Thackeray,Criticize or denounce,Shiv Sena,2014-09-29
+Government (Sudan),Make an appeal or request,Citizen (Sudan),2014-08-25
+Japan,Engage in negotiation,South Korea,2014-07-28
+Antonis Samaras,Express intent to meet or negotiate,Evangelos Venizelos,2014-05-26
+Citizen (Nigeria),Criticize or denounce,Chibuike Rotimi Amaechi,2014-10-23
+Barack Obama,Sign formal agreement,Afghanistan,2014-01-27
+Japan,Express intent to meet or negotiate,South Korea,2014-04-03
+François Hollande,Discuss by telephone,Massoud Barzani,2014-08-07
+Iran,Express intent to engage in diplomatic cooperation (such as policy support),United Arab Emirates,2014-04-14
+Afghanistan,Consult,Kazakhstan,2014-04-11
+Abdullah Abdullah,Sign formal agreement,Ashraf Ghani Ahmadzai,2014-09-29
+Japan,Express intent to engage in diplomatic cooperation (such as policy support),China,2014-09-10
+Arseniy Yatsenyuk,Consult,Joseph Robinette Biden,2014-03-01
+Julie Bishop,Consult,China,2014-11-06
+Sudan,Express intent to cooperate,Vietnam,2014-04-17
+Sergey Viktorovich Lavrov,Discuss by telephone,John Kerry,2014-05-31
+John Kerry,Discuss by telephone,Sergey Viktorovich Lavrov,2014-03-08
+South Korea,Express intent to meet or negotiate,Japan,2014-02-25
+Citizen (Nigeria),Make an appeal or request,Other Authorities / Officials (Nigeria),2014-11-10
+Xi Jinping,Express intent to cooperate,Mahinda Rajapaksa,2014-09-17
+Xi Jinping,Engage in negotiation,Fiji,2014-11-22
+Head of Government (India),Make an appeal or request,Citizen (India),2014-03-28
+South Korea,Express intent to meet or negotiate,China,2014-09-11
+North Korea,Express intent to meet or negotiate,South Korea,2014-02-03
+Iran,Engage in negotiation,Barack Obama,2014-05-25
+Police (Kenya),Accuse,Citizen (Kenya),2014-09-17
+North Korea,Engage in negotiation,Japan,2014-06-19
+Court Judge (Kenya),Consult,Lawyer/Attorney (Kenya),2014-10-17
+Armed Rebel (Yemen),Use unconventional violence,Citizen (Yemen),2014-10-17
+South Korea,Reject,North Korea,2014-02-13
+Election Commission (India),Criticize or denounce,Azam Khan,2014-04-16
+Xi Jinping,Consult,Barack Obama,2014-11-16
+Mohammad Javad Zarif,Consult,Catherine Ashton,2014-02-20
+Sergey Viktorovich Lavrov,Consult,Mohammad Javad Zarif,2014-04-23
+Cabinet / Council of Ministers / Advisors (United States),Consult,Sergey Viktorovich Lavrov,2014-11-24
+Citizen (India),Criticize or denounce,Company - Owner or Operator (India),2014-06-13
+Armed Gang (Thailand),Use unconventional violence,Citizen (Thailand),2014-05-27
+Barack Obama,Consult,Mohamed Ould Abdel Aziz,2014-08-07
+Oluṣẹgun Ọbasanjọ,Make an appeal or request,Citizen (Nigeria),2014-06-30
+Barack Obama,Consult,Haider Al-Abadi,2014-09-25
+Mohammad Javad Zarif,Express intent to meet or negotiate,John Kerry,2014-11-07
+South Korea,Engage in diplomatic cooperation,Japan,2014-12-29
+John Kerry,Discuss by telephone,Sergey Viktorovich Lavrov,2014-01-20
+Sergey Viktorovich Lavrov,Express intent to cooperate,Cabinet / Council of Ministers / Advisors (United States),2014-02-28
+François Hollande,Meet at a 'third' location,Barack Obama,2014-05-18
+National Liberation Army,Express intent to cooperate,Government Delegation (Colombia),2014-09-05
+Iran,Engage in negotiation,France,2014-11-21
+Japan,Make statement,South Korea,2014-10-02
+Israeli Defense Forces,Make statement,Hamas,2014-01-20
+Election Commission (India),Criticize or denounce,Citizen (India),2014-12-23
+Ethiopia,Consult,John Kerry,2014-05-05
+China,Engage in diplomatic cooperation,Association of Southeast Asian Nations,2014-04-21
+Xi Jinping,Consult,Barack Obama,2014-07-17
+Sergey Viktorovich Lavrov,Make statement,Media (Russia),2014-08-18
+Iran,Engage in diplomatic cooperation,Iraq,2014-11-19
+Chuck Hagel,Consult,Jean-Yves Le Drian,2014-07-16
+Head of Government (India),Accuse,Citizen (India),2014-05-30
+Iraq,Sign formal agreement,Iran,2014-05-18
+Nuri al-Maliki,Make statement,Iraq,2014-03-11
+China,Make statement,Defense / Security Ministry (China),2014-07-31
+Academic Staff Union of Universities,Sign formal agreement,Government (Nigeria),2014-12-10
+Sergey Viktorovich Lavrov,Meet at a 'third' location,Cabinet / Council of Ministers / Advisors (United States),2014-12-03
+Joseph Robinette Biden,Consult,Head of Government (Ukraine),2014-04-22
+Iran,Engage in diplomatic cooperation,United Arab Emirates,2014-04-18
+China,Criticize or denounce,Philippines,2014-06-09
+Emmanuel Eweta Uduaghan,Make an appeal or request,Citizen (Nigeria),2014-05-19
+Citizen (Kenya),Demand,Police (Kenya),2014-10-06
+Iran,Engage in diplomatic cooperation,Kuwait,2014-11-27
+China,Sign formal agreement,South Korea,2014-11-10
+Military Personnel (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-07-28
+Bangladesh Nationalist Party,Make statement,Sheikh Hasina Wajed,2014-08-25
+Ashraf Ghani Ahmadzai,Consult,Sherry Rehman,2014-11-16
+Iraq,Sign formal agreement,Iran,2014-11-26
+China,Consult,Xi Jinping,2014-11-23
+Sergey Viktorovich Lavrov,Consult,John Kerry,2014-12-14
+China,Express intent to meet or negotiate,South Korea,2014-09-06
+China,Express intent to cooperate,Japan,2014-09-03
+Abdel Fattah Al-Sisi,Engage in negotiation,Envoy (Saudi Arabia),2014-12-21
+Cabinet / Council of Ministers / Advisors (United States),Express intent to meet or negotiate,Sergey Viktorovich Lavrov,2014-12-02
+Angela Merkel,Consult,Barack Obama,2014-06-23
+Mohamed Ould Abdel Aziz,Consult,Barack Obama,2014-08-07
+Japan,Consult,South Korea,2014-07-27
+City Mayor (Philippines),Make statement,Philippines,2014-01-23
+Cabinet / Council of Ministers / Advisors (United States),Consult,Benjamin Netanyahu,2014-07-23
+Sergey Viktorovich Lavrov,Discuss by telephone,John Kerry,2014-06-22
+Head of Government (India),Make an appeal or request,Citizen (India),2014-02-19
+Liu Yandong,Consult,Benjamin Netanyahu,2014-05-20
+Benjamin Netanyahu,Consult,Likud,2014-11-12
+Head of Government (Ukraine),Consult,Joseph Robinette Biden,2014-11-21
+Japan,Engage in diplomatic cooperation,China,2014-03-08
+Citizen (Yemen),Use unconventional violence,Militant (Yemen),2014-09-19
+South Korea,Make a visit,North Korea,2014-07-02
+Catherine Ashton,Consult,Mohammad Javad Zarif,2014-02-01
+Iraq,Make statement,Nuri al-Maliki,2014-06-24
+South Korea,Engage in negotiation,Japan,2014-11-11
+Foreign Affairs (United States),Consult,Abdullah Abdullah,2014-07-03
+Massoud Barzani,Make a visit,François Hollande,2014-05-25
+Ashraf Ghani Ahmadzai,Sign formal agreement,Abdullah Abdullah,2014-09-15
+North Korea,Consult,Japan,2014-03-21
+Japan,Consult,France,2014-04-11
+UN Security Council,Meet at a 'third' location,Angola,2014-07-05
+China,Consult,Malaysia,2014-08-28
+China,Express intent to cooperate,Vietnam,2014-11-10
+Member of Parliament (Australia),Criticize or denounce,Citizen (Australia),2014-10-17
+North Korea,Accuse,South Korea,2014-03-31
+Iraq,Make statement,Nuri al-Maliki,2014-04-14
+Jean-Yves Le Drian,Consult,Chuck Hagel,2014-02-11
+Benjamin Netanyahu,Consult,Tony Blair,2014-07-26
+Mohammad Javad Zarif,Make statement,Iran,2014-07-08
+Al-Shabaab,Consult,Media Personnel (Somalia),2014-10-21
+Cabinet / Council of Ministers / Advisors (United States),Consult,Sergey Viktorovich Lavrov,2014-11-08
+Ethiopia,Consult,African Union,2014-11-08
+Citizen (Kenya),Make an appeal or request,Uhuru Muigai Kenyatta,2014-07-07
+Catherine Ashton,Express intent to meet or negotiate,Mohammad Javad Zarif,2014-03-15
+Citizen (Nigeria),Accuse,Government (Nigeria),2014-06-16
+South Korea,"Reject plan, agreement to settle dispute",North Korea,2014-07-01
+Other Authorities / Officials (Mexico),Consult,Miguel Ángel Osorio Chong,2014-01-13
+Uhuru Muigai Kenyatta,Make an appeal or request,Court Judge (Kenya),2014-09-08
+South Korea,Demand,North Korea,2014-06-19
+Angola,Meet at a 'third' location,UN Security Council,2014-07-05
+South Korea,Consult,China,2014-01-21
+John Kerry,Consult,Catherine Ashton,2014-11-09
+South Korea,Make statement,Japan,2014-06-20
+John Kerry,Discuss by telephone,Sergey Viktorovich Lavrov,2014-12-30
+John Kerry,Engage in negotiation,Mohammad Javad Zarif,2014-09-22
+Citizen (India),Make an appeal or request,Employee (India),2014-10-30
+Medical Personnel (India),Accuse,Citizen (India),2014-09-28
+Cabinet / Council of Ministers / Advisors (United States),Express intent to cooperate,Sergey Viktorovich Lavrov,2014-07-19
+Nuri al-Maliki,Make statement,Iraq,2014-07-26
+Iran,Criticize or denounce,Iraq,2014-06-19
+South Korea,Demand,North Korea,2014-05-30
+Oman,Engage in diplomatic cooperation,Iran,2014-12-01
+United Arab Emirates,Express intent to engage in diplomatic cooperation (such as policy support),Iran,2014-04-14
+Citizen (India),Make an appeal or request,Governor (India),2014-07-25
+Iran,Express intent to engage in diplomatic cooperation (such as policy support),Slovenia,2014-05-11
+China,Consult,Vietnam,2014-12-27
+Arseniy Yatsenyuk,Express intent to meet or negotiate,Joseph Robinette Biden,2014-10-30
+Miguel Ángel Osorio Chong,Consult,Other Authorities / Officials (Mexico),2014-01-13
+South Korea,Express intent to engage in diplomatic cooperation (such as policy support),China,2014-05-02
+Sergey Viktorovich Lavrov,Discuss by telephone,John Kerry,2014-05-03
+Military (Thailand),Make an appeal or request,Citizen (Thailand),2014-06-15
+South Korea,Consult,Japan,2014-03-30
+Afghanistan,Praise or endorse,Iran,2014-08-18
+Alexander Stubb,Consult,Dmitry Anatolyevich Medvedev,2014-07-15
+Other Authorities / Officials (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-12-29
+Government (Kenya),Demand,Citizen (Kenya),2014-02-28
+Herve Ladsous,Consult,UN Security Council,2014-12-09
+Governor (India),Make an appeal or request,Citizen (India),2014-10-02
+Head of Government (India),Make an appeal or request,Citizen (India),2014-02-26
+Citizen (India),Make an appeal or request,Election Commission (India),2014-06-17
+China,Express intent to engage in diplomatic cooperation (such as policy support),Japan,2014-12-24
+Antonis Samaras,Express intent to meet or negotiate,Evangelos Venizelos,2014-12-09
+Citizen (Thailand),Threaten,Military (Thailand),2014-05-22
+Government (Nigeria),Threaten,Citizen (Nigeria),2014-02-20
+UN Security Council,Criticize or denounce,North Korea,2014-03-31
+China,Express intent to engage in diplomatic cooperation (such as policy support),Japan,2014-11-27
+Government (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-07-18
+Haider Al-Abadi,Make statement,Iraq,2014-10-22
+Justice Department/Ministery (Philippines),Make statement,Lawyer/Attorney (Philippines),2014-05-16
+Pham Binh Minh,Consult,Sergey Viktorovich Lavrov,2014-04-17
+Mohammad Javad Zarif,Make statement,Iran,2014-03-28
+Massoud Barzani,Host a visit,François Hollande,2014-09-13
+Combatant (Yemen),Use unconventional violence,Citizen (Yemen),2014-10-17
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-08-22
+Lithuanian Armed Forces,Engage in diplomatic cooperation,France,2014-07-29
+Iran,Sign formal agreement,China,2014-12-17
+City Mayor (Philippines),Make statement,Philippines,2014-03-22
+Thief (India),Physically assault,Citizen (India),2014-07-15
+South Korea,Engage in diplomatic cooperation,Japan,2014-03-09
+North Korea,Criticize or denounce,UN Security Council,2014-08-14
+Nuri al-Maliki,Consult,Sergey Viktorovich Lavrov,2014-02-21
+Barack Obama,Meet at a 'third' location,François Hollande,2014-05-18
+Nuri al-Maliki,Make statement,Iraq,2014-07-08
+Citizen (Yemen),Use unconventional violence,Militant (Yemen),2014-09-01
+North Korea,Demand,South Korea,2014-01-21
+Japan,Express intent to cooperate,China,2014-08-09
+Iran,Sign formal agreement,China,2014-07-04
+Ashraf Ghani Ahmadzai,Consult,Abdullah Abdullah,2014-07-03
+John Kerry,Express intent to cooperate,Sergey Viktorovich Lavrov,2014-03-05
+Police (Philippines),Make statement,Criminal (Philippines),2014-07-10
+Democratic Party,Express intent to cooperate,South Korea,2014-03-03
+Envoy (Saudi Arabia),Engage in negotiation,Abdel Fattah Al-Sisi,2014-12-21
+François Hollande,Make a visit,Massoud Barzani,2014-09-12
+Xi Jinping,Consult,Head of Government (India),2014-07-25
+China,Consult,South Korea,2014-04-12
+Representatives (France),Consult,Activist (France),2014-06-27
+John Kerry,Express intent to cooperate,Sergey Viktorovich Lavrov,2014-08-09
+France,Consult,China,2014-07-08
+John Kerry,Express intent to meet or negotiate,Mohammad Javad Zarif,2014-11-03
+Citizen (India),Accuse,Medical Personnel (India),2014-03-26
+Amina Mohamed,Meet at a 'third' location,Abdiweli Sheikh Ahmed,2014-03-31
+Governor (Kenya),Make an appeal or request,Citizen (Kenya),2014-12-01
+François Hollande,Express intent to cooperate,Angela Merkel,2014-10-18
+John Kerry,Consult,Sergey Viktorovich Lavrov,2014-03-16
+South Africa,Consult,China,2014-07-07
+Pavlo Klimkin,Consult,Ed Royce,2014-07-31
+Sergey Viktorovich Lavrov,Consult,Catherine Ashton,2014-02-21
+Media (Russia),Make statement,Sergey Viktorovich Lavrov,2014-07-21
+Government (Nigeria),Threaten,Citizen (Nigeria),2014-08-04
+Health Ministry (Nigeria),Make statement,Other Authorities / Officials (Nigeria),2014-08-26
+Foreign Affairs (Russia),Make statement,John Kerry,2014-07-29
+John Kerry,Consult,Catherine Ashton,2014-03-06
+North Korea,"Reject plan, agreement to settle dispute",South Korea,2014-06-12
+Uhuru Muigai Kenyatta,Make an appeal or request,Citizen (Kenya),2014-10-10
+Armed Rebel (Yemen),Use unconventional violence,Citizen (Yemen),2014-05-20
+Citizen (Sudan),Make an appeal or request,Government (Sudan),2014-04-24
+Japan,Express intent to meet or negotiate,North Korea,2014-02-28
+Angela Merkel,Consult,François Hollande,2014-10-17
+Citizen (Nigeria),Make an appeal or request,Ministry (Nigeria),2014-12-29
+Benjamin Netanyahu,Consult,Liu Yandong,2014-05-20
+Iran,Sign formal agreement,Iraq,2014-02-26
+Antonis Samaras,Express intent to meet or negotiate,Evangelos Venizelos,2014-09-30
+Cabinet / Council of Ministers / Advisors (United States),Make a visit,China,2014-02-14
+John Kerry,Consult,Mohammad Javad Zarif,2014-11-23
+John Kerry,Consult,Sergey Viktorovich Lavrov,2014-09-25
+Zakir Hasanov,Consult,Irakli Alasania,2014-08-18
+Sergey Viktorovich Lavrov,Consult,Catherine Ashton,2014-04-08
+Japan,Express intent to meet or negotiate,South Korea,2014-11-20
+Ashraf Ghani Ahmadzai,Express intent to cooperate,Abdullah Abdullah,2014-09-09
+Catherine Ashton,Consult,Sergey Viktorovich Lavrov,2014-04-08
+Chongwadai,Engage in negotiation,Park Won-soon,2014-07-23
+Israeli Defense Forces,fight with small arms and light weapons,"Armed Gang (Palestinian Territory, Occupied)",2014-06-02
+Sergey Viktorovich Lavrov,Discuss by telephone,John Kerry,2014-07-27
+Citizen (India),Make an appeal or request,Employee (India),2014-07-10
+South Korea,Express intent to cooperate,Japan,2014-08-10
+Vietnam,Engage in diplomatic cooperation,Cambodia,2014-12-25
+China,Express intent to meet or negotiate,South Korea,2014-11-03
+Activist (France),Consult,Representatives (France),2014-06-27
+Citizen (Kenya),Make an appeal or request,Police (Kenya),2014-04-10
+Government (Kenya),Make statement,Police (Kenya),2014-11-02
+Mevlut Cavusoglu,Consult,Pavlo Klimkin,2014-07-19
+Ministry (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-02-07
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-02-27
+Citizen (Sudan),Make an appeal or request,Government (Sudan),2014-09-21
+Hani Dahi,Consult,Head of Government (Egypt),2014-08-25
+Seyran Ohanyan,Consult,Armenia,2014-08-04
+Citizen (Yemen),Use unconventional violence,Armed Rebel (Yemen),2014-10-27
+Business (Iran),Consult,France,2014-02-06
+North Korea,Make a visit,China,2014-03-03
+Cabinet / Council of Ministers / Advisors (United States),Consult,Sergey Viktorovich Lavrov,2014-06-06
+Cabinet / Council of Ministers / Advisors (United States),Consult,Benjamin Netanyahu,2014-07-03
+Catherine Ashton,Consult,Mohammad Javad Zarif,2014-09-19
+Barack Obama,Consult,Angela Merkel,2014-05-02
+Ministry (Nigeria),Appeal for diplomatic cooperation (such as policy support),Citizen (Nigeria),2014-03-27
+Citizen (Australia),Make an appeal or request,Member of Parliament (Australia),2014-12-03
+South Korea,Make statement,John Kerry,2014-02-14
+Iran,Engage in diplomatic cooperation,France,2014-02-10
+Police (Kenya),Demand,Citizen (Kenya),2014-04-24
+Government (Nigeria),Use conventional military force,Boko Haram,2014-08-18
+Barack Obama,Engage in negotiation,Xi Jinping,2014-10-19
+John Kerry,Discuss by telephone,Benjamin Netanyahu,2014-03-19
+Military Personnel (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-09-23
+John Kerry,Consult,Xi Jinping,2014-02-15
+Citizen (Nigeria),Make an appeal or request,Court Judge (Nigeria),2014-08-04
+Citizen (Georgia),Express intent to meet or negotiate,France,2014-05-13
+Iran,Consult,Catherine Ashton,2014-03-09
+North Korea,Criticize or denounce,South Korea,2014-12-30
+John Kerry,Discuss by telephone,Sergey Viktorovich Lavrov,2014-03-07
+China,Express intent to engage in diplomatic cooperation (such as policy support),France,2014-10-20
+North Korea,Express intent to cooperate,South Korea,2014-10-04
+Barack Obama,Express intent to meet or negotiate,Xi Jinping,2014-11-03
+Benjamin Netanyahu,Consult,John Kerry,2014-03-20
+Pogu Bitrus,Consult,Daily Trust,2014-05-13
+Citizen (Nigeria),Make an appeal or request,Emmanuel Eweta Uduaghan,2014-09-01
+Ministry (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-09-22
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-04-28
+Government (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-06-17
+Police (Kenya),Make an appeal or request,Citizen (Kenya),2014-11-24
+Barack Obama,Meet at a 'third' location,North Atlantic Treaty Organization,2014-09-06
+Barack Obama,Engage in negotiation,Iran,2014-01-10
+China,Host a visit,North Korea,2014-03-19
+National Coalition for Syrian Revolutionary and Opposition Forces,Accuse,Government (Syria),2014-02-16
+China,Host a visit,North Korea,2014-03-05
+Court Judge (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-10-23
+South Korea,Express intent to meet or negotiate,Japan,2014-04-13
+Citizen (India),Threaten,Employee (India),2014-12-12
+Criminal (Australia),Use unconventional violence,Citizen (Australia),2014-05-16
+Criminal (Philippines),Make statement,Police (Philippines),2014-04-12
+China,Sign formal agreement,New Zealand,2014-11-13
+Iran,Consult,Catherine Ashton,2014-04-07
+Imran Khan,Consult,Raheel Sharif,2014-08-29
+China,Criticize or denounce,Japan,2014-12-23
+Xi Jinping,Express intent to meet or negotiate,Barack Obama,2014-07-14
+Aero Vodochody,Sign formal agreement,Representatives (Iraq),2014-04-08
+UN Security Council,Consult,Herve Ladsous,2014-03-06
+Iran,Praise or endorse,Afghanistan,2014-01-18
+South Korea,Express intent to meet or negotiate,Japan,2014-07-18
+Citizen (Yemen),Use unconventional violence,Armed Rebel (Yemen),2014-10-22
+Japan,Engage in diplomatic cooperation,South Korea,2014-03-21
+Tajikistan,Express intent to meet or negotiate,Iran,2014-09-10
+Representatives (Iraq),Consult,Massoud Barzani,2014-06-18
+John Kerry,Consult,Benjamin Netanyahu,2014-07-09
+Ministry (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-10-20
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-03-12
+Catherine Ashton,Express intent to meet or negotiate,Mohammad Javad Zarif,2014-08-26
+China,Consult,Julie Bishop,2014-11-06
+Catherine Ashton,Consult,Mohammad Javad Zarif,2014-03-09
+Citizen (Kenya),fight with small arms and light weapons,Police (Kenya),2014-06-05
+South Korea,Express intent to meet or negotiate,Japan,2014-07-12
+Tajikistan,Consult,Iran,2014-08-28
+Antonis Samaras,Consult,Angela Merkel,2014-09-23
+Citizen (India),Make an appeal or request,Head of Government (India),2014-01-26
+Sheikh Hasina Wajed,Consult,Ashraf Ghani Ahmadzai,2014-11-30
+African Union,Consult,Ethiopia,2014-11-03
+Kazakhstan,Consult,Iran,2014-04-01
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-10-31
+Sergey Viktorovich Lavrov,Discuss by telephone,John Kerry,2014-12-30
+Barack Obama,Make statement,Angela Merkel,2014-01-31
+Barack Obama,Consult,François Hollande,2014-03-02
+Japan,Criticize or denounce,South Korea,2014-01-21
+Barack Obama,Consult,Abdullah Abdullah,2014-10-22
+Japan,Engage in negotiation,South Korea,2014-11-11
+François Hollande,Engage in negotiation,Xi Jinping,2014-03-26
+City Mayor (Philippines),Make statement,Philippines,2014-03-25
+François Hollande,Host a visit,Massoud Barzani,2014-05-25
+John Kerry,Express intent to meet or negotiate,Mohammad Javad Zarif,2014-07-13
+China,Express intent to cooperate,Japan,2014-10-10
+John Kerry,Engage in negotiation,Iraq,2014-06-23
+Abdullah Abdullah,Consult,Barack Obama,2014-09-21
+Mohammad Javad Zarif,Make statement,Iran,2014-06-21
+Boko Haram,Use conventional military force,Government (Nigeria),2014-08-18
+Armenia,Consult,Seyran Ohanyan,2014-08-04
+Catherine Ashton,Express intent to meet or negotiate,Mohammad Javad Zarif,2014-05-26
+Cristina Fernández de Kirchner,Discuss by telephone,Pope Francis,2014-08-20
+John Kerry,Consult,Sergey Viktorovich Lavrov,2014-09-24
+Mohammad Javad Zarif,Make statement,Iran,2014-05-15
+Iran,Engage in negotiation,John Kerry,2014-02-09
+Pope Francis,Discuss by telephone,Cristina Fernández de Kirchner,2014-08-20
+Catherine Ashton,Express intent to meet or negotiate,John Kerry,2014-10-10
+China,Express intent to cooperate,South Korea,2014-12-18
+China,Criticize or denounce,Japan,2014-01-15
+Company - Owner or Operator (India),Criticize or denounce,Citizen (India),2014-01-25
+John Kerry,Discuss by telephone,Sergey Viktorovich Lavrov,2014-05-09
+Sergey Viktorovich Lavrov,Discuss by telephone,John Kerry,2014-03-18
+Citizen (Yemen),Use unconventional violence,Armed Rebel (Yemen),2014-09-06
+France,Express intent to meet or negotiate,Citizen (Georgia),2014-05-13
+Thailand,Sign formal agreement,Myanmar,2014-10-06
+John Kerry,Express intent to meet or negotiate,Sergey Viktorovich Lavrov,2014-01-13
+Mohammad Javad Zarif,Consult,Catherine Ashton,2014-11-30
+Armed Rebel (Syria),Accuse,Government (Syria),2014-02-10
+Sultan bin Saeed Al Mansouri,Engage in negotiation,Representatives (United States),2014-09-30
+Elmar Mammadyarov,Consult,Didier Burkhalter,2014-06-03
+Japan,Engage in negotiation,North Korea,2014-05-21
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-12-29
+South Korea,Make a visit,North Korea,2014-08-29
+France,Consult,Business (Iran),2014-02-04
+Foreign Affairs (Libya),Consult,Foreign Affairs (United States),2014-08-05
+Ethiopia,Express intent to cooperate,Sudan,2014-10-20
+North Korea,Accuse,South Korea,2014-02-10
+South Korea,Accuse,North Korea,2014-04-07
+China,Consult,South Korea,2014-04-28
+Citizen (Kenya),Accuse,Police (Kenya),2014-11-10
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-03-25
+Antonis Samaras,Consult,Evangelos Venizelos,2014-07-14
+Sergey Viktorovich Lavrov,Consult,John Kerry,2014-10-25
+John Kerry,Consult,Presidential Candidate (Afghanistan),2014-07-13
+Citizen (Kenya),Make an appeal or request,Governor (Kenya),2014-03-17
+Romania,Engage in diplomatic cooperation,China,2014-09-29
+Abdullah Abdullah,Express intent to cooperate,Ashraf Ghani Ahmadzai,2014-07-14
+Thief (India),Criticize or denounce,Citizen (India),2014-04-13
+Ashraf Ghani Ahmadzai,Consult,Sheikh Hasina Wajed,2014-11-30
+South Korea,Express intent to meet or negotiate,China,2014-10-16
+South Korea,Express intent to cooperate,China,2014-09-21
+Tony Blair,Consult,Benjamin Netanyahu,2014-07-26
+Angela Merkel,Consult,Barack Obama,2014-05-07
+Citizen (Nigeria),Make an appeal or request,Other Authorities / Officials (Nigeria),2014-07-02
+Government (Pakistan),Consult,Pakistan Tehreek-e-Insaf,2014-05-15
+Employee (India),Threaten,Citizen (India),2014-05-14
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-11-10
+United Arab Emirates,Engage in diplomatic cooperation,Iran,2014-05-31
+Police (Philippines),Make statement,Criminal (Philippines),2014-05-06
+Barack Obama,Consult,François Hollande,2014-10-13
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-02-19
+City Mayor (Philippines),Make statement,Philippines,2014-12-05
+Likud,Consult,Benjamin Netanyahu,2014-06-23
+Member of Parliament (Iraq),Consult,Nuri al-Maliki,2014-10-14
+Japan,Express intent to meet or negotiate,South Korea,2014-07-19
+Sergey Viktorovich Lavrov,Engage in negotiation,Peter Szijjarto,2014-11-19
+Abdullah Abdullah,Express intent to cooperate,Ashraf Ghani Ahmadzai,2014-07-21
+John Kerry,Consult,Catherine Ashton,2014-07-13
+Sergey Viktorovich Lavrov,Consult,Cabinet / Council of Ministers / Advisors (United States),2014-03-30
+Mohammad Javad Zarif,Make statement,Iran,2014-07-20
+Giorgio Napolitano,Consult,Abdel Fattah Al-Sisi,2014-11-25
+Citizen (Kenya),Accuse,Police (Kenya),2014-06-19
+Japan,Make statement,South Korea,2014-03-28
+Jean-Yves Le Drian,Consult,Chuck Hagel,2014-07-16
+Japan,Make pessimistic comment,China,2014-08-11
+Head of Government (India),Express intent to meet or negotiate,Citizen (India),2014-03-20
+Iran,Use conventional military force,Iraq,2014-12-09
+Cambodia,Consult,Thailand,2014-08-31
+Thief (India),Physically assault,Citizen (India),2014-01-30
+Citizen (India),Accuse,Medical Personnel (India),2014-01-20
+North Korea,Accuse,South Korea,2014-04-07
+China,Make a visit,Cabinet / Council of Ministers / Advisors (United States),2014-02-14
+North Korea,Express intent to meet or negotiate,Japan,2014-06-29
+Nuri al-Maliki,Consult,Member of Parliament (Iraq),2014-10-14
+Nonaligned Movement,Meet at a 'third' location,Mohammad Javad Zarif,2014-05-30
+Evangelos Venizelos,Consult,Antonis Samaras,2014-10-07
+Japan,Engage in negotiation,South Korea,2014-07-02
+Bertie Ahern,Engage in negotiation,Iran,2014-02-07
+Citizen (Nigeria),Threaten,Government (Nigeria),2014-06-17
+Vietnam,Accuse,China,2014-05-05
+Government (Syria),Accuse,National Coalition for Syrian Revolutionary and Opposition Forces,2014-01-26
+Armed Rebel (Yemen),Use unconventional violence,Militant (Yemen),2014-12-15
+Benjamin Netanyahu,Consult,Barack Obama,2014-03-08
+Peter Szijjarto,Engage in negotiation,Sergey Viktorovich Lavrov,2014-11-21
+North Korea,Make statement,South Korea,2014-05-19
+Citizen (Nigeria),Make an appeal or request,Adams Oshiomhole,2014-01-29
+Iraq,Criticize or denounce,Iran,2014-09-12
+Japan,Express intent to meet or negotiate,North Korea,2014-06-30
+John Kerry,Consult,Sergey Viktorovich Lavrov,2014-12-17
+Philippines,Criticize or denounce,China,2014-05-16
+Malaysia,Express intent to meet or negotiate,China,2014-05-04
+Sergey Viktorovich Lavrov,Meet at a 'third' location,John Kerry,2014-11-08
+Barack Obama,Consult,Benjamin Netanyahu,2014-10-03
+China,Accuse,Chuck Hagel,2014-06-01
+Citizen (Mali),Make an appeal or request,UN Security Council,2014-10-10
+Sergey Viktorovich Lavrov,Discuss by telephone,John Kerry,2014-05-30
+Citizen (Nigeria),Accuse,Government (Nigeria),2014-07-23
+Tajikistan,Consult,China,2014-12-11
+Japan,Express intent to meet or negotiate,South Korea,2014-11-23
+Haider Al-Abadi,Make statement,Iraq,2014-08-14
+Sheikh Hasina Wajed,Make statement,Bangladesh Nationalist Party,2014-09-28
+Martin Lidegaard,Express intent to cooperate,Philip Hammond,2014-09-19
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-09-23
+John Kerry,Meet at a 'third' location,Sergey Viktorovich Lavrov,2014-01-13
+Head of Government (Ukraine),Consult,Angela Merkel,2014-06-30
+Police (Kenya),Make statement,Government (Kenya),2014-06-19
+Medical Personnel (India),Accuse,Citizen (India),2014-02-07
+Cabinet / Council of Ministers / Advisors (United States),Consult,Haider Al-Abadi,2014-09-11
+Citizen (Yemen),Use unconventional violence,Combatant (Yemen),2014-10-20
+Adams Oshiomhole,Make an appeal or request,Citizen (Nigeria),2014-05-14
+Cabinet / Council of Ministers / Advisors (United States),Express intent to meet or negotiate,Sergey Viktorovich Lavrov,2014-09-24
+Robert Cazanciuc,Consult,Andrea Orlando,2014-05-16
+Sergey Viktorovich Lavrov,Consult,Cabinet / Council of Ministers / Advisors (United States),2014-11-20
+China,Express intent to engage in diplomatic cooperation (such as policy support),Iran,2014-03-06
+Sergey Viktorovich Lavrov,Express intent to meet or negotiate,John Kerry,2014-01-10
+John Kerry,Consult,Sergey Viktorovich Lavrov,2014-03-29
+Sergey Viktorovich Lavrov,Express intent to meet or negotiate,Cabinet / Council of Ministers / Advisors (United States),2014-03-24
+Cabinet / Council of Ministers / Advisors (United States),Consult,Julie Bishop,2014-08-11
+China,Consult,Japan,2014-11-16
+South Africa,Engage in diplomatic cooperation,Congo,2014-04-17
+Haider Al-Abadi,Consult,Cabinet / Council of Ministers / Advisors (United States),2014-09-10
+Nuri al-Maliki,Make statement,Iraq,2014-01-12
+Barack Obama,Express intent to meet or negotiate,Xi Jinping,2014-07-14
+Vietnam,Express intent to cooperate,Thailand,2014-07-17
+Election Commission (India),Make an appeal or request,Citizen (India),2014-03-10
+François Hollande,Express intent to cooperate,Angela Merkel,2014-12-17
+Pope Francis,Consult,Barack Obama,2014-03-26
+Mohammad Javad Zarif,Make statement,Iran,2014-01-06
+Cabinet / Council of Ministers / Advisors (United States),Express intent to cooperate,Sergey Viktorovich Lavrov,2014-03-31
+Iran,Consult,South Korea,2014-07-09
+Dmitry Anatolyevich Medvedev,Consult,Alexander Stubb,2014-07-15
+China,Express intent to meet or negotiate,Japan,2014-09-06
+Iran,Engage in negotiation,Barack Obama,2014-01-10
+South Korea,Make statement,North Korea,2014-04-30
+Barack Obama,Consult,Angela Merkel,2014-07-03
+Ashraf Ghani Ahmadzai,Consult,Abdullah Abdullah,2014-07-16
+Lawyer/Attorney (Egypt),Make an appeal or request,Court Judge (Egypt),2014-02-16
+North Atlantic Treaty Organization,Meet at a 'third' location,Barack Obama,2014-09-03
+Villager (India),Accuse,Citizen (India),2014-10-14
+Militant (Yemen),Use unconventional violence,Citizen (Yemen),2014-09-19
+Other Authorities / Officials (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-10-16
+Japan,Consult,South Korea,2014-11-16
+John Kerry,Express intent to meet or negotiate,Sergey Viktorovich Lavrov,2014-12-13
+Police (Kenya),Make an appeal or request,Citizen (Kenya),2014-09-20
+Afghanistan,Sign formal agreement,Barack Obama,2014-01-27
+Benjamin Netanyahu,Meet at a 'third' location,John Kerry,2014-11-22
+Pavlo Klimkin,Consult,Mevlut Cavusoglu,2014-07-19
+South Korea,Engage in diplomatic cooperation,Japan,2014-07-16
+Ministry (Iran),Consult,Sebastian Kurz,2014-03-19
+South Korea,Reject,North Korea,2014-01-22
+Iran,Engage in negotiation,Barack Obama,2014-04-12
+Cabinet / Council of Ministers / Advisors (United States),Consult,Sergey Viktorovich Lavrov,2014-09-26
+François Hollande,Consult,Barack Obama,2014-10-15
+China,Express intent to cooperate,South Korea,2014-09-03
+Catherine Ashton,Consult,Mohammad Javad Zarif,2014-07-03
+Member of Parliament (Australia),Criticize or denounce,Citizen (Australia),2014-10-03
+China,Express intent to cooperate,South Korea,2014-12-09
+South Korea,Express intent to meet or negotiate,China,2014-02-17
+Militant (Yemen),Use unconventional violence,Armed Rebel (Yemen),2014-10-15
+Shabelle Media Network,Consult,Intellectual (Somalia),2014-08-13
+Xi Jinping,Consult,Barack Obama,2014-02-21
+OMV,Sign formal agreement,Gazprom,2014-07-01
+Armed Rebel (Yemen),Use unconventional violence,Citizen (Yemen),2014-01-28
+Government (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-03-11
+Member of Parliament (India),Consult,Citizen (India),2014-11-18
+Sergey Viktorovich Lavrov,Express intent to meet or negotiate,John Kerry,2014-12-14
+Sergey Viktorovich Lavrov,Consult,Mohammad Javad Zarif,2014-09-12
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-04-03
+François Hollande,Meet at a 'third' location,Barack Obama,2014-05-16
+Barack Obama,Consult,Angela Merkel,2014-08-09
+Philippines,Make statement,City Mayor (Philippines),2014-09-21
+Foreign Affairs (Syria),Consult,Foreign Affairs (Russia),2014-12-10
+North Korea,Make a visit,South Korea,2014-09-03
+Raheel Sharif,Consult,Imran Khan,2014-08-28
+Xi Jinping,Engage in negotiation,Barack Obama,2014-10-18
+Xi Jinping,Consult,China,2014-12-25
+Afghanistan,Make statement,Iran,2014-02-19
+John Kerry,Engage in negotiation,Iran,2014-02-09
+Canada,Consult,France,2014-03-25
+South Korea,Express intent to meet or negotiate,China,2014-02-10
+Mohammad Javad Zarif,Engage in negotiation,John Kerry,2014-07-15
+Member of Parliament (Iran),Make statement,Iran,2014-11-02
+North Korea,Criticize or denounce,South Korea,2014-11-28
+UN Security Council,Express intent to meet or negotiate,Iran,2014-01-28
+Sergey Viktorovich Lavrov,Consult,John Kerry,2014-02-22
+South Korea,Express intent to meet or negotiate,Japan,2014-12-29
+Sergey Viktorovich Lavrov,Discuss by telephone,Pavlo Klimkin,2014-08-14
+Citizen (India),Make an appeal or request,Governor (India),2014-09-09
+Iran,Express intent to meet or negotiate,UN Security Council,2014-02-12
+Citizen (Nigeria),Make an appeal or request,Oluṣẹgun Ọbasanjọ,2014-10-06
+North Korea,Engage in negotiation,Japan,2014-10-04
+Japan,Express intent to meet or negotiate,China,2014-06-30
+Iran,Make statement,Iraq,2014-12-07
+Intellectual (Somalia),Consult,Shabelle Media Network,2014-08-13
+Citizen (Thailand),Use unconventional violence,Armed Gang (Thailand),2014-02-03
+Abdullah Abdullah,Accuse,Ashraf Ghani Ahmadzai,2014-06-23
+Cabinet / Council of Ministers / Advisors (United States),Make a visit,China,2014-02-17
+John Kerry,Consult,Benjamin Netanyahu,2014-04-02
+Iran,Express intent to meet or negotiate,Tajikistan,2014-08-26
+Cabinet / Council of Ministers / Advisors (United States),Consult,Benjamin Netanyahu,2014-01-02
+Abdullah Abdullah,Express intent to cooperate,Ashraf Ghani Ahmadzai,2014-07-27
+Thailand,Consult,Cambodia,2014-08-31
+South Korea,Accuse,North Korea,2014-12-20
+Abdel Fattah Al-Sisi,Engage in negotiation,Head of Government (Ethiopia),2014-06-29
+Evangelos Venizelos,Express intent to meet or negotiate,Antonis Samaras,2014-09-14
+South Korea,Reject,North Korea,2014-04-14
+Citizen (India),Express intent to meet or negotiate,Head of Government (India),2014-12-16
+Iraq,Make statement,Nuri al-Maliki,2014-07-02
+Mohammad Javad Zarif,Consult,Catherine Ashton,2014-11-20
+Barack Obama,Express intent to cooperate,François Hollande,2014-06-20
+Mohammad Javad Zarif,Consult,Sergey Viktorovich Lavrov,2014-01-13
+Mohammad Javad Zarif,Consult,John Kerry,2014-07-13
+Abdullah Abdullah,Accuse,Ashraf Ghani Ahmadzai,2014-09-15
+Iraq,Use conventional military force,Iran,2014-05-08
+Justice and Equality Movement,Consult,Media (Africa),2014-06-26
+Xi Jinping,Consult,John Kerry,2014-02-14
+Police (Kenya),fight with small arms and light weapons,Citizen (Kenya),2014-08-26
+Citizen (India),Consult,Member of Parliament (India),2014-11-18
+South Korea,Meet at a 'third' location,Japan,2014-05-31
+Sergey Viktorovich Lavrov,Consult,Cabinet / Council of Ministers / Advisors (United States),2014-10-14
+John Kerry,Meet at a 'third' location,Sergey Viktorovich Lavrov,2014-04-02
+Foreign Affairs (United States),Consult,Foreign Affairs (Libya),2014-08-05
+Cambodia,Express intent to cooperate,Vietnam,2014-06-25
+Police (Philippines),Make statement,Criminal (Philippines),2014-02-15
+Sergey Viktorovich Lavrov,Express intent to cooperate,John Kerry,2014-04-10
+John Kerry,Express intent to cooperate,Sergey Viktorovich Lavrov,2014-08-10
+Citizen (India),Make an appeal or request,Governor (India),2014-06-17
+France,Consult,Japan,2014-04-11
+Mohammad Javad Zarif,Meet at a 'third' location,Nonaligned Movement,2014-05-30
+Vietnam,Express intent to cooperate,Thailand,2014-11-27
+Citizen (Nigeria),Make an appeal or request,Military Personnel (Nigeria),2014-01-21
+Iraq,Engage in diplomatic cooperation,Iran,2014-06-02
+Police (Kenya),fight with small arms and light weapons,Citizen (Kenya),2014-08-06
+Mohammad Javad Zarif,Consult,Sergey Viktorovich Lavrov,2014-04-23
+Police (Philippines),Make statement,Criminal (Philippines),2014-08-04
+Citizen (Kenya),Demand,Government (Kenya),2014-03-17
+Sergey Viktorovich Lavrov,Consult,John Kerry,2014-03-16
+Citizen (India),Criticize or denounce,Election Commission (India),2014-05-12
+Citizen (India),Accuse,Medical Personnel (India),2014-04-28
+Pavlo Klimkin,Discuss by telephone,Sergey Viktorovich Lavrov,2014-08-14
+Citizen (Nigeria),Accuse,Government (Nigeria),2014-12-20
+Antonis Samaras,Express intent to meet or negotiate,Evangelos Venizelos,2014-10-07
+Antonis Samaras,Consult,Evangelos Venizelos,2014-11-27
+Afghanistan,Sign formal agreement,North Atlantic Treaty Organization,2014-12-12
+Ministry (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-08-19
+Mohammad Javad Zarif,Make statement,Iran,2014-12-29
+UN Security Council,Make an appeal or request,Citizen (Mali),2014-10-17
+North Korea,Criticize or denounce,South Korea,2014-01-23
+Iraq,Engage in diplomatic cooperation,Iran,2014-12-31
+Tajikistan,Express intent to meet or negotiate,Iran,2014-06-13
+Irakli Alasania,Consult,Zakir Hasanov,2014-02-27
+City Mayor (Philippines),Make statement,Philippines,2014-12-07
+John Kerry,Consult,Benjamin Netanyahu,2014-03-19
+China,Sign formal agreement,Iran,2014-01-23
+North Korea,Express intent to meet or negotiate,Japan,2014-10-22
+Abdullah Abdullah,Consult,Foreign Affairs (United States),2014-11-16
+Xi Jinping,Consult,Head of Government (Tajikistan),2014-09-20
+South Korea,Sign formal agreement,Japan,2014-12-29
+France,Engage in negotiation,Iran,2014-09-22
+Catherine Ashton,Consult,Mohammad Javad Zarif,2014-09-14
+Sergey Kuzhugetovich Shoygu,Make statement,Interfax,2014-09-16
+Sergey Viktorovich Lavrov,Discuss by telephone,Cabinet / Council of Ministers / Advisors (United States),2014-11-21
+Association of Southeast Asian Nations,Engage in diplomatic cooperation,China,2014-06-02
+Head of Government (India),Make an appeal or request,Citizen (India),2014-12-03
+Iraq,Engage in diplomatic cooperation,Iran,2014-02-25
+Member of Parliament (Iran),Make statement,Iran,2014-10-25
+Pakistan Tehreek-e-Insaf,Consult,Government (Pakistan),2014-05-15
+Head of Government (Ukraine),Consult,Joseph Robinette Biden,2014-07-03
+China,Express intent to cooperate,South Korea,2014-07-20
+Thailand,Express intent to cooperate,Vietnam,2014-06-27
+China,Consult,France,2014-06-18
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-04-14
+Head of Government (India),Consult,Xi Jinping,2014-07-01
+Head of Government (Ethiopia),Engage in negotiation,Abdel Fattah Al-Sisi,2014-06-29
+Barack Obama,Consult,Benjamin Netanyahu,2014-03-12
+Iran,Criticize or denounce,Iraq,2014-07-06
+Benjamin Netanyahu,Discuss by telephone,John Kerry,2014-03-20
+North Korea,Make a visit,South Korea,2014-10-13
+Mohammad Javad Zarif,Consult,Catherine Ashton,2014-07-13
+Police (Philippines),Make statement,Criminal (Philippines),2014-07-05
+China,Express intent to meet or negotiate,France,2014-02-04
+Riek Machar,Discuss by telephone,Agence France-Presse,2014-01-10
+Ministry (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-04-22
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-10-24
+Sergey Viktorovich Lavrov,Discuss by telephone,Cabinet / Council of Ministers / Advisors (United States),2014-03-20
+John Kerry,Discuss by telephone,Mevlut Cavusoglu,2014-11-06
+John Kerry,Make statement,Foreign Affairs (Russia),2014-02-27
+Xi Jinping,Express intent to meet or negotiate,Barack Obama,2014-03-18
+Philippines,Criticize or denounce,China,2014-11-12
+Citizen (Australia),Criticize or denounce,Member of Parliament (Australia),2014-11-26
+François Hollande,Express intent to cooperate,Barack Obama,2014-07-08
+Japan,Express intent to meet or negotiate,France,2014-07-29
+China,Express intent to meet or negotiate,South Korea,2014-09-11
+Benjamin Netanyahu,Consult,John Kerry,2014-11-15
+Company - Owner or Operator (Italy),Consult,Silvio Berlusconi,2014-01-22
+Mohammad Javad Zarif,Make statement,Iran,2014-04-24
+François Hollande,Consult,Barack Obama,2014-07-29
+Canada,Engage in negotiation,France,2014-06-05
+Head of Government (India),Demand change in leadership,Citizen (India),2014-09-19
+Japan,Consult,China,2014-12-27
+Catherine Ashton,Consult,Mohammad Javad Zarif,2014-07-27
+Iraq,Make statement,Nuri al-Maliki,2014-09-15
+Iran,Make statement,Afghanistan,2014-11-21
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-10-14
+Citizen (India),Physically assault,Thief (India),2014-11-28
+Government (Nigeria),Consult,Head of Government (Nigeria),2014-06-16
+Xi Jinping,Engage in negotiation,François Hollande,2014-03-26
+Representatives (United States),Engage in negotiation,Sultan bin Saeed Al Mansouri,2014-09-30
+Elmar Mammadyarov,Consult,János Martonyi,2014-04-29
+Pakistan Tehreek-e-Insaf,Consult,Government (Pakistan),2014-12-26
+China,Make statement,Iran,2014-03-21
+North Korea,Accuse,South Korea,2014-07-18
+Omar Abdullah,Consult,Media (India),2014-10-21
+Labor Union (Nigeria),Criticize or denounce,Citizen (Nigeria),2014-01-29
+Lawyer/Attorney (Kenya),Make statement,Police (Kenya),2014-06-27
+Abdullah Abdullah,Express intent to cooperate,Ashraf Ghani Ahmadzai,2014-08-09
+South Korea,Express intent to cooperate,Japan,2014-09-26
+Barack Obama,Consult,Ashraf Ghani Ahmadzai,2014-10-22
+Iran,Engage in negotiation,France,2014-09-12
+Military (Thailand),Threaten,Citizen (Thailand),2014-05-24
+UN Security Council,Criticize or denounce,North Korea,2014-07-20
+Kuwait,Engage in diplomatic cooperation,Iran,2014-11-12
+John Kerry,Discuss by telephone,Sergey Viktorovich Lavrov,2014-04-10
+China,Consult,France,2014-04-07
+Sudan,Express intent to cooperate,Ethiopia,2014-08-29
+Iran,Make statement,China,2014-05-28
+China,Express intent to cooperate,Japan,2014-04-26
+Nuri al-Maliki,Make statement,Iraq,2014-01-09
+Milos Zeman,Consult,Businessperson (Czech Republic),2014-07-08
+China,Sign formal agreement,Ashraf Ghani Ahmadzai,2014-11-05
+Sudan,Express intent to cooperate,Ethiopia,2014-09-05
+Mexico,Express intent to engage in diplomatic cooperation (such as policy support),Vietnam,2014-10-23
+Abdel Fattah Al-Sisi,Consult,Cabinet / Council of Ministers / Advisors (United States),2014-06-26
+John Kerry,Consult,Sergey Viktorovich Lavrov,2014-10-03
+France,Consult,China,2014-06-20
+Japan,Express intent to cooperate,South Korea,2014-09-17
+Sergey Viktorovich Lavrov,Express intent to cooperate,Cabinet / Council of Ministers / Advisors (United States),2014-10-15
+Iraq,Sign formal agreement,Iran,2014-09-28
+Japan,Engage in diplomatic cooperation,China,2014-11-11
+Member of Parliament (Australia),Make an appeal or request,Citizen (Australia),2014-11-24
+France,Consult,China,2014-05-05
+North Korea,Make statement,South Korea,2014-04-05
+China,Engage in diplomatic cooperation,Romania,2014-09-29
+Silvio Berlusconi,Consult,Company - Owner or Operator (Italy),2014-01-21
+Media (Africa),Consult,Justice and Equality Movement,2014-10-02
+Dmitry Olegovich Rogozin,Consult,Yevgeny Shevchuk,2014-08-22
+Slovenia,Express intent to engage in diplomatic cooperation (such as policy support),Iran,2014-04-26
+Ethiopia,Express intent to cooperate,Sudan,2014-05-19
+Fiji,Engage in negotiation,Xi Jinping,2014-11-22
+Head of Government (Nigeria),Consult,Government (Nigeria),2014-06-16
+China,Express intent to engage in diplomatic cooperation (such as policy support),South Korea,2014-07-02
+Citizen (Nigeria),Make an appeal or request,Government (Nigeria),2014-07-28
+South Korea,Sign formal agreement,China,2014-11-17
+North Korea,Accuse,South Korea,2014-01-24
+Iraq,Engage in diplomatic cooperation,Iran,2014-07-26
+Abdullah Abdullah,Consult,Ashraf Ghani Ahmadzai,2014-10-23
+Sergey Viktorovich Lavrov,Discuss by telephone,John Kerry,2014-12-12
+Ethiopia,Consult,John Kerry,2014-05-03
+South Korea,Criticize or denounce,North Korea,2014-01-04
+Massoud Barzani,Consult,Representatives (Iraq),2014-05-19
+Japan,Express intent to meet or negotiate,South Korea,2014-11-21
+John Kerry,Consult,Sergey Viktorovich Lavrov,2014-05-08
+North Korea,Reject,South Korea,2014-10-20
+China,Express intent to meet or negotiate,France,2014-02-03
+Barack Obama,Consult,François Hollande,2014-03-08
+Barack Obama,Consult,Haider Al-Abadi,2014-09-24
+Cambodia,Engage in diplomatic cooperation,Vietnam,2014-12-25
+Yevgeny Shevchuk,Consult,Dmitry Olegovich Rogozin,2014-08-22
+Haider Al-Abadi,Consult,Barack Obama,2014-09-24
+Head of Government (Ukraine),Consult,Angela Merkel,2014-05-29
+Sergey Viktorovich Lavrov,Express intent to meet or negotiate,John Kerry,2014-01-05
+Citizen (India),Physically assault,Thief (India),2014-04-08
+City Mayor (Philippines),Make statement,Philippines,2014-08-04
+China,Sign formal agreement,South Korea,2014-11-17
+Emmanuel Eweta Uduaghan,Make an appeal or request,Citizen (Nigeria),2014-09-30
+Xi Jinping,Express intent to meet or negotiate,Barack Obama,2014-08-28
+Park Won-soon,Engage in negotiation,Chongwadai,2014-07-24
+Presidential Candidate (Afghanistan),Consult,John Kerry,2014-07-10
+Tomislav Nikolić,Consult,Gjorge Ivanov,2014-07-15
+Japan,Sign formal agreement,South Korea,2014-12-29
+South Korea,Demand,North Korea,2014-09-15
+John Kerry,Meet at a 'third' location,Sergey Viktorovich Lavrov,2014-12-16
+Mohammad Javad Zarif,Make statement,Iran,2014-09-18
+South Korea,Consult,China,2014-07-14
+Chibuike Rotimi Amaechi,Criticize or denounce,Citizen (Nigeria),2014-01-31
+Barack Obama,Consult,Angela Merkel,2014-07-15
+Catherine Ashton,Express intent to meet or negotiate,Mohammad Javad Zarif,2014-03-11
+France,Express intent to meet or negotiate,Japan,2014-06-04
+Government (Syria),Accuse,Armed Rebel (Syria),2014-05-27
+Iran,Engage in diplomatic cooperation,Mexico,2014-09-13
+South Korea,Make a visit,North Korea,2014-02-11
+Citizen (Nigeria),Criticize or denounce,Labor Union (Nigeria),2014-06-27
+Citizen (Thailand),Make an appeal or request,Military (Thailand),2014-06-06
+Philip Hammond,Express intent to cooperate,Martin Lidegaard,2014-09-19
+Barack Obama,Consult,Xi Jinping,2014-07-15
+Citizen (Nigeria),Accuse,Government (Nigeria),2014-12-01
+Armed Rebel (Yemen),Use unconventional violence,Citizen (Yemen),2014-06-21
+Massoud Barzani,Discuss by telephone,François Hollande,2014-08-09
+China,Express intent to cooperate,South Korea,2014-05-26
+Businessperson (Czech Republic),Consult,Milos Zeman,2014-07-08
+Abdullah Abdullah,Consult,Barack Obama,2014-07-09
+Cabinet / Council of Ministers / Advisors (United States),Discuss by telephone,Sergey Viktorovich Lavrov,2014-04-22
+China,Consult,South Africa,2014-04-22
+Representatives (Iraq),Sign formal agreement,Aero Vodochody,2014-04-07
+Cabinet / Council of Ministers / Advisors (United States),Meet at a 'third' location,Sergey Viktorovich Lavrov,2014-06-09
+France,Engage in diplomatic cooperation,Iran,2014-09-15
+Mohammad Javad Zarif,Make statement,Iran,2014-03-18
+Sheikh Hasina Wajed,Engage in symbolic act,Citizen (International),2014-09-24
+Cabinet / Council of Ministers / Advisors (United States),Discuss by telephone,Sergey Viktorovich Lavrov,2014-03-13
+North Korea,Criticize or denounce,UN Security Council,2014-07-20
+John Kerry,Express intent to meet or negotiate,Sergey Viktorovich Lavrov,2014-03-20
+Defense / Security Ministry (China),Make statement,China,2014-12-14
+Congo,Engage in diplomatic cooperation,South Africa,2014-04-14
+Business (Bulgaria),Sign formal agreement,Labor Union (Bulgaria),2014-09-23
+Police (Kenya),fight with small arms and light weapons,Citizen (Kenya),2014-07-30
