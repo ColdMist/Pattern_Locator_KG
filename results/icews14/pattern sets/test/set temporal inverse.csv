@@ -1,0 +1,314 @@
+head,relation,tail,time
+Sudan,Meet at a 'third' location,Umar al Bashir,2014-01-06
+Umar al Bashir,Express intent to meet or negotiate,Sudan,2014-01-06
+Sudan,Make statement,South Sudan,2014-01-07
+South Sudan,Express intent to cooperate,Sudan,2014-01-07
+Foreign Affairs (United States),Make a visit,Afghanistan,2014-01-15
+Afghanistan,Host a visit,Foreign Affairs (United States),2014-01-15
+Royal Administration (Jordan),Make a visit,Benjamin Netanyahu,2014-01-16
+Benjamin Netanyahu,Host a visit,Royal Administration (Jordan),2014-01-16
+Kuwait,Host a visit,Ministry (Turkey),2014-01-17
+Ministry (Turkey),Make a visit,Kuwait,2014-01-17
+Rafiq Hariri,Make a visit,The Hague,2014-01-21
+The Hague,Host a visit,Rafiq Hariri,2014-01-21
+Police (Ukraine),Express intent to cooperate,Protester (Ukraine),2014-01-24
+Protester (Ukraine),Express accord,Police (Ukraine),2014-01-24
+Iran,Host a visit,Foreign Affairs (Venezuela),2014-01-26
+Foreign Affairs (Venezuela),Make a visit,Iran,2014-01-26
+Nadine Heredia,Make a visit,Royal Administration (Japan),2014-01-28
+Royal Administration (Japan),Host a visit,Nadine Heredia,2014-01-28
+Chuck Hagel,Express intent to meet or negotiate,Poland,2014-01-29
+Poland,Host a visit,Chuck Hagel,2014-01-29
+Military (Philippines),Use conventional military force,Islamic Rebel (Philippines),2014-02-01
+Islamic Rebel (Philippines),Use unconventional violence,Military (Philippines),2014-02-01
+Protester (Thailand),Impose restrictions on political freedoms,Thailand,2014-02-06
+Thailand,"Arrest, detain, or charge with legal action",Protester (Thailand),2014-02-06
+Fumio Kishida,Make statement,John Kerry,2014-02-08
+John Kerry,Express intent to engage in diplomatic cooperation (such as policy support),Fumio Kishida,2014-02-08
+City Mayor (United States),Express intent to meet or negotiate,Philippines,2014-02-11
+Philippines,Host a visit,City Mayor (United States),2014-02-11
+China,Host a visit,John Kerry,2014-02-15
+John Kerry,Make statement,China,2014-02-15
+Angela Merkel,Make statement,France,2014-02-19
+Rioter (Ukraine),Use unconventional violence,Police (Ukraine),2014-02-19
+France,Host a visit,Angela Merkel,2014-02-19
+Police (Ukraine),Use conventional military force,Rioter (Ukraine),2014-02-19
+Police (Yemen),Use tactics of violent repression,Protester (Yemen),2014-02-21
+Protester (Yemen),"Protest violently, riot",Police (Yemen),2014-02-21
+Protester (Yemen),Demonstrate or rally,Police (Yemen),2014-02-21
+Military (United Kingdom),Use conventional military force,Citizen (United Kingdom),2014-02-26
+Citizen (United Kingdom),Kill by physical assault,Military (United Kingdom),2014-02-26
+Sergey Viktorovich Lavrov,Engage in negotiation,John Kerry,2014-03-05
+John Kerry,Express intent to cooperate,Sergey Viktorovich Lavrov,2014-03-05
+Barack Obama,Appeal for diplomatic cooperation (such as policy support),Japan,2014-03-07
+Japan,Express intent to engage in diplomatic cooperation (such as policy support),Barack Obama,2014-03-07
+Iran,Make statement,Mohammad Javad Zarif,2014-03-10
+Mohammad Javad Zarif,Make an appeal or request,Iran,2014-03-10
+Iran,Express intent to meet or negotiate,Oman,2014-03-13
+Oman,Sign formal agreement,Iran,2014-03-13
+Iran,Host a visit,Evangelos Venizelos,2014-03-15
+Evangelos Venizelos,Make statement,Iran,2014-03-15
+Governor (Kenya),Demand,Citizen (Kenya),2014-03-17
+Citizen (Kenya),Make an appeal or request,Governor (Kenya),2014-03-17
+Milos Zeman,Make a visit,Poland,2014-03-17
+Poland,Host a visit,Milos Zeman,2014-03-17
+Sudan,Host a visit,Kuol Manyang Juuk,2014-03-20
+Kuol Manyang Juuk,Make a visit,Sudan,2014-03-20
+John Kerry,Make statement,Fumio Kishida,2014-03-23
+Fumio Kishida,Express intent to cooperate,John Kerry,2014-03-23
+Chris Alexander,Make a visit,China,2014-03-24
+China,Host a visit,Chris Alexander,2014-03-24
+Iran,Express intent to meet or negotiate,Kazakhstan,2014-04-01
+Kazakhstan,Consult,Iran,2014-04-01
+Japan,Express intent to engage in diplomatic cooperation (such as policy support),Iran,2014-04-03
+Iran,Consult,Japan,2014-04-03
+Sergey Viktorovich Lavrov,Express intent to cooperate,John Kerry,2014-04-10
+John Kerry,Discuss by telephone,Sergey Viktorovich Lavrov,2014-04-10
+Police (Philippines),"Arrest, detain, or charge with legal action",Criminal (Philippines),2014-04-12
+Criminal (Philippines),Make statement,Police (Philippines),2014-04-12
+South Korea,Reject,North Korea,2014-04-14
+North Korea,Threaten,South Korea,2014-04-14
+Citizen (Nigeria),Criticize or denounce,Ministry (Nigeria),2014-04-22
+Ministry (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-04-22
+Royal Administration (Spain),Make a visit,United Arab Emirates,2014-04-24
+United Arab Emirates,Host a visit,Royal Administration (Spain),2014-04-24
+Employee (India),Accuse,Citizen (India),2014-04-25
+Citizen (India),Threaten,Employee (India),2014-04-25
+South Korea,Host a visit,Barack Obama,2014-04-26
+Barack Obama,Make a visit,South Korea,2014-04-26
+Angela Merkel,Make a visit,Barack Obama,2014-05-02
+Angela Merkel,Express intent to meet or negotiate,Barack Obama,2014-05-02
+Barack Obama,Consult,Angela Merkel,2014-05-02
+Ethiopia,Host a visit,Head of Government (China),2014-05-04
+Head of Government (China),Make a visit,Ethiopia,2014-05-04
+Angela Merkel,Make a visit,Barack Obama,2014-05-05
+Barack Obama,Praise or endorse,Angela Merkel,2014-05-05
+Head of Government (Turkmenistan),Make a visit,Tajikistan,2014-05-06
+Tajikistan,Host a visit,Head of Government (Turkmenistan),2014-05-06
+Philippines,Host a visit,Myanmar,2014-05-10
+Myanmar,Make a visit,Philippines,2014-05-10
+Professor (Afghanistan),Reject,Ashraf Ghani Ahmadzai,2014-05-11
+Ashraf Ghani Ahmadzai,Appeal for diplomatic cooperation (such as policy support),Professor (Afghanistan),2014-05-11
+Benjamin Netanyahu,Make statement,Japan,2014-05-12
+Japan,Host a visit,Benjamin Netanyahu,2014-05-12
+Citizen (Nigeria),Praise or endorse,Government (Nigeria),2014-05-21
+Government (Nigeria),Engage in material cooperation,Citizen (Nigeria),2014-05-21
+Massoud Barzani,Make a visit,François Hollande,2014-05-25
+François Hollande,Host a visit,Massoud Barzani,2014-05-25
+Citizen (Nigeria),Accuse,Government (Nigeria),2014-05-26
+Government (Nigeria),Impose restrictions on political freedoms,Citizen (Nigeria),2014-05-26
+South Korea,Express intent to engage in diplomatic cooperation (such as policy support),China,2014-05-26
+Citizen (Nigeria),Criticize or denounce,Government (Nigeria),2014-05-26
+Citizen (Nigeria),Appeal for judicial cooperation,Government (Nigeria),2014-05-26
+China,Express intent to cooperate,South Korea,2014-05-26
+Barack Obama,Express intent to de-escalate military engagement,Afghanistan,2014-05-27
+Afghanistan,Host a visit,Barack Obama,2014-05-27
+Japan,Engage in negotiation,North Korea,2014-05-30
+North Korea,Appeal for easing of administrative sanctions,Japan,2014-05-30
+Afghanistan,Host a visit,Chuck Hagel,2014-06-02
+Chuck Hagel,Make a visit,Afghanistan,2014-06-02
+Afghanistan,Host a visit,Military Personnel (United States),2014-06-05
+Military Personnel (United States),Make a visit,Afghanistan,2014-06-05
+Iraq,Make an appeal or request,Legislature (Iraq),2014-06-10
+Legislature (Iraq),Impose state of emergency or martial law,Iraq,2014-06-10
+Iraq,Host a visit,Nuri al-Maliki,2014-06-13
+Nuri al-Maliki,Make a visit,Iraq,2014-06-13
+Iraq,Criticize or denounce,Nuri al-Maliki,2014-06-13
+David Choquehuanca,Host a visit,Raúl Castro,2014-06-13
+Raúl Castro,Make a visit,David Choquehuanca,2014-06-13
+Government (Nigeria),Make an appeal or request,Citizen (Nigeria),2014-06-17
+Citizen (Nigeria),Threaten,Government (Nigeria),2014-06-17
+Iraq,Make statement,Iran,2014-06-18
+Massoud Barzani,Make a visit,Iraq,2014-06-18
+Iraq,Host a visit,Massoud Barzani,2014-06-18
+Iran,Provide military protection or peacekeeping,Iraq,2014-06-18
+Police (Kenya),"Arrest, detain, or charge with legal action",Citizen (Kenya),2014-06-19
+Citizen (Kenya),Accuse,Police (Kenya),2014-06-19
+Domestic Affairs (South Sudan),Make a visit,Sudan,2014-06-22
+Sudan,Host a visit,Domestic Affairs (South Sudan),2014-06-22
+Japan,Reduce relations,South Korea,2014-06-23
+South Korea,Make an appeal or request,Japan,2014-06-23
+Iraq,Host a visit,Sergey Viktorovich Lavrov,2014-06-27
+Sergey Viktorovich Lavrov,Make a visit,Iraq,2014-06-27
+China,Make a visit,South Korea,2014-06-28
+South Korea,Host a visit,China,2014-06-28
+Xi Jinping,Express intent to meet or negotiate,South Korea,2014-07-02
+South Korea,Host a visit,Xi Jinping,2014-07-02
+Nuri al-Maliki,Deny responsibility,Iraq,2014-07-02
+South Korea,Make optimistic comment,Xi Jinping,2014-07-02
+Iraq,Make statement,Nuri al-Maliki,2014-07-02
+Police (Egypt),Use tactics of violent repression,Protester (Egypt),2014-07-03
+Angela Merkel,Express intent to cooperate,Barack Obama,2014-07-03
+Barack Obama,Consult,Angela Merkel,2014-07-03
+Protester (Egypt),Demonstrate or rally,Police (Egypt),2014-07-03
+Japan,Make statement,North Korea,2014-07-04
+North Korea,Engage in negotiation,Japan,2014-07-04
+Election Commission (Afghanistan),Make optimistic comment,Afghanistan,2014-07-05
+Afghanistan,Make an appeal or request,Election Commission (Afghanistan),2014-07-05
+South Korea,Host a visit,Xi Jinping,2014-07-05
+Xi Jinping,Make a visit,South Korea,2014-07-05
+Xi Jinping,Make statement,South Korea,2014-07-05
+Presidential Candidate (Afghanistan),Engage in negotiation,John Kerry,2014-07-13
+John Kerry,Express intent to meet or negotiate,Mohammad Javad Zarif,2014-07-13
+John Kerry,Praise or endorse,Iran,2014-07-13
+John Kerry,Consult,Presidential Candidate (Afghanistan),2014-07-13
+Mohammad Javad Zarif,Consult,John Kerry,2014-07-13
+Iran,Meet at a 'third' location,John Kerry,2014-07-13
+Ashraf Ghani Ahmadzai,Sign formal agreement,Abdullah Abdullah,2014-07-14
+Abdullah Abdullah,Express intent to cooperate,Ashraf Ghani Ahmadzai,2014-07-14
+East African Community,Make a visit,Barnaba Marial Benjamin,2014-07-15
+Barnaba Marial Benjamin,Host a visit,East African Community,2014-07-15
+Vietnam,Express intent to cooperate,Thailand,2014-07-17
+Thailand,Praise or endorse,Vietnam,2014-07-17
+Benjamin Netanyahu,Engage in negotiation,John Kerry,2014-07-23
+John Kerry,Express intent to meet or negotiate,Benjamin Netanyahu,2014-07-23
+Citizen (India),Use unconventional violence,Court Judge (India),2014-07-27
+Court Judge (India),Ease administrative sanctions,Citizen (India),2014-07-27
+France,Express intent to engage in diplomatic cooperation (such as policy support),Japan,2014-07-29
+France,Express intent to cooperate,Japan,2014-07-29
+Japan,Express intent to meet or negotiate,France,2014-07-29
+Myanmar,Host a visit,John Kerry,2014-08-05
+John Kerry,Make a visit,Myanmar,2014-08-05
+Angela Merkel,Express intent to cooperate,Barack Obama,2014-08-09
+Barack Obama,Consult,Angela Merkel,2014-08-09
+John Kerry,Express intent to meet or negotiate,Julie Bishop,2014-08-10
+South Africa,Host a visit,Shivraj Singh Chouhan,2014-08-10
+Julie Bishop,Engage in negotiation,John Kerry,2014-08-10
+Shivraj Singh Chouhan,Make a visit,South Africa,2014-08-10
+Myanmar,Host a visit,John Kerry,2014-08-11
+John Kerry,Make statement,Myanmar,2014-08-11
+Citizen (Nigeria),Make empathetic comment,Ministry (Nigeria),2014-08-12
+Ministry (Nigeria),Praise or endorse,Citizen (Nigeria),2014-08-12
+Massoud Barzani,Make statement,Angela Merkel,2014-08-16
+Angela Merkel,Discuss by telephone,Massoud Barzani,2014-08-16
+Islam Karimov,Make a visit,China,2014-08-22
+China,Host a visit,Islam Karimov,2014-08-22
+Kyriakos Gerontopoulos,Make a visit,Military (Cyprus),2014-08-25
+Iraq,Host a visit,Foreign Affairs (Norway),2014-08-25
+Military (Cyprus),Host a visit,Kyriakos Gerontopoulos,2014-08-25
+Foreign Affairs (Norway),Make a visit,Iraq,2014-08-25
+Nguyen Phu Trong,Make a visit,Vietnam,2014-08-29
+Vietnam,Host a visit,Nguyen Phu Trong,2014-08-29
+Police (Philippines),Confiscate property,Criminal (Philippines),2014-08-30
+Criminal (Philippines),Use unconventional violence,Police (Philippines),2014-08-30
+Mohammad Javad Zarif,Make a visit,Catherine Ashton,2014-09-02
+Catherine Ashton,Host a visit,Mohammad Javad Zarif,2014-09-02
+John Baird,Make a visit,Serbia,2014-09-03
+Serbia,Host a visit,John Baird,2014-09-03
+North Atlantic Treaty Organization,Meet at a 'third' location,Barack Obama,2014-09-03
+Barack Obama,Demand,North Atlantic Treaty Organization,2014-09-03
+Head of Government (Ukraine),Express intent to cooperate,North Atlantic Treaty Organization,2014-09-04
+North Atlantic Treaty Organization,Meet at a 'third' location,Head of Government (Ukraine),2014-09-04
+Armed Rebel (Yemen),fight with artillery and tanks,Citizen (Yemen),2014-09-06
+Citizen (Yemen),Use unconventional violence,Armed Rebel (Yemen),2014-09-06
+China,Engage in diplomatic cooperation,Japan,2014-09-10
+"Children (Palestinian Territory, Occupied)",Physically assault,Israeli Defense Forces,2014-09-10
+Japan,Express intent to engage in diplomatic cooperation (such as policy support),China,2014-09-10
+Israeli Defense Forces,Use conventional military force,"Children (Palestinian Territory, Occupied)",2014-09-10
+John Kerry,Host a visit,Abdel Fattah Al-Sisi,2014-09-13
+John Kerry,Meet at a 'third' location,Abdel Fattah Al-Sisi,2014-09-13
+Abdel Fattah Al-Sisi,Engage in negotiation,John Kerry,2014-09-13
+Ashraf Ghani Ahmadzai,Sign formal agreement,Abdullah Abdullah,2014-09-15
+Abdullah Abdullah,Accuse,Ashraf Ghani Ahmadzai,2014-09-15
+China,Host a visit,Barnaby Joyce,2014-09-16
+Barnaby Joyce,Make a visit,China,2014-09-16
+Japan,Make a visit,Thailand,2014-09-22
+Thailand,Host a visit,Japan,2014-09-22
+Ethiopia,Host a visit,Sergey Viktorovich Lavrov,2014-09-22
+Sergey Viktorovich Lavrov,Make a visit,Ethiopia,2014-09-22
+Barack Obama,Praise or endorse,Sheikh Hasina Wajed,2014-09-24
+Police (Australia),Investigate,Citizen (Australia),2014-09-24
+Citizen (Australia),Use unconventional violence,Police (Australia),2014-09-24
+Sheikh Hasina Wajed,Engage in symbolic act,Barack Obama,2014-09-24
+Japan,Consult,South Korea,2014-09-26
+Criminal (Australia),Use unconventional violence,Police (Australia),2014-09-26
+Police (Australia),Express intent to meet or negotiate,Criminal (Australia),2014-09-26
+South Korea,Express intent to cooperate,Japan,2014-09-26
+Iran,Engage in negotiation,Iraq,2014-09-28
+Iraq,Sign formal agreement,Iran,2014-09-28
+Evangelos Venizelos,Express intent to cooperate,Antonis Samaras,2014-09-30
+Antonis Samaras,Express intent to meet or negotiate,Evangelos Venizelos,2014-09-30
+Barack Obama,Make a visit,China,2014-10-02
+China,Host a visit,Barack Obama,2014-10-02
+North Korea,Express intent to cooperate,South Korea,2014-10-04
+South Korea,Make an appeal or request,North Korea,2014-10-04
+North Korea,Make a visit,South Korea,2014-10-07
+South Korea,Express intent to engage in diplomatic cooperation (such as policy support),North Korea,2014-10-07
+Evangelos Venizelos,Consult,Antonis Samaras,2014-10-07
+North Korea,fight with small arms and light weapons,South Korea,2014-10-07
+Antonis Samaras,Express intent to meet or negotiate,Evangelos Venizelos,2014-10-07
+Citizen (Nigeria),Criticize or denounce,Government (Nigeria),2014-10-13
+Government (Nigeria),Accuse,Citizen (Nigeria),2014-10-13
+France,Host a visit,Sergey Viktorovich Lavrov,2014-10-14
+Attacker (Saudi Arabia),fight with small arms and light weapons,Police (Saudi Arabia),2014-10-14
+Evo Morales,Make a visit,China,2014-10-14
+China,Host a visit,Evo Morales,2014-10-14
+Sergey Viktorovich Lavrov,Make a visit,France,2014-10-14
+Police (Saudi Arabia),Use conventional military force,Attacker (Saudi Arabia),2014-10-14
+Iran,Express intent to cooperate,Vietnam,2014-10-15
+Vietnam,Praise or endorse,Iran,2014-10-15
+Mohammad Javad Zarif,Engage in negotiation,Catherine Ashton,2014-10-15
+Catherine Ashton,Sign formal agreement,Mohammad Javad Zarif,2014-10-15
+Police (Hong Kong),Use conventional military force,Protester (Hong Kong),2014-10-17
+Protester (Hong Kong),Demonstrate or rally,Police (Hong Kong),2014-10-17
+Combatant (Yemen),Use unconventional violence,Armed Rebel (Yemen),2014-10-18
+Armed Rebel (Yemen),Express intent to cooperate,Combatant (Yemen),2014-10-18
+Iraq,Engage in diplomatic cooperation,Iran,2014-10-21
+Iran,Host a visit,Iraq,2014-10-21
+Head of Government (China),Praise or endorse,Foreign Affairs (Liberia),2014-10-24
+Foreign Affairs (Liberia),Make a visit,Head of Government (China),2014-10-24
+China,Host a visit,Teo Chee Hean,2014-10-28
+Teo Chee Hean,Make statement,China,2014-10-28
+Barack Obama,Express intent to meet or negotiate,Xi Jinping,2014-11-03
+Xi Jinping,Host a visit,Barack Obama,2014-11-03
+Iran,Express intent to meet or negotiate,Mohammad Javad Zarif,2014-11-08
+Mohammad Javad Zarif,Make a visit,Iran,2014-11-08
+Head of Government (China),Consult,Xi Jinping,2014-11-10
+Xi Jinping,Praise or endorse,Head of Government (China),2014-11-10
+China,Mobilize or increase armed forces,Japan,2014-11-11
+Japan,Engage in diplomatic cooperation,China,2014-11-11
+China,Host a visit,Head of Government (Chile),2014-11-12
+Head of Government (Chile),Make a visit,China,2014-11-12
+China,Engage in diplomatic cooperation,Fiji,2014-11-13
+Canada,Host a visit,Tahirul Qadri,2014-11-13
+Fiji,Grant diplomatic recognition,China,2014-11-13
+Tahirul Qadri,Make a visit,Canada,2014-11-13
+Japan,Criticize or denounce,China,2014-11-14
+South Africa,"Arrest, detain, or charge with legal action",Men (South Africa),2014-11-14
+China,Sign formal agreement,Japan,2014-11-14
+Men (South Africa),Use unconventional violence,South Africa,2014-11-14
+Barack Obama,Sign formal agreement,China,2014-11-15
+China,Host a visit,Barack Obama,2014-11-15
+Slovenia,Host a visit,Wang Yang,2014-11-20
+Wang Yang,Make a visit,Slovenia,2014-11-20
+Xi Jinping,Praise or endorse,Niue,2014-11-22
+Niue,Consult,Xi Jinping,2014-11-22
+Xi Jinping,Praise or endorse,Fiji,2014-11-22
+Fiji,Engage in negotiation,Xi Jinping,2014-11-22
+Employee (India),Consult,Head of Government (India),2014-11-26
+Head of Government (India),Make an appeal or request,Employee (India),2014-11-26
+Head of Government (Egypt),Consult,François Hollande,2014-11-27
+François Hollande,Host a visit,Head of Government (Egypt),2014-11-27
+Citizen (Nigeria),Appeal to engage in or accept mediation,Government (Nigeria),2014-11-28
+Government (Nigeria),Express intent to engage in diplomatic cooperation (such as policy support),Citizen (Nigeria),2014-11-28
+France,Host a visit,Abdel Fattah Al-Sisi,2014-11-29
+Abdel Fattah Al-Sisi,Make a visit,France,2014-11-29
+Mexico,Host a visit,Iran,2014-12-03
+Iran,Engage in diplomatic cooperation,Mexico,2014-12-03
+Citizen (Kenya),Demand,Government (Kenya),2014-12-08
+Government (Kenya),Reject,Citizen (Kenya),2014-12-08
+Defense / Security Ministry (United States),Make a visit,Kuwait,2014-12-08
+Kuwait,Host a visit,Defense / Security Ministry (United States),2014-12-08
+Iraq,Host a visit,Chuck Hagel,2014-12-09
+Chuck Hagel,Consult,Iraq,2014-12-09
+Iraq,Consult,Kuwait,2014-12-28
+Kuwait,Sign formal agreement,Iraq,2014-12-28
+Kuwait,Praise or endorse,Iraq,2014-12-28
+Ministry (Nigeria),Express intent to cooperate,Citizen (Nigeria),2014-12-29
+Foreign Affairs (Belarus),Make a visit,Iran,2014-12-29
+Iran,Host a visit,Foreign Affairs (Belarus),2014-12-29
+South Korea,Consult,Japan,2014-12-29
+South Korea,Engage in diplomatic cooperation,Japan,2014-12-29
+Citizen (Nigeria),Make an appeal or request,Ministry (Nigeria),2014-12-29
+South Korea,Express intent to meet or negotiate,Japan,2014-12-29
+Japan,Sign formal agreement,South Korea,2014-12-29

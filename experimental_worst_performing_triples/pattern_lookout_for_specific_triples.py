@@ -16,7 +16,7 @@ def find_patterns_for_triples(triples, pattern_list):
         #print(filter_row_subject)
         filter_row_subject_object = filter_row_subject[filter_row_subject.eq(row_object).any()]
         #print(filter_row_subject_object)
-        print('any pattern does not match this low performing triples')
+        print('any pattern does not match this low performing static')
 
 
 if __name__ == '__main__':
