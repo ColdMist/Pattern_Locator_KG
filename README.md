@@ -55,13 +55,13 @@ The program will output the detected patterns in the given location
 .
 ├── data/
 │   └── dataset1/
-        ├── saved_patterns/
-        │   ├── implication_patterns.txt
-        │   ├── inverse_patterns.txt
-        │   ├── reflection_patterns.txt
-        │   ├── symmetric_patterns.txt
-        │   ├── transitive_patterns.txt
-        │   └── composition_patterns.txt
+│   │   ├── saved_patterns/
+│   │   │   ├── implication_patterns.txt
+│   │   │   ├── inverse_patterns.txt
+│   │   │   ├── reflection_patterns.txt
+│   │   │   ├── symmetric_patterns.txt
+│   │   │   ├── transitive_patterns.txt
+│   │   │   └── composition_patterns.txt
 │   │   └── train.txt 
 │   │   └── dataset2/
 │   │   └── ...
