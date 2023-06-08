@@ -4,6 +4,11 @@
 
 ## Finding statistical relational patterns
 
+## Workflow
+<div align="center">
+  <img src="workflow.png"  alt="workflow">
+</div>
+## Description
 The Pattern Locator KG is a repository that contains a pattern matching algorithm that locates specific patterns in a given dataset from knowledge graphs triplets.
 Currently the project supports the following pattern extraction from KGs:
   - Reflection
@@ -80,7 +85,7 @@ The program will output the detected patterns in the given location
 - **relational_pattern_lookout.py**: This is the main file for the statistical pattern lookout. It contains the main function that calls the other functions in the program.
 - **utility_functions.py**: This file contains the utility functions (including the codes to find statistical patterns) used in the program.
 
-# Temporal Pattern Lookout:
+## Temporal Pattern Lookout:
 - This script is to find pattern in (Temporal) Knowledge Graph. The file format is in quaternion (subject, predicate, object, time) or triples ((subject, predicate, object).
 - Unzip the data.zip in the same folder as folder 'temporal_pattern_lookout'
 How to run:
