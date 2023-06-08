@@ -5,6 +5,7 @@
 ## Finding statistical relational patterns
 
 ## Workflow
+
 <div align="center">
   <img src="workflow.png"  alt="workflow">
 </div>
