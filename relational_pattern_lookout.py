@@ -34,42 +34,42 @@ def main(args):
         # If not, create it
         os.makedirs(save_pattern_path)
 
-    if symmetric_patterns!=None:
+    if len(symmetric_patterns)!=0:
         pd.DataFrame(symmetric_patterns).to_csv(
             os.path.join(save_pattern_path, "symmetric_patterns.csv"),
             sep="\t",
             header=None,
             index=False,
         )
-    if reflexive_patterns!=None:
+    if len(reflexive_patterns)!=0:
         pd.DataFrame(reflexive_patterns).to_csv(
             os.path.join(save_pattern_path, "reflexive_patterns.csv"),
             sep="\t",
             header=None,
             index=False,
         )
-    if implication_patterns!=None:
+    if len(implication_patterns)!=0:
         pd.DataFrame(implication_patterns).to_csv(
             os.path.join(save_pattern_path, "implication_patterns.csv"),
             sep="\t",
             header=None,
             index=False,
         )
-    if inverse_patterns!=None:
+    if len(inverse_patterns)!=0:
         pd.DataFrame(inverse_patterns).to_csv(
             os.path.join(save_pattern_path, "inverse_patterns.csv"),
             sep="\t",
             header=None,
             index=False,
         )
-    if transitive_patterns!=None:
+    if len(transitive_patterns)!=0:
         pd.DataFrame(transitive_patterns).to_csv(
             os.path.join(save_pattern_path, "transitive_patterns.csv"),
             sep="\t",
             header=None,
             index=False,
         )
-    if composition_patterns!=None:
+    if len(composition_patterns)!=0:
         pd.DataFrame(composition_patterns).to_csv(
             os.path.join(save_pattern_path, "composition_patterns.csv"),
             sep="\t",

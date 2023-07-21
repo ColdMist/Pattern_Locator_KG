@@ -63,7 +63,7 @@ The program will output the detected patterns in the given location
 │   │   │   ├── transitive_patterns.txt
 │   │   │   └── composition_patterns.txt
 │   │   └── train.txt 
-│   │   └── dataset2/
+│   └── dataset2/
 │   │   └── ...
 ├── utils/
 │   ├── utility_functions.py
